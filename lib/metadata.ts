@@ -16,18 +16,25 @@ export function buildMetadata({
   title,
   description,
   path,
-  seo
+  seo,
+  imageUrl
 }: {
   title?: string;
   description?: string;
   path: string;
   seo?: SeoFields;
+  imageUrl?: string;
 }): Metadata {
   const isPreviewDeployment = process.env.VERCEL_ENV === "preview";
   const finalTitle = seo?.metaTitle ?? title ?? defaultTitle;
   const finalDescription = seo?.metaDescription ?? description ?? defaultDescription;
   const canonical = seo?.canonicalUrl ?? toAbsoluteUrl(path);
   const noIndex = seo?.noIndex ?? isPreviewDeployment;
+  const ogImage = imageUrl
+    ? imageUrl.startsWith("http")
+      ? imageUrl
+      : toAbsoluteUrl(imageUrl)
+    : undefined;
 
   return {
     title: finalTitle,
@@ -40,12 +47,14 @@ export function buildMetadata({
       title: finalTitle,
       description: finalDescription,
       url: canonical,
-      type: "website"
+      type: "website",
+      images: ogImage ? [{ url: ogImage }] : undefined
     },
     twitter: {
       card: "summary_large_image",
       title: finalTitle,
-      description: finalDescription
+      description: finalDescription,
+      images: ogImage ? [ogImage] : undefined
     }
   };
 }

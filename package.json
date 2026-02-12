@@ -9,6 +9,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "seed:generate": "node sanity/seed/generate-seed.mjs",
+    "images:blogs:unsplash": "node scripts/fetch-unsplash-blog-images.mjs",
+    "images:blogs:unsplash:apply-seed": "node scripts/fetch-unsplash-blog-images.mjs --apply-seed",
     "sanity:dev": "sanity dev",
     "sanity:build": "sanity build",
     "sanity:deploy": "sanity deploy"

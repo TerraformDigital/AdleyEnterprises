@@ -119,6 +119,11 @@ export const blogPostsQuery = groq`
     "slug": slug.current,
     excerpt,
     publishedAt,
+    coverImageUrl,
+    coverImageAlt,
+    coverImageCreditName,
+    coverImageCreditUrl,
+    coverImageSource,
     body,
     seo
   }
@@ -131,6 +136,11 @@ export const blogPostBySlugQuery = groq`
     "slug": slug.current,
     excerpt,
     publishedAt,
+    coverImageUrl,
+    coverImageAlt,
+    coverImageCreditName,
+    coverImageCreditUrl,
+    coverImageSource,
     body,
     seo
   }

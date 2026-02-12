@@ -35,6 +35,34 @@ export const blogPostType = defineType({
       validation: (rule) => rule.required()
     }),
     defineField({
+      name: "coverImageUrl",
+      title: "Cover image URL",
+      type: "url",
+      validation: (rule) => rule.uri({ scheme: ["http", "https"] })
+    }),
+    defineField({
+      name: "coverImageAlt",
+      title: "Cover image alt text",
+      type: "string",
+      validation: (rule) => rule.max(160)
+    }),
+    defineField({
+      name: "coverImageCreditName",
+      title: "Cover image credit name",
+      type: "string"
+    }),
+    defineField({
+      name: "coverImageCreditUrl",
+      title: "Cover image credit URL",
+      type: "url",
+      validation: (rule) => rule.uri({ scheme: ["http", "https"] })
+    }),
+    defineField({
+      name: "coverImageSource",
+      title: "Cover image source",
+      type: "string"
+    }),
+    defineField({
       name: "body",
       title: "Body",
       type: "richText",

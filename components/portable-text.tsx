@@ -11,7 +11,16 @@ const components: PortableTextComponents = {
   block: {
     normal: ({ children }) => <p>{children}</p>,
     h2: ({ children }) => <h2>{children}</h2>,
-    h3: ({ children }) => <h3>{children}</h3>
+    h3: ({ children }) => <h3>{children}</h3>,
+    blockquote: ({ children }) => <blockquote>{children}</blockquote>
+  },
+  list: {
+    bullet: ({ children }) => <ul>{children}</ul>,
+    number: ({ children }) => <ol>{children}</ol>
+  },
+  listItem: {
+    bullet: ({ children }) => <li>{children}</li>,
+    number: ({ children }) => <li>{children}</li>
   },
   marks: {
     link: ({ children, value }) => {

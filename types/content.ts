@@ -11,6 +11,8 @@ export interface PortableTextBlock {
   children: PortableTextSpan[];
   _key?: string;
   style?: string;
+  listItem?: "bullet" | "number";
+  level?: number;
   markDefs?: Array<Record<string, unknown>>;
   [key: string]: unknown;
 }
@@ -118,6 +120,11 @@ export interface BlogPost {
   excerpt: string;
   publishedAt: string;
   body: PortableTextValue;
+  coverImageUrl?: string;
+  coverImageAlt?: string;
+  coverImageCreditName?: string;
+  coverImageCreditUrl?: string;
+  coverImageSource?: string;
   seo?: SeoFields;
 }
 

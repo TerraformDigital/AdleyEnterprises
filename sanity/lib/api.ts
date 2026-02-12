@@ -30,6 +30,28 @@ import type {
   SiteSettings
 } from "@/types/content";
 
+function withBlogFallback(post: BlogPost): BlogPost {
+  const fallback = fallbackBlogPosts.find((item) => item.slug === post.slug);
+
+  if (!fallback) {
+    return post;
+  }
+
+  const shouldUpgradeBody = !post.body || post.body.length < 5;
+
+  return {
+    ...fallback,
+    ...post,
+    excerpt: post.excerpt || fallback.excerpt,
+    body: shouldUpgradeBody ? fallback.body : post.body,
+    coverImageUrl: post.coverImageUrl || fallback.coverImageUrl,
+    coverImageAlt: post.coverImageAlt || fallback.coverImageAlt,
+    coverImageCreditName: post.coverImageCreditName || fallback.coverImageCreditName,
+    coverImageCreditUrl: post.coverImageCreditUrl || fallback.coverImageCreditUrl,
+    coverImageSource: post.coverImageSource || fallback.coverImageSource
+  };
+}
+
 export async function getSiteSettings() {
   return sanityFetch<SiteSettings>({
     query: siteSettingsQuery,
@@ -105,15 +127,17 @@ export async function getBlogPosts() {
     fallback: fallbackBlogPosts
   });
 
-  return posts.length > 0 ? posts : fallbackBlogPosts;
+  return posts.length > 0 ? posts.map((post) => withBlogFallback(post)) : fallbackBlogPosts;
 }
 
 export async function getBlogPostBySlug(slug: string) {
-  return sanityFetch<BlogPost | null>({
+  const post = await sanityFetch<BlogPost | null>({
     query: blogPostBySlugQuery,
     params: { slug },
     fallback: fallbackBlogPosts.find((item) => item.slug === slug) ?? null
   });
+
+  return post ? withBlogFallback(post) : null;
 }
 
 export async function getProjects() {

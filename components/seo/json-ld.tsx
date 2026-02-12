@@ -1,5 +1,6 @@
 import { toAbsoluteUrl } from "@/lib/metadata";
-import type { FaqItem, Product, Service, SiteSettings } from "@/types/content";
+import type { BlogCover } from "@/lib/blog-covers";
+import type { BlogPost, FaqItem, Product, Service, SiteSettings } from "@/types/content";
 
 function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
@@ -140,6 +141,39 @@ export function BreadcrumbJsonLd({
       name: item.name,
       item: toAbsoluteUrl(item.href)
     }))
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function BlogPostingJsonLd({
+  post,
+  cover
+}: {
+  post: BlogPost;
+  cover: BlogCover;
+}) {
+  const canonical = toAbsoluteUrl(`/blog/${post.slug}`);
+  const imageUrl = cover.url.startsWith("http") ? cover.url : toAbsoluteUrl(cover.url);
+
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: [imageUrl],
+    datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    mainEntityOfPage: canonical,
+    author: {
+      "@type": "Organization",
+      name: "Adley Enterprises LLC"
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Adley Enterprises LLC",
+      url: toAbsoluteUrl("/")
+    }
   };
 
   return <JsonLd data={data} />;

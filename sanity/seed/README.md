@@ -11,6 +11,20 @@ This folder contains import-ready documents for Adley Enterprises:
 npm run seed:generate
 ```
 
+## Optional: Pull Blog Image Metadata from Unsplash
+
+Requires `UNSPLASH_ACCESS_KEY` in your environment.
+
+```bash
+npm run images:blogs:unsplash
+```
+
+To also inject image fields into `adley-seed.json` and `adley-seed.ndjson`:
+
+```bash
+npm run images:blogs:unsplash:apply-seed
+```
+
 ## Import to Sanity Dataset
 
 ```bash

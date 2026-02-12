@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { PageHero } from "@/components/sections/page-hero";
+import { getBlogCover } from "@/lib/blog-covers";
 import { buildMetadata } from "@/lib/metadata";
 import { getBlogPosts } from "@/sanity/lib/api";
 
@@ -27,15 +29,30 @@ export default async function BlogIndexPage() {
       />
 
       <section className="shell page-section card-grid">
-        {posts.map((post) => (
-          <article key={post.slug} className="card">
-            <h2>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
-            </h2>
-            <p>{post.excerpt}</p>
-            <p className="small">Published {new Date(post.publishedAt).toLocaleDateString()}</p>
-          </article>
-        ))}
+        {posts.map((post) => {
+          const cover = getBlogCover(post);
+          const isRemote = cover.url.startsWith("http");
+
+          return (
+            <article key={post.slug} className="card blog-card">
+              <Link href={`/blog/${post.slug}`} className="blog-card-media-link" aria-label={post.title}>
+                <Image
+                  src={cover.url}
+                  alt={cover.alt}
+                  width={1600}
+                  height={1000}
+                  className="blog-card-media"
+                  unoptimized={isRemote}
+                />
+              </Link>
+              <h2>
+                <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+              </h2>
+              <p>{post.excerpt}</p>
+              <p className="small">Published {new Date(post.publishedAt).toLocaleDateString()}</p>
+            </article>
+          );
+        })}
       </section>
     </>
   );

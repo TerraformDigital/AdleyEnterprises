@@ -21,6 +21,23 @@ const block = (text, style = "normal") => ({
   ]
 });
 
+const listItemBlock = (text, listItem = "bullet", level = 1, style = "normal") => ({
+  _type: "block",
+  _key: key(),
+  style,
+  listItem,
+  level,
+  markDefs: [],
+  children: [
+    {
+      _type: "span",
+      _key: key(),
+      text,
+      marks: []
+    }
+  ]
+});
+
 const toSlug = (value) =>
   value
     .toLowerCase()
@@ -353,44 +370,79 @@ const blogSeeds = [
     title: "Common Fiberglass Boat Damage and How to Spot It Early",
     slug: "common-fiberglass-boat-damage",
     excerpt:
-      "A practical checklist to identify fiberglass damage early and avoid bigger repair costs.",
+      "A practical checklist for spotting fiberglass damage before it turns into a bigger structural repair.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-one.avif",
+    coverImageAlt: "Fiberglass hull area prepped for structural and cosmetic repair",
     body: [
-      "Fiberglass damage often starts small: hairline cracks, chips, and soft spots that are easy to ignore.",
-      "The earlier you inspect and document changes, the easier it is to control repair scope.",
-      "If you notice repeated cracking in the same zone, schedule a professional inspection before the damage spreads."
+      { style: "normal", text: "Most fiberglass failures start as small visual changes: light spider cracking, chips near edges, and stress lines around hardware. Early inspection usually means simpler repairs, shorter downtime, and lower risk of hidden moisture intrusion." },
+      { style: "h2", text: "What to Watch for During Routine Checks" },
+      { listItem: "bullet", text: "Spider cracks that keep returning in the same area." },
+      { listItem: "bullet", text: "Chips or gouges that expose fibers under the gel coat surface." },
+      { listItem: "bullet", text: "Soft or flexing sections when you apply light hand pressure." },
+      { listItem: "bullet", text: "Discoloration, bubbling, or dull patches that spread over time." },
+      { style: "h3", text: "Simple Documentation That Speeds Up Estimates" },
+      { style: "normal", text: "Take a wide photo of the whole panel, then medium and close-up shots of the damage. Include one angled photo to show depth and one photo with a ruler or tape measure for scale." },
+      { style: "normal", text: "If cracks are growing or damage is near high-load zones, schedule inspection before the next run." }
     ]
   },
   {
     title: "Gel Coat Repair vs Full Repaint: Which Is Right for Your Boat?",
     slug: "gel-coat-repair-vs-repaint",
     excerpt:
-      "When to choose localized gel coat repair and when a larger refinishing scope makes more sense.",
+      "How to decide between targeted gel coat correction and broader exterior refinishing.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-two.avif",
+    coverImageAlt: "Technician preparing fiberglass surface for gel coat restoration",
     body: [
-      "Not every faded or scratched surface needs a full repaint.",
-      "Localized repair is often effective when damage is isolated and color matching can be controlled.",
-      "Wider oxidation, heavy surface inconsistency, or repeated patch history may justify broader refinishing."
+      { style: "normal", text: "Boat owners often ask whether they need spot gel coat repair or full repainting. The best answer depends on coverage area, damage depth, and finish consistency." },
+      { style: "h2", text: "When Spot Gel Coat Repair Is Usually Enough" },
+      { listItem: "bullet", text: "Damage is isolated to one or two sections." },
+      { listItem: "bullet", text: "The surrounding finish is still stable and not heavily oxidized." },
+      { listItem: "bullet", text: "Color matching can be blended without obvious patch transitions." },
+      { style: "h2", text: "When Broader Refinishing Makes More Sense" },
+      { listItem: "bullet", text: "Multiple repaired sections create inconsistent color or gloss." },
+      { listItem: "bullet", text: "Oxidation and weathering are present across wide panels." },
+      { listItem: "bullet", text: "Previous patch history makes new touch-up blending unreliable." },
+      { style: "normal", text: "Adley Enterprises does not publish one-size-fits-all pricing. Every estimate is tied to real hull condition and finish scope." }
     ]
   },
   {
     title: "What to Do After a Hull Collision",
     slug: "what-to-do-after-hull-collision",
     excerpt:
-      "Step-by-step actions for boat owners after impact damage to protect the hull and speed up repair.",
+      "A step-by-step owner checklist after impact damage to protect the hull and speed up repairs.",
+    coverImageUrl: "/images/checking-bodywork-on-boat-repair-optimized.jpg",
+    coverImageAlt: "Hull collision damage inspection before fiberglass repair begins",
     body: [
-      "Start with safety and document the affected area with clear photos from multiple angles.",
-      "Avoid continued use until a repair professional confirms structural condition.",
-      "Early assessment reduces the chance of moisture intrusion and additional laminate stress."
+      { style: "normal", text: "Collision damage is not always limited to what you can see on the surface. Fiberglass can fracture beneath the finish, so what looks small may still need structural correction." },
+      { style: "h2", text: "Immediate Steps After Impact" },
+      { listItem: "bullet", text: "Prioritize safety and remove the boat from operation." },
+      { listItem: "bullet", text: "Photograph damage from wide, medium, and close-up angles." },
+      { listItem: "bullet", text: "Note where the impact happened and what was hit." },
+      { listItem: "bullet", text: "Avoid additional runs until structural condition is reviewed." },
+      { style: "h3", text: "What to Avoid Before Inspection" },
+      { listItem: "bullet", text: "Do not grind, sand, or fill the area before evaluation." },
+      { listItem: "bullet", text: "Do not apply temporary coatings that hide crack edges." },
+      { style: "normal", text: "Early assessment helps reduce moisture intrusion risk and prevents stress cracks from expanding while the boat is parked." }
     ]
   },
   {
     title: "How Often Should You Buff and Wax a Fiberglass Boat?",
     slug: "how-often-buff-and-wax-fiberglass-boat",
     excerpt:
-      "Maintenance interval guidance based on storage, usage patterns, and finish condition.",
+      "Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions.",
+    coverImageUrl: "/images/polishing-boat-optimized.jpg",
+    coverImageAlt: "Technician buffing and polishing a fiberglass boat side panel",
     body: [
-      "Buffing and waxing frequency depends on UV exposure, water conditions, and how the boat is stored.",
-      "Routine finish maintenance helps preserve gloss and reduce surface degradation over time.",
-      "Ask for a maintenance recommendation during your next repair or inspection visit."
+      { style: "normal", text: "Buffing and waxing keeps fiberglass finishes cleaner, glossier, and better protected from weather exposure." },
+      { style: "h2", text: "Typical Service Rhythm by Use Case" },
+      { listItem: "bullet", text: "Indoor stored / moderate use: usually one full correction cycle per season." },
+      { listItem: "bullet", text: "Outdoor stored / frequent weekend use: often two cycles per season." },
+      { listItem: "bullet", text: "Heavy sun exposure or frequent trailering: touch-up intervals may be shorter." },
+      { style: "h3", text: "Signs It Is Time for Service" },
+      { listItem: "bullet", text: "Water no longer beads consistently on the surface." },
+      { listItem: "bullet", text: "The hull looks chalky or dull after washing." },
+      { listItem: "bullet", text: "Fine swirl marks are visible in direct sunlight." },
+      { style: "normal", text: "Regular maintenance helps protect earlier repair work and keeps finish quality consistent through the season." }
     ]
   },
   {
@@ -398,68 +450,128 @@ const blogSeeds = [
     slug: "how-photo-estimates-work",
     excerpt:
       "What photos to send and how to make your initial repair estimate faster and more accurate.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-three.avif",
+    coverImageAlt: "Close-up photo capture of fiberglass repair area for estimate review",
     body: [
-      "Photo estimates work best when you include wide shots, close-up damage shots, and a few angle variations.",
-      "Include brief notes on when damage occurred and whether the area has previous repair history.",
-      "Final scope is confirmed with in-person review when needed."
+      { style: "normal", text: "Photo estimates help start the conversation quickly, especially when you are comparing timelines before hauling the boat in." },
+      { style: "h2", text: "Best Photo Set to Send" },
+      { listItem: "bullet", text: "One full-side image so damage context is clear." },
+      { listItem: "bullet", text: "Two medium shots showing the exact repair zone." },
+      { listItem: "bullet", text: "Two close-ups that capture crack depth or edge condition." },
+      { listItem: "bullet", text: "An angled shot to reveal contour distortion or dent shape." },
+      { style: "h3", text: "Information to Include" },
+      { listItem: "bullet", text: "Boat make/model and approximate year." },
+      { listItem: "bullet", text: "How the damage happened and when it happened." },
+      { listItem: "bullet", text: "Whether the area was previously repaired." },
+      { style: "normal", text: "Photo estimates are an initial planning step. Final scope is confirmed through in-person inspection when required." }
     ]
   },
   {
     title: "Spring Boat Prep Checklist for Central Minnesota",
     slug: "spring-boat-prep-central-minnesota",
     excerpt:
-      "Pre-season fiberglass and finish checks to reduce delays when boating season starts.",
+      "Pre-season fiberglass inspection and finish prep to reduce downtime during Minnesota’s launch window.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-two.avif",
+    coverImageAlt: "Spring-season fiberglass hull prep before boating launch",
     body: [
-      "Before launch, inspect hull surfaces, gel coat condition, and any known repaired zones.",
-      "Address minor chips and cracks early so they do not become larger mid-season repairs.",
-      "A pre-season detailing and finish protection service can improve durability and appearance."
+      { style: "normal", text: "In Central Minnesota, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded." },
+      { style: "h2", text: "Pre-Launch Inspection Checklist" },
+      { listItem: "bullet", text: "Inspect high-stress zones for fresh cracks and impact marks." },
+      { listItem: "bullet", text: "Check previous repair areas for movement or finish edge changes." },
+      { listItem: "bullet", text: "Look for oxidation or chalking on exposed gel coat surfaces." },
+      { listItem: "bullet", text: "Confirm all hardware mount points are sealed and stable." },
+      { style: "h3", text: "Why Early Scheduling Helps" },
+      { style: "normal", text: "Small corrections are easier to schedule before peak season. Waiting until launch weekend can delay repairs when demand spikes." }
     ]
   },
   {
     title: "Signs Your Boat Needs Professional Dent and Scratch Repair",
     slug: "signs-you-need-dent-scratch-repair",
     excerpt:
-      "How to tell when cosmetic-looking damage may need professional correction.",
+      "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-four.avif",
+    coverImageAlt: "Dent and scratch correction work on fiberglass hull panel",
     body: [
-      "If a scratch catches your fingernail or appears to cut through finish layers, schedule an inspection.",
-      "Dents near stress zones can require more than surface correction.",
-      "Professional repair protects both appearance and long-term surface integrity."
+      { style: "normal", text: "Not all scratches are equal. Some are light finish marks, while others cut deep enough to expose substrate and invite further degradation." },
+      { style: "h2", text: "Red Flags That Need Professional Review" },
+      { listItem: "bullet", text: "Scratches that catch a fingernail and appear layered." },
+      { listItem: "bullet", text: "Dents near chine lines, corners, or hardware zones." },
+      { listItem: "bullet", text: "Damage with surrounding spider cracks or dull halos." },
+      { listItem: "bullet", text: "Repeated chips in the same impact-prone location." },
+      { style: "h3", text: "What Affects Repair Scope" },
+      { listItem: "bullet", text: "Depth and spread of the damage." },
+      { listItem: "bullet", text: "Location relative to stress and load points." },
+      { listItem: "bullet", text: "Need for color blending across adjacent panels." },
+      { style: "normal", text: "Professional review helps separate true cosmetic touch-up work from deeper correction needs." }
     ]
   },
   {
     title: "Service Areas We Cover Around Melrose, MN",
     slug: "service-areas-around-melrose",
     excerpt:
-      "A quick overview of cities and communities within our regular fiberglass repair coverage area.",
+      "An overview of Central Minnesota communities regularly served from the Melrose shop.",
+    coverImageUrl: "/images/fiberglass-boat-repair-wide.avif",
+    coverImageAlt: "Adley Enterprises repair shop servicing Central Minnesota boat owners",
     body: [
-      "Adley Enterprises serves boat owners within roughly 30 miles of Melrose, Minnesota.",
-      "Coverage includes St. Cloud, Sauk Rapids, Waite Park, St. Joseph, and nearby communities.",
-      "If you are unsure whether you are inside our service range, call and we can confirm."
+      { style: "normal", text: "Adley Enterprises serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and lake communities." },
+      { style: "h2", text: "Common Cities in the Primary Service Radius" },
+      { listItem: "bullet", text: "St. Cloud, Sauk Rapids, Waite Park, and St. Joseph." },
+      { listItem: "bullet", text: "Sauk Centre, Cold Spring, Long Prairie, and Albany." },
+      { listItem: "bullet", text: "Paynesville, Richmond, and surrounding communities." },
+      { style: "normal", text: "If you are outside that radius, call anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization." },
+      { style: "normal", text: "Appointment scheduling is recommended, especially during pre-season and mid-summer demand windows." }
     ]
   },
   {
     title: "Adjustable Transducer Mounts: Port, Starboard, and Single Setups",
     slug: "adjustable-transducer-mount-options",
     excerpt:
-      "Compare available transducer mount configurations and choose the right setup for your boat.",
+      "How to choose between single, port-side dual, and starboard-side dual transducer mount setups.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-one.avif",
+    coverImageAlt: "Boat stern area prepared for adjustable transducer mount setup",
     body: [
-      "We offer port-side, starboard-side, and single transducer mount configurations.",
-      "Each setup supports a practical installation path based on your transducer and hull layout.",
-      "Contact us for fit questions and USA shipping details."
+      { style: "normal", text: "Adley Enterprises builds inquiry-only adjustable transducer mounts for owners who need practical fitment options and clean installation paths." },
+      { style: "h2", text: "Core Configuration Options" },
+      { listItem: "bullet", text: "Single transducer mount for simpler sonar layouts." },
+      { listItem: "bullet", text: "Dual mount (port side) for side-specific electronics setups." },
+      { listItem: "bullet", text: "Dual mount (starboard side) for opposite-side routing needs." },
+      { style: "h3", text: "What to Confirm Before Ordering" },
+      { listItem: "bullet", text: "Exact transducer model and bracket footprint." },
+      { listItem: "bullet", text: "Preferred side and cable path to electronics." },
+      { listItem: "bullet", text: "Stern clearance and trailer proximity." },
+      { style: "normal", text: "Public pricing is not listed. Contact Adley Enterprises with your setup details for fit guidance and USA shipping options." }
     ]
   },
   {
     title: "How to Protect Fiberglass Finish During Storage and Transport",
     slug: "protect-fiberglass-finish-storage-transport",
     excerpt:
-      "Simple habits that help preserve finish quality between seasons and long hauls.",
+      "Practical storage and transport habits that reduce avoidable finish wear between seasons.",
+    coverImageUrl: "/images/fiberglass-boat-repair-4-3-three.avif",
+    coverImageAlt: "Fiberglass finish polishing and protection before seasonal storage",
     body: [
-      "Clean and dry surfaces before storage to reduce buildup and staining risk.",
-      "Use proper covers and avoid abrasive contact points during transport.",
-      "Routine finish checks make it easier to spot early wear before it becomes larger repair work."
+      { style: "normal", text: "Storage and transport are two common sources of avoidable finish wear. A few setup changes can protect gel coat and reduce spring repair needs." },
+      { style: "h2", text: "Pre-Storage Protection Steps" },
+      { listItem: "bullet", text: "Wash and fully dry surfaces before covering." },
+      { listItem: "bullet", text: "Remove residue around fittings, seams, and rub rail zones." },
+      { listItem: "bullet", text: "Apply protective wax before long off-season storage." },
+      { listItem: "bullet", text: "Use breathable covers to reduce trapped moisture." },
+      { style: "h3", text: "Transport Protection Checklist" },
+      { listItem: "bullet", text: "Secure straps to avoid rubbing against painted/gel surfaces." },
+      { listItem: "bullet", text: "Pad frequent contact points on trailer supports." },
+      { listItem: "bullet", text: "Inspect tie-down pressure after first miles on the road." },
+      { style: "normal", text: "Monthly off-season checks help catch dull patches or abrasion early, before the next launch window." }
     ]
   }
 ];
+
+const toBlogBlock = (entry) => {
+  if (entry.listItem) {
+    return listItemBlock(entry.text, entry.listItem, entry.level ?? 1, entry.style ?? "normal");
+  }
+
+  return block(entry.text, entry.style ?? "normal");
+};
 
 const blogPosts = blogSeeds.map((post, index) => ({
   _id: `blog.${post.slug}`,
@@ -468,7 +580,9 @@ const blogPosts = blogSeeds.map((post, index) => ({
   slug: { _type: "slug", current: post.slug },
   excerpt: post.excerpt,
   publishedAt: `2026-01-${String(index + 2).padStart(2, "0")}T09:00:00Z`,
-  body: post.body.map((paragraph) => block(paragraph)),
+  coverImageUrl: post.coverImageUrl,
+  coverImageAlt: post.coverImageAlt,
+  body: post.body.map((entry) => toBlogBlock(entry)),
   seo: {
     _type: "seo",
     metaTitle: `${post.title} | Adley Enterprises LLC`,
