@@ -1020,92 +1020,80 @@
       {
         "_type": "object",
         "_key": "k2q",
-        "url": "/images/products/single-board-01.jpg",
-        "alt": "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
+        "url": "/images/products/single-adjustable-board-01.jpg",
+        "alt": "Single Adjustable Transducer board by Adley Enterprises - primary view"
       },
       {
         "_type": "object",
         "_key": "k2r",
-        "url": "/images/products/single-board-02.jpg",
-        "alt": "Single adjustable transducer mount showing adjustment mechanism"
-      },
-      {
-        "_type": "object",
-        "_key": "k2s",
-        "url": "/images/products/single-board-03.jpg",
-        "alt": "Single transducer board side angle detail"
-      },
-      {
-        "_type": "object",
-        "_key": "k2t",
-        "url": "/images/products/single-board-04.jpg",
-        "alt": "American made single transducer board mounted orientation view"
+        "url": "/images/products/single-adjustable-board-02.jpg",
+        "alt": "American Made Single Adjustable Transducer board detail view"
       }
     ],
     "specifications": [
       {
         "_type": "object",
-        "_key": "k2u",
+        "_key": "k2w",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k2v",
+        "_key": "k2x",
         "label": "Model",
         "value": "Single Adjustable Transducer Board"
       },
       {
         "_type": "object",
-        "_key": "k2w",
+        "_key": "k2y",
         "label": "MPN",
         "value": "11-1-2023-SDB"
       },
       {
         "_type": "object",
-        "_key": "k2x",
+        "_key": "k2z",
         "label": "Type",
         "value": "Adjustable"
       },
       {
         "_type": "object",
-        "_key": "k2y",
+        "_key": "k30",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k2z",
+        "_key": "k31",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k30",
+        "_key": "k32",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k31",
+        "_key": "k33",
         "label": "Shipping",
         "value": "Free USPS Priority Mail"
       },
       {
         "_type": "object",
-        "_key": "k32",
+        "_key": "k34",
         "label": "Returns",
         "value": "30 days (buyer pays return shipping)"
       },
       {
         "_type": "object",
-        "_key": "k33",
+        "_key": "k35",
         "label": "Dimensions",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k34",
+        "_key": "k36",
         "label": "Weight",
         "value": "To be confirmed"
       }
@@ -1117,25 +1105,11 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k35",
+        "_key": "k37",
         "name": "Single transducer setup"
       }
     ],
     "body": [
-      {
-        "_type": "block",
-        "_key": "k36",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k37",
-            "text": "This board is designed for anglers running a single transducer setup who need clean mounting and precise adjustment without switching to disposable bracket hardware.",
-            "marks": []
-          }
-        ]
-      },
       {
         "_type": "block",
         "_key": "k38",
@@ -1145,7 +1119,7 @@
           {
             "_type": "span",
             "_key": "k39",
-            "text": "The core advantage is angle control. Instead of being stuck with a fixed plate, you can dial the transducer position to improve sonar returns based on your hull behavior, load, and typical running speed.",
+            "text": "This board is designed for anglers running a single transducer setup who need clean mounting and precise adjustment without switching to disposable bracket hardware.",
             "marks": []
           }
         ]
@@ -1159,6 +1133,20 @@
           {
             "_type": "span",
             "_key": "k3b",
+            "text": "The core advantage is angle control. Instead of being stuck with a fixed plate, you can dial the transducer position to improve sonar returns based on your hull behavior, load, and typical running speed.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3d",
             "text": "Each board is built by Adley Enterprises in Melrose, Minnesota by the same team that performs fiberglass boat repairs.",
             "marks": []
           }
@@ -1202,93 +1190,81 @@
     "images": [
       {
         "_type": "object",
-        "_key": "k2q",
-        "url": "/images/products/single-board-01.jpg",
-        "alt": "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
-      },
-      {
-        "_type": "object",
-        "_key": "k2r",
-        "url": "/images/products/single-board-02.jpg",
-        "alt": "Single adjustable transducer mount showing adjustment mechanism"
-      },
-      {
-        "_type": "object",
         "_key": "k2s",
-        "url": "/images/products/single-board-03.jpg",
-        "alt": "Single transducer board side angle detail"
+        "url": "/images/products/dual-port-adjustable-board-01.jpg",
+        "alt": "American Made Dual Transducer Board Port Side Adjustable Mount"
       },
       {
         "_type": "object",
         "_key": "k2t",
-        "url": "/images/products/single-board-04.jpg",
-        "alt": "American made single transducer board mounted orientation view"
+        "url": "/images/products/dual-port-starboard-board-01.jpg",
+        "alt": "Adjustable dual transducer boards showing port and starboard orientations"
       }
     ],
     "specifications": [
       {
         "_type": "object",
-        "_key": "k3c",
+        "_key": "k3e",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k3d",
+        "_key": "k3f",
         "label": "Model",
         "value": "Dual Transducer Board - Port Side Adjustable Mount"
       },
       {
         "_type": "object",
-        "_key": "k3e",
+        "_key": "k3g",
         "label": "MPN",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k3f",
+        "_key": "k3h",
         "label": "Type",
         "value": "Adjustable dual mount (port side)"
       },
       {
         "_type": "object",
-        "_key": "k3g",
+        "_key": "k3i",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k3h",
+        "_key": "k3j",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k3i",
+        "_key": "k3k",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k3j",
+        "_key": "k3l",
         "label": "Shipping",
         "value": "Free delivery"
       },
       {
         "_type": "object",
-        "_key": "k3k",
+        "_key": "k3m",
         "label": "Returns",
         "value": "30 days (buyer pays return shipping)"
       },
       {
         "_type": "object",
-        "_key": "k3l",
+        "_key": "k3n",
         "label": "Dimensions",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k3m",
+        "_key": "k3o",
         "label": "Weight",
         "value": "To be confirmed"
       }
@@ -1300,25 +1276,11 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k3n",
+        "_key": "k3p",
         "name": "Dual transducer port-side configuration"
       }
     ],
     "body": [
-      {
-        "_type": "block",
-        "_key": "k3o",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k3p",
-            "text": "This dual-board configuration is intended for anglers running two transducers and needing a dedicated port-side layout.",
-            "marks": []
-          }
-        ]
-      },
       {
         "_type": "block",
         "_key": "k3q",
@@ -1328,7 +1290,7 @@
           {
             "_type": "span",
             "_key": "k3r",
-            "text": "Compared with flat fixed plates, this setup gives you more control over angle and final position during install.",
+            "text": "This dual-board configuration is intended for anglers running two transducers and needing a dedicated port-side layout.",
             "marks": []
           }
         ]
@@ -1342,6 +1304,20 @@
           {
             "_type": "span",
             "_key": "k3t",
+            "text": "Compared with flat fixed plates, this setup gives you more control over angle and final position during install.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3u",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3v",
             "text": "eBay item number and final MPN are being confirmed. Contact us directly if you want this configuration before published listing details are finalized.",
             "marks": []
           }
@@ -1387,93 +1363,81 @@
     "images": [
       {
         "_type": "object",
-        "_key": "k2q",
-        "url": "/images/products/single-board-01.jpg",
-        "alt": "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
+        "_key": "k2u",
+        "url": "/images/products/dual-port-starboard-board-01.jpg",
+        "alt": "Adjustable dual transducer boards showing port and starboard orientations"
       },
       {
         "_type": "object",
-        "_key": "k2r",
-        "url": "/images/products/single-board-02.jpg",
-        "alt": "Single adjustable transducer mount showing adjustment mechanism"
-      },
-      {
-        "_type": "object",
-        "_key": "k2s",
-        "url": "/images/products/single-board-03.jpg",
-        "alt": "Single transducer board side angle detail"
-      },
-      {
-        "_type": "object",
-        "_key": "k2t",
-        "url": "/images/products/single-board-04.jpg",
-        "alt": "American made single transducer board mounted orientation view"
+        "_key": "k2v",
+        "url": "/images/products/dual-starboard-adjustable-board-02.jpg",
+        "alt": "Dual transducer mount detail image for starboard-side setup"
       }
     ],
     "specifications": [
       {
         "_type": "object",
-        "_key": "k3u",
+        "_key": "k3w",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k3v",
+        "_key": "k3x",
         "label": "Model",
         "value": "Dual Transducer Board - Starboard Side Adjustable Mount"
       },
       {
         "_type": "object",
-        "_key": "k3w",
+        "_key": "k3y",
         "label": "MPN",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k3x",
+        "_key": "k3z",
         "label": "Type",
         "value": "Adjustable dual mount (starboard side)"
       },
       {
         "_type": "object",
-        "_key": "k3y",
+        "_key": "k40",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k3z",
+        "_key": "k41",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k40",
+        "_key": "k42",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k41",
+        "_key": "k43",
         "label": "Shipping",
         "value": "Free delivery"
       },
       {
         "_type": "object",
-        "_key": "k42",
+        "_key": "k44",
         "label": "Returns",
         "value": "30 days (buyer pays return shipping)"
       },
       {
         "_type": "object",
-        "_key": "k43",
+        "_key": "k45",
         "label": "Dimensions",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k44",
+        "_key": "k46",
         "label": "Weight",
         "value": "To be confirmed"
       }
@@ -1485,25 +1449,11 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k45",
+        "_key": "k47",
         "name": "Dual transducer starboard-side configuration"
       }
     ],
     "body": [
-      {
-        "_type": "block",
-        "_key": "k46",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k47",
-            "text": "This starboard-side dual board is built for boats where transducer placement, cable routing, and stern layout are best served on the right-side configuration.",
-            "marks": []
-          }
-        ]
-      },
       {
         "_type": "block",
         "_key": "k48",
@@ -1513,7 +1463,7 @@
           {
             "_type": "span",
             "_key": "k49",
-            "text": "The adjustable design allows fine positioning during setup instead of committing to a fixed angle from the start.",
+            "text": "This starboard-side dual board is built for boats where transducer placement, cable routing, and stern layout are best served on the right-side configuration.",
             "marks": []
           }
         ]
@@ -1527,6 +1477,20 @@
           {
             "_type": "span",
             "_key": "k4b",
+            "text": "The adjustable design allows fine positioning during setup instead of committing to a fixed angle from the start.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4d",
             "text": "You can order through eBay or contact Adley directly to confirm fit before purchase.",
             "marks": []
           }
@@ -1569,74 +1533,62 @@
       {
         "_type": "object",
         "_key": "k2q",
-        "url": "/images/products/single-board-01.jpg",
-        "alt": "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
+        "url": "/images/products/single-adjustable-board-01.jpg",
+        "alt": "Single Adjustable Transducer board by Adley Enterprises - primary view"
       },
       {
         "_type": "object",
         "_key": "k2r",
-        "url": "/images/products/single-board-02.jpg",
-        "alt": "Single adjustable transducer mount showing adjustment mechanism"
-      },
-      {
-        "_type": "object",
-        "_key": "k2s",
-        "url": "/images/products/single-board-03.jpg",
-        "alt": "Single transducer board side angle detail"
-      },
-      {
-        "_type": "object",
-        "_key": "k2t",
-        "url": "/images/products/single-board-04.jpg",
-        "alt": "American made single transducer board mounted orientation view"
+        "url": "/images/products/single-adjustable-board-02.jpg",
+        "alt": "American Made Single Adjustable Transducer board detail view"
       }
     ],
     "specifications": [
       {
         "_type": "object",
-        "_key": "k4c",
+        "_key": "k4e",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k4d",
+        "_key": "k4f",
         "label": "Model",
         "value": "Transducer Mounting Board"
       },
       {
         "_type": "object",
-        "_key": "k4e",
+        "_key": "k4g",
         "label": "Type",
         "value": "Standard (non-adjustable)"
       },
       {
         "_type": "object",
-        "_key": "k4f",
+        "_key": "k4h",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k4g",
+        "_key": "k4i",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k4h",
+        "_key": "k4j",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k4i",
+        "_key": "k4k",
         "label": "Shipping",
         "value": "Free delivery"
       },
       {
         "_type": "object",
-        "_key": "k4j",
+        "_key": "k4l",
         "label": "Returns",
         "value": "Free returns"
       }
@@ -1647,20 +1599,20 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k4k",
+        "_key": "k4m",
         "name": "Basic mounting board"
       }
     ],
     "body": [
       {
         "_type": "block",
-        "_key": "k4l",
+        "_key": "k4n",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4m",
+            "_key": "k4o",
             "text": "This board is held as optional pending client confirmation for website publishing.",
             "marks": []
           }
@@ -1680,13 +1632,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4n",
+        "_key": "k4p",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4o",
+            "_key": "k4q",
             "text": "We repair fiberglass boats only. Our shop focuses on fiberglass-specific repair and refinishing workflows.",
             "marks": []
           }
@@ -1705,13 +1657,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4p",
+        "_key": "k4r",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4q",
+            "_key": "k4s",
             "text": "No. We focus exclusively on fiberglass boat repair services.",
             "marks": []
           }
@@ -1730,13 +1682,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4r",
+        "_key": "k4t",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4s",
+            "_key": "k4u",
             "text": "You can call us directly, submit your information through the quote form, and include photos if available.",
             "marks": []
           }
@@ -1755,13 +1707,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4t",
+        "_key": "k4v",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4u",
+            "_key": "k4w",
             "text": "Yes. Photo submission is encouraged for faster initial review and estimate planning.",
             "marks": []
           }
@@ -1780,13 +1732,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4v",
+        "_key": "k4x",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4w",
+            "_key": "k4y",
             "text": "Turnaround time varies based on damage type, repair depth, finish work requirements, and schedule volume.",
             "marks": []
           }
@@ -1805,13 +1757,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4x",
+        "_key": "k4z",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4y",
+            "_key": "k50",
             "text": "Yes. We handle both structural and cosmetic collision damage along with gel coat and exterior finish correction.",
             "marks": []
           }
@@ -1830,13 +1782,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4z",
+        "_key": "k51",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k50",
+            "_key": "k52",
             "text": "Yes. Buffing and waxing can be scheduled as standalone service or bundled with other repair work.",
             "marks": []
           }
@@ -1855,13 +1807,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k51",
+        "_key": "k53",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k52",
+            "_key": "k54",
             "text": "Warranty claims are reviewed with each written estimate and finalized during repair approval.",
             "marks": []
           }
@@ -1880,13 +1832,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k53",
+        "_key": "k55",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k54",
+            "_key": "k56",
             "text": "We serve approximately a 30-mile radius around Melrose, MN, including St. Cloud, Sauk Rapids, Waite Park, and nearby communities.",
             "marks": []
           }
@@ -1905,13 +1857,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k55",
+        "_key": "k57",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k56",
+            "_key": "k58",
             "text": "Yes. We offer inquiry-only transducer mount options for port side, starboard side, and single transducer setups with USA shipping.",
             "marks": []
           }
@@ -1938,13 +1890,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k57",
+        "_key": "k59",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k58",
+            "_key": "k5a",
             "text": "Most fiberglass failures start as small visual changes: light spider cracking, chips near edges, and stress lines around hardware. Early inspection usually means simpler repairs, shorter downtime, and lower risk of hidden moisture intrusion.",
             "marks": []
           }
@@ -1952,30 +1904,14 @@
       },
       {
         "_type": "block",
-        "_key": "k59",
+        "_key": "k5b",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5a",
-            "text": "What to Watch for During Routine Checks",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k5b",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k5c",
-            "text": "Spider cracks that keep returning in the same area.",
+            "text": "What to Watch for During Routine Checks",
             "marks": []
           }
         ]
@@ -1991,7 +1927,7 @@
           {
             "_type": "span",
             "_key": "k5e",
-            "text": "Chips or gouges that expose fibers under the gel coat surface.",
+            "text": "Spider cracks that keep returning in the same area.",
             "marks": []
           }
         ]
@@ -2007,7 +1943,7 @@
           {
             "_type": "span",
             "_key": "k5g",
-            "text": "Soft or flexing sections when you apply light hand pressure.",
+            "text": "Chips or gouges that expose fibers under the gel coat surface.",
             "marks": []
           }
         ]
@@ -2023,7 +1959,7 @@
           {
             "_type": "span",
             "_key": "k5i",
-            "text": "Discoloration, bubbling, or dull patches that spread over time.",
+            "text": "Soft or flexing sections when you apply light hand pressure.",
             "marks": []
           }
         ]
@@ -2031,13 +1967,15 @@
       {
         "_type": "block",
         "_key": "k5j",
-        "style": "h3",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k5k",
-            "text": "Simple Documentation That Speeds Up Estimates",
+            "text": "Discoloration, bubbling, or dull patches that spread over time.",
             "marks": []
           }
         ]
@@ -2045,13 +1983,13 @@
       {
         "_type": "block",
         "_key": "k5l",
-        "style": "normal",
+        "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k5m",
-            "text": "Take a wide photo of the whole panel, then medium and close-up shots of the damage. Include one angled photo to show depth and one photo with a ruler or tape measure for scale.",
+            "text": "Simple Documentation That Speeds Up Estimates",
             "marks": []
           }
         ]
@@ -2065,6 +2003,20 @@
           {
             "_type": "span",
             "_key": "k5o",
+            "text": "Take a wide photo of the whole panel, then medium and close-up shots of the damage. Include one angled photo to show depth and one photo with a ruler or tape measure for scale.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k5p",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k5q",
             "text": "If cracks are growing or damage is near high-load zones, schedule inspection before the next run.",
             "marks": []
           }
@@ -2092,13 +2044,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k5p",
+        "_key": "k5r",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5q",
+            "_key": "k5s",
             "text": "Boat owners often ask whether they need spot gel coat repair or full repainting. The best answer depends on coverage area, damage depth, and finish consistency.",
             "marks": []
           }
@@ -2106,30 +2058,14 @@
       },
       {
         "_type": "block",
-        "_key": "k5r",
+        "_key": "k5t",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5s",
-            "text": "When Spot Gel Coat Repair Is Usually Enough",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k5t",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k5u",
-            "text": "Damage is isolated to one or two sections.",
+            "text": "When Spot Gel Coat Repair Is Usually Enough",
             "marks": []
           }
         ]
@@ -2145,7 +2081,7 @@
           {
             "_type": "span",
             "_key": "k5w",
-            "text": "The surrounding finish is still stable and not heavily oxidized.",
+            "text": "Damage is isolated to one or two sections.",
             "marks": []
           }
         ]
@@ -2161,7 +2097,7 @@
           {
             "_type": "span",
             "_key": "k5y",
-            "text": "Color matching can be blended without obvious patch transitions.",
+            "text": "The surrounding finish is still stable and not heavily oxidized.",
             "marks": []
           }
         ]
@@ -2169,20 +2105,6 @@
       {
         "_type": "block",
         "_key": "k5z",
-        "style": "h2",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k60",
-            "text": "When Broader Refinishing Makes More Sense",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k61",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2190,8 +2112,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k60",
+            "text": "Color matching can be blended without obvious patch transitions.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k61",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k62",
-            "text": "Multiple repaired sections create inconsistent color or gloss.",
+            "text": "When Broader Refinishing Makes More Sense",
             "marks": []
           }
         ]
@@ -2207,7 +2143,7 @@
           {
             "_type": "span",
             "_key": "k64",
-            "text": "Oxidation and weathering are present across wide panels.",
+            "text": "Multiple repaired sections create inconsistent color or gloss.",
             "marks": []
           }
         ]
@@ -2223,7 +2159,7 @@
           {
             "_type": "span",
             "_key": "k66",
-            "text": "Previous patch history makes new touch-up blending unreliable.",
+            "text": "Oxidation and weathering are present across wide panels.",
             "marks": []
           }
         ]
@@ -2232,11 +2168,27 @@
         "_type": "block",
         "_key": "k67",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k68",
+            "text": "Previous patch history makes new touch-up blending unreliable.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k69",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6a",
             "text": "Adley Enterprises does not publish one-size-fits-all pricing. Every estimate is tied to real hull condition and finish scope.",
             "marks": []
           }
@@ -2264,13 +2216,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k69",
+        "_key": "k6b",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6a",
+            "_key": "k6c",
             "text": "Collision damage is not always limited to what you can see on the surface. Fiberglass can fracture beneath the finish, so what looks small may still need structural correction.",
             "marks": []
           }
@@ -2278,30 +2230,14 @@
       },
       {
         "_type": "block",
-        "_key": "k6b",
+        "_key": "k6d",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6c",
-            "text": "Immediate Steps After Impact",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k6d",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k6e",
-            "text": "Prioritize safety and remove the boat from operation.",
+            "text": "Immediate Steps After Impact",
             "marks": []
           }
         ]
@@ -2317,7 +2253,7 @@
           {
             "_type": "span",
             "_key": "k6g",
-            "text": "Photograph damage from wide, medium, and close-up angles.",
+            "text": "Prioritize safety and remove the boat from operation.",
             "marks": []
           }
         ]
@@ -2333,7 +2269,7 @@
           {
             "_type": "span",
             "_key": "k6i",
-            "text": "Note where the impact happened and what was hit.",
+            "text": "Photograph damage from wide, medium, and close-up angles.",
             "marks": []
           }
         ]
@@ -2349,7 +2285,7 @@
           {
             "_type": "span",
             "_key": "k6k",
-            "text": "Avoid additional runs until structural condition is reviewed.",
+            "text": "Note where the impact happened and what was hit.",
             "marks": []
           }
         ]
@@ -2357,20 +2293,6 @@
       {
         "_type": "block",
         "_key": "k6l",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k6m",
-            "text": "What to Avoid Before Inspection",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k6n",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2378,8 +2300,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k6m",
+            "text": "Avoid additional runs until structural condition is reviewed.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6n",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k6o",
-            "text": "Do not grind, sand, or fill the area before evaluation.",
+            "text": "What to Avoid Before Inspection",
             "marks": []
           }
         ]
@@ -2395,7 +2331,7 @@
           {
             "_type": "span",
             "_key": "k6q",
-            "text": "Do not apply temporary coatings that hide crack edges.",
+            "text": "Do not grind, sand, or fill the area before evaluation.",
             "marks": []
           }
         ]
@@ -2404,11 +2340,27 @@
         "_type": "block",
         "_key": "k6r",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k6s",
+            "text": "Do not apply temporary coatings that hide crack edges.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6u",
             "text": "Early assessment helps reduce moisture intrusion risk and prevents stress cracks from expanding while the boat is parked.",
             "marks": []
           }
@@ -2436,13 +2388,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k6t",
+        "_key": "k6v",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6u",
+            "_key": "k6w",
             "text": "Buffing and waxing keeps fiberglass finishes cleaner, glossier, and better protected from weather exposure.",
             "marks": []
           }
@@ -2450,30 +2402,14 @@
       },
       {
         "_type": "block",
-        "_key": "k6v",
+        "_key": "k6x",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6w",
-            "text": "Typical Service Rhythm by Use Case",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k6x",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k6y",
-            "text": "Indoor stored / moderate use: usually one full correction cycle per season.",
+            "text": "Typical Service Rhythm by Use Case",
             "marks": []
           }
         ]
@@ -2489,7 +2425,7 @@
           {
             "_type": "span",
             "_key": "k70",
-            "text": "Outdoor stored / frequent weekend use: often two cycles per season.",
+            "text": "Indoor stored / moderate use: usually one full correction cycle per season.",
             "marks": []
           }
         ]
@@ -2505,7 +2441,7 @@
           {
             "_type": "span",
             "_key": "k72",
-            "text": "Heavy sun exposure or frequent trailering: touch-up intervals may be shorter.",
+            "text": "Outdoor stored / frequent weekend use: often two cycles per season.",
             "marks": []
           }
         ]
@@ -2513,20 +2449,6 @@
       {
         "_type": "block",
         "_key": "k73",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k74",
-            "text": "Signs It Is Time for Service",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k75",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2534,8 +2456,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k74",
+            "text": "Heavy sun exposure or frequent trailering: touch-up intervals may be shorter.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k75",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k76",
-            "text": "Water no longer beads consistently on the surface.",
+            "text": "Signs It Is Time for Service",
             "marks": []
           }
         ]
@@ -2551,7 +2487,7 @@
           {
             "_type": "span",
             "_key": "k78",
-            "text": "The hull looks chalky or dull after washing.",
+            "text": "Water no longer beads consistently on the surface.",
             "marks": []
           }
         ]
@@ -2567,7 +2503,7 @@
           {
             "_type": "span",
             "_key": "k7a",
-            "text": "Fine swirl marks are visible in direct sunlight.",
+            "text": "The hull looks chalky or dull after washing.",
             "marks": []
           }
         ]
@@ -2576,11 +2512,27 @@
         "_type": "block",
         "_key": "k7b",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k7c",
+            "text": "Fine swirl marks are visible in direct sunlight.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7e",
             "text": "Regular maintenance helps protect earlier repair work and keeps finish quality consistent through the season.",
             "marks": []
           }
@@ -2608,13 +2560,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k7d",
+        "_key": "k7f",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k7e",
+            "_key": "k7g",
             "text": "Photo estimates help start the conversation quickly, especially when you are comparing timelines before hauling the boat in.",
             "marks": []
           }
@@ -2622,30 +2574,14 @@
       },
       {
         "_type": "block",
-        "_key": "k7f",
+        "_key": "k7h",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k7g",
-            "text": "Best Photo Set to Send",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k7h",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k7i",
-            "text": "One full-side image so damage context is clear.",
+            "text": "Best Photo Set to Send",
             "marks": []
           }
         ]
@@ -2661,7 +2597,7 @@
           {
             "_type": "span",
             "_key": "k7k",
-            "text": "Two medium shots showing the exact repair zone.",
+            "text": "One full-side image so damage context is clear.",
             "marks": []
           }
         ]
@@ -2677,7 +2613,7 @@
           {
             "_type": "span",
             "_key": "k7m",
-            "text": "Two close-ups that capture crack depth or edge condition.",
+            "text": "Two medium shots showing the exact repair zone.",
             "marks": []
           }
         ]
@@ -2693,7 +2629,7 @@
           {
             "_type": "span",
             "_key": "k7o",
-            "text": "An angled shot to reveal contour distortion or dent shape.",
+            "text": "Two close-ups that capture crack depth or edge condition.",
             "marks": []
           }
         ]
@@ -2701,20 +2637,6 @@
       {
         "_type": "block",
         "_key": "k7p",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k7q",
-            "text": "Information to Include",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k7r",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2722,8 +2644,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k7q",
+            "text": "An angled shot to reveal contour distortion or dent shape.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7r",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k7s",
-            "text": "Boat make/model and approximate year.",
+            "text": "Information to Include",
             "marks": []
           }
         ]
@@ -2739,7 +2675,7 @@
           {
             "_type": "span",
             "_key": "k7u",
-            "text": "How the damage happened and when it happened.",
+            "text": "Boat make/model and approximate year.",
             "marks": []
           }
         ]
@@ -2755,7 +2691,7 @@
           {
             "_type": "span",
             "_key": "k7w",
-            "text": "Whether the area was previously repaired.",
+            "text": "How the damage happened and when it happened.",
             "marks": []
           }
         ]
@@ -2764,11 +2700,27 @@
         "_type": "block",
         "_key": "k7x",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k7y",
+            "text": "Whether the area was previously repaired.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k80",
             "text": "Photo estimates are an initial planning step. Final scope is confirmed through in-person inspection when required.",
             "marks": []
           }
@@ -2796,13 +2748,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k7z",
+        "_key": "k81",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k80",
+            "_key": "k82",
             "text": "In Central Minnesota, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded.",
             "marks": []
           }
@@ -2810,30 +2762,14 @@
       },
       {
         "_type": "block",
-        "_key": "k81",
+        "_key": "k83",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k82",
-            "text": "Pre-Launch Inspection Checklist",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k83",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k84",
-            "text": "Inspect high-stress zones for fresh cracks and impact marks.",
+            "text": "Pre-Launch Inspection Checklist",
             "marks": []
           }
         ]
@@ -2849,7 +2785,7 @@
           {
             "_type": "span",
             "_key": "k86",
-            "text": "Check previous repair areas for movement or finish edge changes.",
+            "text": "Inspect high-stress zones for fresh cracks and impact marks.",
             "marks": []
           }
         ]
@@ -2865,7 +2801,7 @@
           {
             "_type": "span",
             "_key": "k88",
-            "text": "Look for oxidation or chalking on exposed gel coat surfaces.",
+            "text": "Check previous repair areas for movement or finish edge changes.",
             "marks": []
           }
         ]
@@ -2881,7 +2817,7 @@
           {
             "_type": "span",
             "_key": "k8a",
-            "text": "Confirm all hardware mount points are sealed and stable.",
+            "text": "Look for oxidation or chalking on exposed gel coat surfaces.",
             "marks": []
           }
         ]
@@ -2889,13 +2825,15 @@
       {
         "_type": "block",
         "_key": "k8b",
-        "style": "h3",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8c",
-            "text": "Why Early Scheduling Helps",
+            "text": "Confirm all hardware mount points are sealed and stable.",
             "marks": []
           }
         ]
@@ -2903,12 +2841,26 @@
       {
         "_type": "block",
         "_key": "k8d",
-        "style": "normal",
+        "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8e",
+            "text": "Why Early Scheduling Helps",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k8f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k8g",
             "text": "Small corrections are easier to schedule before peak season. Waiting until launch weekend can delay repairs when demand spikes.",
             "marks": []
           }
@@ -2936,13 +2888,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k8f",
+        "_key": "k8h",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k8g",
+            "_key": "k8i",
             "text": "Not all scratches are equal. Some are light finish marks, while others cut deep enough to expose substrate and invite further degradation.",
             "marks": []
           }
@@ -2950,30 +2902,14 @@
       },
       {
         "_type": "block",
-        "_key": "k8h",
+        "_key": "k8j",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k8i",
-            "text": "Red Flags That Need Professional Review",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k8j",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k8k",
-            "text": "Scratches that catch a fingernail and appear layered.",
+            "text": "Red Flags That Need Professional Review",
             "marks": []
           }
         ]
@@ -2989,7 +2925,7 @@
           {
             "_type": "span",
             "_key": "k8m",
-            "text": "Dents near chine lines, corners, or hardware zones.",
+            "text": "Scratches that catch a fingernail and appear layered.",
             "marks": []
           }
         ]
@@ -3005,7 +2941,7 @@
           {
             "_type": "span",
             "_key": "k8o",
-            "text": "Damage with surrounding spider cracks or dull halos.",
+            "text": "Dents near chine lines, corners, or hardware zones.",
             "marks": []
           }
         ]
@@ -3021,7 +2957,7 @@
           {
             "_type": "span",
             "_key": "k8q",
-            "text": "Repeated chips in the same impact-prone location.",
+            "text": "Damage with surrounding spider cracks or dull halos.",
             "marks": []
           }
         ]
@@ -3029,20 +2965,6 @@
       {
         "_type": "block",
         "_key": "k8r",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k8s",
-            "text": "What Affects Repair Scope",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k8t",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3050,8 +2972,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k8s",
+            "text": "Repeated chips in the same impact-prone location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k8t",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k8u",
-            "text": "Depth and spread of the damage.",
+            "text": "What Affects Repair Scope",
             "marks": []
           }
         ]
@@ -3067,7 +3003,7 @@
           {
             "_type": "span",
             "_key": "k8w",
-            "text": "Location relative to stress and load points.",
+            "text": "Depth and spread of the damage.",
             "marks": []
           }
         ]
@@ -3083,7 +3019,7 @@
           {
             "_type": "span",
             "_key": "k8y",
-            "text": "Need for color blending across adjacent panels.",
+            "text": "Location relative to stress and load points.",
             "marks": []
           }
         ]
@@ -3092,11 +3028,27 @@
         "_type": "block",
         "_key": "k8z",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k90",
+            "text": "Need for color blending across adjacent panels.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k91",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k92",
             "text": "Professional review helps separate true cosmetic touch-up work from deeper correction needs.",
             "marks": []
           }
@@ -3124,13 +3076,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k91",
+        "_key": "k93",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k92",
+            "_key": "k94",
             "text": "Adley Enterprises serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and lake communities.",
             "marks": []
           }
@@ -3138,30 +3090,14 @@
       },
       {
         "_type": "block",
-        "_key": "k93",
+        "_key": "k95",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k94",
-            "text": "Common Cities in the Primary Service Radius",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k95",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k96",
-            "text": "St. Cloud, Sauk Rapids, Waite Park, and St. Joseph.",
+            "text": "Common Cities in the Primary Service Radius",
             "marks": []
           }
         ]
@@ -3177,7 +3113,7 @@
           {
             "_type": "span",
             "_key": "k98",
-            "text": "Sauk Centre, Cold Spring, Long Prairie, and Albany.",
+            "text": "St. Cloud, Sauk Rapids, Waite Park, and St. Joseph.",
             "marks": []
           }
         ]
@@ -3193,7 +3129,7 @@
           {
             "_type": "span",
             "_key": "k9a",
-            "text": "Paynesville, Richmond, and surrounding communities.",
+            "text": "Sauk Centre, Cold Spring, Long Prairie, and Albany.",
             "marks": []
           }
         ]
@@ -3202,12 +3138,14 @@
         "_type": "block",
         "_key": "k9b",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k9c",
-            "text": "If you are outside that radius, call anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization.",
+            "text": "Paynesville, Richmond, and surrounding communities.",
             "marks": []
           }
         ]
@@ -3221,6 +3159,20 @@
           {
             "_type": "span",
             "_key": "k9e",
+            "text": "If you are outside that radius, call anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k9f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k9g",
             "text": "Appointment scheduling is recommended, especially during pre-season and mid-summer demand windows.",
             "marks": []
           }
@@ -3248,13 +3200,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k9f",
+        "_key": "k9h",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k9g",
+            "_key": "k9i",
             "text": "Adley Enterprises builds inquiry-only adjustable transducer mounts for owners who need practical fitment options and clean installation paths.",
             "marks": []
           }
@@ -3262,30 +3214,14 @@
       },
       {
         "_type": "block",
-        "_key": "k9h",
+        "_key": "k9j",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k9i",
-            "text": "Core Configuration Options",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k9j",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "k9k",
-            "text": "Single transducer mount for simpler sonar layouts.",
+            "text": "Core Configuration Options",
             "marks": []
           }
         ]
@@ -3301,7 +3237,7 @@
           {
             "_type": "span",
             "_key": "k9m",
-            "text": "Dual mount (port side) for side-specific electronics setups.",
+            "text": "Single transducer mount for simpler sonar layouts.",
             "marks": []
           }
         ]
@@ -3317,7 +3253,7 @@
           {
             "_type": "span",
             "_key": "k9o",
-            "text": "Dual mount (starboard side) for opposite-side routing needs.",
+            "text": "Dual mount (port side) for side-specific electronics setups.",
             "marks": []
           }
         ]
@@ -3325,20 +3261,6 @@
       {
         "_type": "block",
         "_key": "k9p",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k9q",
-            "text": "What to Confirm Before Ordering",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k9r",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3346,8 +3268,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "k9q",
+            "text": "Dual mount (starboard side) for opposite-side routing needs.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k9r",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k9s",
-            "text": "Exact transducer model and bracket footprint.",
+            "text": "What to Confirm Before Ordering",
             "marks": []
           }
         ]
@@ -3363,7 +3299,7 @@
           {
             "_type": "span",
             "_key": "k9u",
-            "text": "Preferred side and cable path to electronics.",
+            "text": "Exact transducer model and bracket footprint.",
             "marks": []
           }
         ]
@@ -3379,7 +3315,7 @@
           {
             "_type": "span",
             "_key": "k9w",
-            "text": "Stern clearance and trailer proximity.",
+            "text": "Preferred side and cable path to electronics.",
             "marks": []
           }
         ]
@@ -3388,11 +3324,27 @@
         "_type": "block",
         "_key": "k9x",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k9y",
+            "text": "Stern clearance and trailer proximity.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k9z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "ka0",
             "text": "Public pricing is not listed. Contact Adley Enterprises with your setup details for fit guidance and USA shipping options.",
             "marks": []
           }
@@ -3420,13 +3372,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k9z",
+        "_key": "ka1",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "ka0",
+            "_key": "ka2",
             "text": "Storage and transport are two common sources of avoidable finish wear. A few setup changes can protect gel coat and reduce spring repair needs.",
             "marks": []
           }
@@ -3434,30 +3386,14 @@
       },
       {
         "_type": "block",
-        "_key": "ka1",
+        "_key": "ka3",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "ka2",
-            "text": "Pre-Storage Protection Steps",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "ka3",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
             "_key": "ka4",
-            "text": "Wash and fully dry surfaces before covering.",
+            "text": "Pre-Storage Protection Steps",
             "marks": []
           }
         ]
@@ -3473,7 +3409,7 @@
           {
             "_type": "span",
             "_key": "ka6",
-            "text": "Remove residue around fittings, seams, and rub rail zones.",
+            "text": "Wash and fully dry surfaces before covering.",
             "marks": []
           }
         ]
@@ -3489,7 +3425,7 @@
           {
             "_type": "span",
             "_key": "ka8",
-            "text": "Apply protective wax before long off-season storage.",
+            "text": "Remove residue around fittings, seams, and rub rail zones.",
             "marks": []
           }
         ]
@@ -3505,7 +3441,7 @@
           {
             "_type": "span",
             "_key": "kaa",
-            "text": "Use breathable covers to reduce trapped moisture.",
+            "text": "Apply protective wax before long off-season storage.",
             "marks": []
           }
         ]
@@ -3513,20 +3449,6 @@
       {
         "_type": "block",
         "_key": "kab",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "kac",
-            "text": "Transport Protection Checklist",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "kad",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3534,8 +3456,22 @@
         "children": [
           {
             "_type": "span",
+            "_key": "kac",
+            "text": "Use breathable covers to reduce trapped moisture.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kad",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "kae",
-            "text": "Secure straps to avoid rubbing against painted/gel surfaces.",
+            "text": "Transport Protection Checklist",
             "marks": []
           }
         ]
@@ -3551,7 +3487,7 @@
           {
             "_type": "span",
             "_key": "kag",
-            "text": "Pad frequent contact points on trailer supports.",
+            "text": "Secure straps to avoid rubbing against painted/gel surfaces.",
             "marks": []
           }
         ]
@@ -3567,7 +3503,7 @@
           {
             "_type": "span",
             "_key": "kai",
-            "text": "Inspect tie-down pressure after first miles on the road.",
+            "text": "Pad frequent contact points on trailer supports.",
             "marks": []
           }
         ]
@@ -3576,11 +3512,27 @@
         "_type": "block",
         "_key": "kaj",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "kak",
+            "text": "Inspect tie-down pressure after first miles on the road.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kal",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kam",
             "text": "Monthly off-season checks help catch dull patches or abrasion early, before the next launch window.",
             "marks": []
           }

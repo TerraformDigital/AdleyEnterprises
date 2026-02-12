@@ -271,26 +271,44 @@ const singleBoardImages = [
   {
     _type: "object",
     _key: key(),
-    url: "/images/products/single-board-01.jpg",
-    alt: "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
+    url: "/images/products/single-adjustable-board-01.jpg",
+    alt: "Single Adjustable Transducer board by Adley Enterprises - primary view"
   },
   {
     _type: "object",
     _key: key(),
-    url: "/images/products/single-board-02.jpg",
-    alt: "Single adjustable transducer mount showing adjustment mechanism"
+    url: "/images/products/single-adjustable-board-02.jpg",
+    alt: "American Made Single Adjustable Transducer board detail view"
+  }
+];
+
+const dualPortImages = [
+  {
+    _type: "object",
+    _key: key(),
+    url: "/images/products/dual-port-adjustable-board-01.jpg",
+    alt: "American Made Dual Transducer Board Port Side Adjustable Mount"
   },
   {
     _type: "object",
     _key: key(),
-    url: "/images/products/single-board-03.jpg",
-    alt: "Single transducer board side angle detail"
+    url: "/images/products/dual-port-starboard-board-01.jpg",
+    alt: "Adjustable dual transducer boards showing port and starboard orientations"
+  }
+];
+
+const dualStarboardImages = [
+  {
+    _type: "object",
+    _key: key(),
+    url: "/images/products/dual-port-starboard-board-01.jpg",
+    alt: "Adjustable dual transducer boards showing port and starboard orientations"
   },
   {
     _type: "object",
     _key: key(),
-    url: "/images/products/single-board-04.jpg",
-    alt: "American made single transducer board mounted orientation view"
+    url: "/images/products/dual-starboard-adjustable-board-02.jpg",
+    alt: "Dual transducer mount detail image for starboard-side setup"
   }
 ];
 
@@ -400,7 +418,7 @@ const products = [
       "Designed for dual transducer layouts where port-side mounting and adjustability are required.",
     socialProofNote: "Premium adjustable mount built by fiberglass repair professionals in Minnesota.",
     isPublished: true,
-    images: singleBoardImages,
+    images: dualPortImages,
     specifications: [
       makeSpec("Brand", "Adley Enterprises"),
       makeSpec("Model", "Dual Transducer Board - Port Side Adjustable Mount"),
@@ -469,7 +487,7 @@ const products = [
       "Designed for dual transducer layouts that require starboard-side orientation.",
     socialProofNote: "Built in the same Minnesota shop trusted for fiberglass repair work.",
     isPublished: true,
-    images: singleBoardImages,
+    images: dualStarboardImages,
     specifications: [
       makeSpec("Brand", "Adley Enterprises"),
       makeSpec("Model", "Dual Transducer Board - Starboard Side Adjustable Mount"),
