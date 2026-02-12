@@ -6,6 +6,7 @@ import type { SeoFields } from "@/types/content";
 const defaultTitle = "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN";
 const defaultDescription =
   "Fiberglass boat repair specialists serving Melrose, MN and nearby Central Minnesota communities.";
+export const UNIVERSAL_OG_IMAGE_PATH = "/images/Adley-Enterprises-OG.jpg";
 
 export const toAbsoluteUrl = (path: string) => {
   const normalized = path.startsWith("/") ? path : `/${path}`;
@@ -30,11 +31,10 @@ export function buildMetadata({
   const finalDescription = seo?.metaDescription ?? description ?? defaultDescription;
   const canonical = seo?.canonicalUrl ?? toAbsoluteUrl(path);
   const noIndex = seo?.noIndex ?? isPreviewDeployment;
-  const ogImage = imageUrl
-    ? imageUrl.startsWith("http")
-      ? imageUrl
-      : toAbsoluteUrl(imageUrl)
-    : undefined;
+  const resolvedImage = imageUrl ?? UNIVERSAL_OG_IMAGE_PATH;
+  const ogImage = resolvedImage.startsWith("http")
+    ? resolvedImage
+    : toAbsoluteUrl(resolvedImage);
 
   return {
     title: finalTitle,
@@ -48,13 +48,22 @@ export function buildMetadata({
       description: finalDescription,
       url: canonical,
       type: "website",
-      images: ogImage ? [{ url: ogImage }] : undefined
+      siteName: "Adley Enterprises LLC",
+      locale: "en_US",
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: "Adley Enterprises LLC"
+        }
+      ]
     },
     twitter: {
       card: "summary_large_image",
       title: finalTitle,
       description: finalDescription,
-      images: ogImage ? [ogImage] : undefined
+      images: [ogImage]
     }
   };
 }
