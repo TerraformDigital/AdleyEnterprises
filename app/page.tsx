@@ -1,10 +1,13 @@
 import Link from "next/link";
+import { Clock3, ShieldCheck, Wrench } from "lucide-react";
 
 import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
+import { Reveal } from "@/components/ui/reveal";
 import { FaqJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { getServiceIcon } from "@/lib/service-icons";
 import {
   getFaqItems,
   getLocationPages,
@@ -57,74 +60,98 @@ export default async function HomePage() {
         }
       />
 
-      <section className="shell page-section">
-        <h2>Why Boat Owners Choose Adley</h2>
-        <div className="key-points">
-          <article>
-            <h3>Fiberglass-Only Focus</h3>
-            <p>Repair workflows are designed specifically for fiberglass boats.</p>
-          </article>
-          <article>
-            <h3>15+ Years in Business</h3>
-            <p>Experienced team serving Melrose and surrounding communities.</p>
-          </article>
-          <article>
-            <h3>Insured Service</h3>
-            <p>Estimate-first process with phone, photo, or in-person inspection.</p>
-          </article>
-        </div>
-      </section>
-
-      <section className="shell page-section">
-        <div className="section-head">
-          <h2>Core Services</h2>
-          <Link href="/services">View All Services</Link>
-        </div>
-        <div className="card-grid">
-          {featuredServices.map((service) => (
-            <article key={service.slug} className="card">
-              <h3>
-                <Link href={`/services/${service.slug}`}>{service.title}</Link>
-              </h3>
-              <p>{service.shortDescription}</p>
+      <Reveal>
+        <section className="shell page-section">
+          <h2>Why Boat Owners Choose Adley</h2>
+          <div className="key-points">
+            <article>
+              <span className="icon-badge" aria-hidden="true">
+                <Wrench size={20} />
+              </span>
+              <h3>Fiberglass-Only Focus</h3>
+              <p>Repair workflows are designed specifically for fiberglass boats.</p>
             </article>
-          ))}
-        </div>
-      </section>
+            <article>
+              <span className="icon-badge" aria-hidden="true">
+                <Clock3 size={20} />
+              </span>
+              <h3>15+ Years in Business</h3>
+              <p>Experienced team serving Melrose and surrounding communities.</p>
+            </article>
+            <article>
+              <span className="icon-badge" aria-hidden="true">
+                <ShieldCheck size={20} />
+              </span>
+              <h3>Insured Service</h3>
+              <p>Estimate-first process with phone, photo, or in-person inspection.</p>
+            </article>
+          </div>
+        </section>
+      </Reveal>
 
-      <section className="shell page-section">
-        <div className="section-head">
-          <h2>Service Area Coverage</h2>
-          <Link href="/service-areas">View All Service Areas</Link>
-        </div>
-        <ul className="city-list">
-          {locations.slice(0, 10).map((location) => (
-            <li key={location.slug}>
-              <Link href={`/service-areas/${location.slug}`}>{location.city}, MN</Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <Reveal delay={0.05}>
+        <section className="shell page-section">
+          <div className="section-head">
+            <h2>Core Services</h2>
+            <Link href="/services">View All Services</Link>
+          </div>
+          <div className="card-grid">
+            {featuredServices.map((service) => {
+              const ServiceIcon = getServiceIcon(service.slug);
 
-      <section className="shell page-section">
-        <h2>Quick Answers</h2>
-        <div className="faq-list">
-          {faqs.slice(0, 4).map((faq) => (
-            <details key={faq.question}>
-              <summary>{faq.question}</summary>
-              <p>
-                {faq.answer
-                  .map((block) =>
-                    Array.isArray(block.children)
-                      ? block.children.map((child) => (typeof child.text === "string" ? child.text : "")).join("")
-                      : ""
-                  )
-                  .join(" ")}
-              </p>
-            </details>
-          ))}
-        </div>
-      </section>
+              return (
+                <article key={service.slug} className="card">
+                  <span className="icon-badge" aria-hidden="true">
+                    <ServiceIcon size={20} />
+                  </span>
+                  <h3>
+                    <Link href={`/services/${service.slug}`}>{service.title}</Link>
+                  </h3>
+                  <p>{service.shortDescription}</p>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <section className="shell page-section">
+          <div className="section-head">
+            <h2>Service Area Coverage</h2>
+            <Link href="/service-areas">View All Service Areas</Link>
+          </div>
+          <ul className="city-list">
+            {locations.slice(0, 10).map((location) => (
+              <li key={location.slug}>
+                <Link href={`/service-areas/${location.slug}`}>{location.city}, MN</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Reveal>
+
+      <Reveal delay={0.15}>
+        <section className="shell page-section">
+          <h2>Quick Answers</h2>
+          <div className="faq-list">
+            {faqs.slice(0, 4).map((faq) => (
+              <details key={faq.question}>
+                <summary>{faq.question}</summary>
+                <p>
+                  {faq.answer
+                    .map((block) =>
+                      Array.isArray(block.children)
+                        ? block.children.map((child) => (typeof child.text === "string" ? child.text : "")).join("")
+                        : ""
+                    )
+                    .join(" ")}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      </Reveal>
 
       <CtaBanner settings={settings} />
       <FaqJsonLd faqs={faqs.slice(0, 8)} />

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { TrackingScripts } from "@/components/analytics/tracking-scripts";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -40,6 +42,8 @@ export default async function RootLayout({
         <LocalBusinessJsonLd settings={settings} />
         <main>{children}</main>
         <SiteFooter settings={settings} />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
