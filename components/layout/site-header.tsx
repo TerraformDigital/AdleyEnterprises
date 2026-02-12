@@ -16,14 +16,13 @@ export function SiteHeader() {
       <div className="shell header-inner">
         <Link href="/" className="brand">
           <Image
-            src="/images/adley-enterprises-logo.avif"
+            src="/images/Adley-Enterprises-logo-concept-white.png"
             alt="Adley Enterprises LLC"
             className="brand-logo"
-            width={300}
-            height={80}
+            width={320}
+            height={98}
             priority
           />
-          <span className="brand-text">Adley Enterprises LLC</span>
         </Link>
         <nav aria-label="Main navigation">
           <ul className="nav-list">

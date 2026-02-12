@@ -10,13 +10,12 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
       <div className="shell footer-grid">
         <div>
           <Image
-            src="/images/adley-enterprises-logo.avif"
+            src="/images/Adley-Enterprises-logo-concept-white.png"
             alt="Adley Enterprises LLC"
             className="footer-logo"
-            width={260}
-            height={70}
+            width={280}
+            height={85}
           />
-          <h2>{settings.legalName}</h2>
           <p>
             {settings.streetAddress}, {settings.city}, {settings.region} {settings.postalCode}
           </p>
