@@ -93,14 +93,49 @@ export interface ProductVariant {
   description?: string;
 }
 
+export interface ProductImage {
+  _key?: string;
+  url: string;
+  alt: string;
+}
+
+export interface ProductSpecification {
+  _key?: string;
+  label: string;
+  value: string;
+}
+
 export interface Product {
   _id?: string;
   title: string;
   slug: string;
   summary: string;
+  price?: number;
+  priceCurrency?: string;
+  mpn?: string;
+  ebayItemNumber?: string;
+  ebayUrl?: string;
+  type?: string;
+  material?: string;
+  color?: string;
+  brand?: string;
+  category?: string;
+  condition?: string;
+  shippingInfo?: string;
+  returnPolicy?: string;
+  stockNote?: string;
+  unitsSoldNote?: string;
+  locationNote?: string;
+  madeIn?: string;
+  compatibilityNote?: string;
+  socialProofNote?: string;
+  isPublished?: boolean;
   body?: PortableTextValue;
   inquiryOnly: boolean;
   shippingScope: string;
+  images?: ProductImage[];
+  specifications?: ProductSpecification[];
+  relatedProductSlugs?: string[];
   variants: ProductVariant[];
   seo?: SeoFields;
 }

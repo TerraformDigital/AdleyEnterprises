@@ -138,22 +138,262 @@ export const fallbackLocations: LocationPage[] = [
   )
 }));
 
-export const fallbackProduct: Product = {
-  title: "Adjustable Transducer Mounts",
-  slug: "adjustable-transducer-mounts",
-  summary:
-    "Adjustable transducer board mounts for port side, starboard side, and single transducer setups.",
-  body: paragraph(
-    "This product is inquiry-based. Contact Adley Enterprises for fit guidance, setup options, and shipping details."
-  ),
-  inquiryOnly: true,
-  shippingScope: "USA only",
-  variants: [
-    { name: "Port Side Mount" },
-    { name: "Starboard Side Mount" },
-    { name: "Single Transducer Mount" }
-  ]
-};
+const singleBoardImages = [
+  {
+    url: "/images/products/single-board-01.jpg",
+    alt: "American Made Single Adjustable Transducer Board by Adley Enterprises - front view"
+  },
+  {
+    url: "/images/products/single-board-02.jpg",
+    alt: "Single adjustable transducer mount showing adjustment mechanism"
+  },
+  {
+    url: "/images/products/single-board-03.jpg",
+    alt: "Single transducer board side angle detail"
+  },
+  {
+    url: "/images/products/single-board-04.jpg",
+    alt: "American made single transducer board mounted orientation view"
+  }
+];
+
+export const fallbackProducts: Product[] = [
+  {
+    title: "American Made Single Adjustable Transducer Board",
+    slug: "single-adjustable-transducer-board",
+    summary:
+      "Adjustable mount for single transducer setups. Built in Melrose, MN with free shipping in the USA.",
+    price: 91,
+    priceCurrency: "USD",
+    mpn: "11-1-2023-SDB",
+    ebayItemNumber: "204657035281",
+    ebayUrl: "https://www.ebay.com/itm/204657035281",
+    brand: "Adley Enterprises",
+    type: "Adjustable",
+    material: "Plastic",
+    color: "Black",
+    category: "Sporting Goods > Fishing > Fishfinders",
+    condition: "New",
+    inquiryOnly: false,
+    shippingScope: "USA only",
+    shippingInfo: "Free USPS Priority Mail shipping (2-5 business days) in the USA.",
+    returnPolicy: "30-day returns. Buyer pays return shipping.",
+    stockNote: "10+ available",
+    unitsSoldNote: "5+ sold",
+    locationNote: "Melrose, Minnesota",
+    madeIn: "USA (Melrose, MN)",
+    compatibilityNote:
+      "Works with most popular fish finder transducer systems including common Garmin, Lowrance, and Humminbird setups. Contact us with your exact model to confirm fit.",
+    socialProofNote:
+      "100% positive seller feedback on eBay. Recent buyers report on-time delivery with no issues.",
+    images: singleBoardImages,
+    specifications: [
+      { label: "Brand", value: "Adley Enterprises" },
+      { label: "Model", value: "Single Adjustable Transducer Board" },
+      { label: "MPN", value: "11-1-2023-SDB" },
+      { label: "Type", value: "Adjustable" },
+      { label: "Material", value: "Plastic" },
+      { label: "Color", value: "Black" },
+      { label: "Made In", value: "USA (Melrose, MN)" },
+      { label: "Shipping", value: "Free USPS Priority Mail" },
+      { label: "Returns", value: "30 days (buyer pays return shipping)" },
+      { label: "Dimensions", value: "To be confirmed" },
+      { label: "Weight", value: "To be confirmed" }
+    ],
+    relatedProductSlugs: ["dual-transducer-board-port-side", "dual-transducer-board-starboard-side"],
+    variants: [{ name: "Single transducer setup" }],
+    body: [
+      richBlock(
+        "This board is designed for anglers running a single transducer setup who need clean mounting and precise adjustment without switching to disposable bracket hardware."
+      ),
+      richBlock(
+        "The core advantage is angle control. Instead of being stuck with a fixed plate, you can dial the transducer position to improve sonar returns based on your hull behavior, load, and typical running speed."
+      ),
+      richBlock(
+        "Each board is built by Adley Enterprises in Melrose, Minnesota by the same team that performs fiberglass boat repairs. That practical shop experience matters when designing products that need to hold up in real marine conditions."
+      ),
+      richBlock(
+        "If you are replacing an existing mount, send your current transducer model and stern photo before ordering. We can help confirm fit before shipment."
+      )
+    ],
+    seo: {
+      metaTitle: "American Made Single Adjustable Transducer Board | Adley Enterprises Transducer Mounts",
+      metaDescription:
+        "American Made Single Adjustable Transducer Board - $91.00. Adjustable transducer mount built in Melrose, MN with free USPS Priority Mail shipping."
+    }
+  },
+  {
+    title: "American Made Dual Transducer Board - Port Side Adjustable Mount",
+    slug: "dual-transducer-board-port-side",
+    summary:
+      "Dual adjustable mount for port-side transducer configurations. Built in Melrose, MN with free USA shipping.",
+    price: 175.5,
+    priceCurrency: "USD",
+    mpn: "To be confirmed",
+    brand: "Adley Enterprises",
+    type: "Adjustable dual mount (port side)",
+    material: "Plastic",
+    color: "Black",
+    category: "Sporting Goods > Fishing > Fishfinders",
+    condition: "New",
+    inquiryOnly: false,
+    shippingScope: "USA only",
+    shippingInfo: "Free delivery in the USA.",
+    returnPolicy: "30-day returns. Buyer pays return shipping.",
+    stockNote: "Availability in eBay store",
+    locationNote: "Melrose, Minnesota",
+    madeIn: "USA (Melrose, MN)",
+    compatibilityNote:
+      "Designed for dual transducer layouts where port-side mounting and adjustability are required. Contact us with your electronics configuration to verify fit.",
+    socialProofNote: "Premium adjustable mount built by fiberglass repair professionals in Minnesota.",
+    images: singleBoardImages,
+    specifications: [
+      { label: "Brand", value: "Adley Enterprises" },
+      { label: "Model", value: "Dual Transducer Board - Port Side Adjustable Mount" },
+      { label: "MPN", value: "To be confirmed" },
+      { label: "Type", value: "Adjustable dual mount (port side)" },
+      { label: "Material", value: "Plastic" },
+      { label: "Color", value: "Black" },
+      { label: "Made In", value: "USA (Melrose, MN)" },
+      { label: "Shipping", value: "Free delivery" },
+      { label: "Returns", value: "30 days (buyer pays return shipping)" },
+      { label: "Dimensions", value: "To be confirmed" },
+      { label: "Weight", value: "To be confirmed" }
+    ],
+    relatedProductSlugs: ["single-adjustable-transducer-board", "dual-transducer-board-starboard-side"],
+    variants: [{ name: "Dual transducer port-side configuration" }],
+    body: [
+      richBlock(
+        "This dual-board configuration is intended for anglers running two transducers and needing a dedicated port-side layout. The adjustable mount design helps fine-tune placement to improve real-world sonar performance."
+      ),
+      richBlock(
+        "Compared with flat fixed plates, this setup gives you more control over angle and final position during install. That flexibility is useful when balancing multiple sonar sources on the same transom."
+      ),
+      richBlock(
+        "Every board is manufactured in Adley's Melrose fiberglass shop. The focus is durability, repeatable setup, and clean mounting for serious fishing electronics."
+      ),
+      richBlock(
+        "eBay item number and final MPN are being confirmed. Contact us directly if you want this configuration before published listing details are finalized."
+      )
+    ],
+    seo: {
+      metaTitle: "American Made Dual Transducer Board - Port Side | Adley Enterprises Transducer Mounts",
+      metaDescription:
+        "Dual Transducer Board - Port Side Adjustable Mount for $175.50. American-made in Melrose, MN with free USA shipping."
+    }
+  },
+  {
+    title: "American Made Dual Transducer Board - Starboard Side Adjustable Mount",
+    slug: "dual-transducer-board-starboard-side",
+    summary:
+      "Dual adjustable mount for starboard-side transducer configurations. American made and built in Melrose, MN.",
+    price: 175.5,
+    priceCurrency: "USD",
+    mpn: "To be confirmed",
+    ebayItemNumber: "204657042455",
+    ebayUrl: "https://www.ebay.com/itm/204657042455",
+    brand: "Adley Enterprises",
+    type: "Adjustable dual mount (starboard side)",
+    material: "Plastic",
+    color: "Black",
+    category: "Sporting Goods > Fishing > Fishfinders",
+    condition: "New",
+    inquiryOnly: false,
+    shippingScope: "USA only",
+    shippingInfo: "Free delivery in the USA.",
+    returnPolicy: "30-day returns. Buyer pays return shipping.",
+    stockNote: "Availability in eBay store",
+    locationNote: "Melrose, Minnesota",
+    madeIn: "USA (Melrose, MN)",
+    compatibilityNote:
+      "Designed for dual transducer layouts that require starboard-side orientation. Contact us with your setup details to confirm fit.",
+    socialProofNote: "Built in the same Minnesota shop trusted for fiberglass repair work.",
+    images: singleBoardImages,
+    specifications: [
+      { label: "Brand", value: "Adley Enterprises" },
+      { label: "Model", value: "Dual Transducer Board - Starboard Side Adjustable Mount" },
+      { label: "MPN", value: "To be confirmed" },
+      { label: "Type", value: "Adjustable dual mount (starboard side)" },
+      { label: "Material", value: "Plastic" },
+      { label: "Color", value: "Black" },
+      { label: "Made In", value: "USA (Melrose, MN)" },
+      { label: "Shipping", value: "Free delivery" },
+      { label: "Returns", value: "30 days (buyer pays return shipping)" },
+      { label: "Dimensions", value: "To be confirmed" },
+      { label: "Weight", value: "To be confirmed" }
+    ],
+    relatedProductSlugs: ["single-adjustable-transducer-board", "dual-transducer-board-port-side"],
+    variants: [{ name: "Dual transducer starboard-side configuration" }],
+    body: [
+      richBlock(
+        "This starboard-side dual board is built for boats where transducer placement, cable routing, and stern layout are best served on the right-side configuration."
+      ),
+      richBlock(
+        "The adjustable design allows fine positioning during setup instead of committing to a fixed angle from the start. That control helps maximize sonar clarity and coverage for advanced fishing electronics."
+      ),
+      richBlock(
+        "Adley manufactures these mounts in-house in Melrose, Minnesota. They are not generic imports and are designed by people who work on fiberglass boats daily."
+      ),
+      richBlock(
+        "You can order through eBay or contact Adley directly to confirm fit before purchase."
+      )
+    ],
+    seo: {
+      metaTitle: "American Made Dual Transducer Board - Starboard Side | Adley Enterprises Transducer Mounts",
+      metaDescription:
+        "Dual Transducer Board - Starboard Side Adjustable Mount for $175.50. American-made in Melrose, MN with free delivery."
+    }
+  },
+  {
+    title: "American-Made Transducer Mounting Board",
+    slug: "transducer-mounting-board",
+    summary:
+      "Entry-level non-adjustable transducer mounting board for budget-conscious setups.",
+    price: 35.66,
+    priceCurrency: "USD",
+    brand: "Adley Enterprises",
+    type: "Standard mounting board",
+    material: "Plastic",
+    color: "Black",
+    category: "Sporting Goods > Fishing > Fishfinders",
+    condition: "New",
+    inquiryOnly: false,
+    shippingScope: "USA only",
+    shippingInfo: "Free delivery and free returns (per eBay listing).",
+    returnPolicy: "Free returns.",
+    stockNote: "To be confirmed",
+    locationNote: "Melrose, Minnesota",
+    madeIn: "USA (Melrose, MN)",
+    compatibilityNote:
+      "This is listed as a standard board option on eBay. Confirm final fit and application details before ordering.",
+    socialProofNote:
+      "Client confirmation pending for website publishing.",
+    isPublished: false,
+    images: singleBoardImages,
+    specifications: [
+      { label: "Brand", value: "Adley Enterprises" },
+      { label: "Model", value: "Transducer Mounting Board" },
+      { label: "Type", value: "Standard (non-adjustable)" },
+      { label: "Material", value: "Plastic" },
+      { label: "Color", value: "Black" },
+      { label: "Made In", value: "USA (Melrose, MN)" },
+      { label: "Shipping", value: "Free delivery" },
+      { label: "Returns", value: "Free returns" }
+    ],
+    relatedProductSlugs: ["single-adjustable-transducer-board"],
+    variants: [{ name: "Basic mounting board" }],
+    body: paragraph(
+      "This lower-cost standard mounting board appears in the eBay store but is currently held as pending client confirmation for website publishing."
+    ),
+    seo: {
+      metaTitle: "American-Made Transducer Mounting Board | Adley Enterprises",
+      metaDescription:
+        "Standard transducer mounting board listed at $35.66 with free delivery. Publication pending confirmation."
+    }
+  }
+];
+
+export const fallbackProduct = fallbackProducts[0];
 
 export const fallbackFaqs: FaqItem[] = [
   {

@@ -38,6 +38,6 @@ If you want to preserve existing documents, remove `--replace` and import into a
 - 1 `siteSettings`
 - 5 `service`
 - 10 `locationPage`
-- 1 `product`
+- 4 `product`
 - 10 `faqItem`
 - 10 `blogPost`

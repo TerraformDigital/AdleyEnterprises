@@ -158,6 +158,11 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 </li>
               ))}
             </ul>
+            <h3>Related Products</h3>
+            <p>
+              We also manufacture adjustable transducer mounting boards in-house.{" "}
+              <Link href="/products">See all transducer mount products</Link>.
+            </p>
           </aside>
         </section>
       </Reveal>

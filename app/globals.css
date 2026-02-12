@@ -254,6 +254,108 @@ p {
   object-fit: cover;
 }
 
+.product-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-card {
+  overflow: hidden;
+}
+
+.product-card-image-wrap {
+  margin: -1rem -1rem 0.95rem;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  border-bottom: 1px solid var(--line);
+}
+
+.product-card-image {
+  object-fit: cover;
+}
+
+.product-card-title a {
+  color: var(--accent);
+}
+
+.product-price-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.product-price {
+  color: #f2f3f5;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.product-price-large {
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.product-shipping-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #a32a37;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  color: #ff8f99;
+  background: rgba(214, 40, 57, 0.12);
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.product-gallery-item {
+  margin: 0;
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.product-gallery-image {
+  object-fit: cover;
+}
+
+.product-spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-spec-table th,
+.product-spec-table td {
+  padding: 0.62rem 0.72rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.product-spec-table th {
+  color: #f5f6f7;
+  width: 42%;
+  font-weight: 600;
+}
+
+.product-spec-table tr:nth-child(odd) th,
+.product-spec-table tr:nth-child(odd) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
 .service-hero-image-wrap {
   position: relative;
   aspect-ratio: 16 / 9;
@@ -640,6 +742,10 @@ select:focus {
   }
 
   .service-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-gallery {
     grid-template-columns: 1fr;
   }
 

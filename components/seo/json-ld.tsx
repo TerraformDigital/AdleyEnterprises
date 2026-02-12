@@ -109,19 +109,99 @@ export function ProductJsonLd({
   product: Product;
   settings: SiteSettings;
 }) {
+  const productUrl = toAbsoluteUrl(`/products/${product.slug}`);
+  const imageUrl =
+    product.images && product.images.length > 0
+      ? product.images[0].url.startsWith("http")
+        ? product.images[0].url
+        : toAbsoluteUrl(product.images[0].url)
+      : undefined;
+
   const data = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.title,
     description: product.summary,
-    brand: settings.legalName,
-    category: "Marine hardware",
+    brand: {
+      "@type": "Brand",
+      name: product.brand || settings.legalName
+    },
+    mpn: product.mpn,
+    color: product.color,
+    material: product.material,
+    category: product.category || "Marine hardware",
+    countryOfOrigin: "US",
+    image: imageUrl ? [imageUrl] : undefined,
+    manufacturer: {
+      "@type": "Organization",
+      name: settings.legalName,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: settings.streetAddress,
+        addressLocality: settings.city,
+        addressRegion: settings.region,
+        postalCode: settings.postalCode,
+        addressCountry: settings.country
+      }
+    },
     additionalProperty: product.variants.map((variant) => ({
       "@type": "PropertyValue",
       name: "Variant",
       value: variant.name
     })),
-    url: toAbsoluteUrl(`/products/${product.slug}`)
+    url: productUrl,
+    offers: product.price
+      ? {
+          "@type": "Offer",
+          price: product.price.toFixed(2),
+          priceCurrency: product.priceCurrency || "USD",
+          availability: "https://schema.org/InStock",
+          url: productUrl,
+          seller: {
+            "@type": "Organization",
+            name: settings.legalName
+          },
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            shippingRate: {
+              "@type": "MonetaryAmount",
+              value: "0",
+              currency: product.priceCurrency || "USD"
+            },
+            shippingDestination: {
+              "@type": "DefinedRegion",
+              addressCountry: "US"
+            }
+          },
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+            merchantReturnDays: 30,
+            returnMethod: "https://schema.org/ReturnByMail"
+          }
+        }
+      : undefined
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function SimpleFaqJsonLd({
+  items
+}: {
+  items: Array<{ question: string; answer: string }>;
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer
+      }
+    }))
   };
 
   return <JsonLd data={data} />;

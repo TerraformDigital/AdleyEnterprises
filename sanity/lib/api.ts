@@ -2,7 +2,7 @@ import {
   fallbackBlogPosts,
   fallbackFaqs,
   fallbackLocations,
-  fallbackProduct,
+  fallbackProducts,
   fallbackServices,
   fallbackSiteSettings
 } from "@/lib/fallback-content";
@@ -96,20 +96,41 @@ export async function getLocationPageBySlug(slug: string) {
 }
 
 export async function getProductBySlug(slug: string) {
-  return sanityFetch<Product | null>({
+  const product = await sanityFetch<Product | null>({
     query: productBySlugQuery,
     params: { slug },
-    fallback: slug === fallbackProduct.slug ? fallbackProduct : null
+    fallback: fallbackProducts.find((item) => item.slug === slug) ?? null
   });
+
+  if (!product) {
+    return null;
+  }
+
+  const fallback = fallbackProducts.find((item) => item.slug === product.slug);
+  return fallback ? { ...fallback, ...product } : product;
 }
 
 export async function getProducts() {
   const products = await sanityFetch<Product[]>({
     query: productsQuery,
-    fallback: [fallbackProduct]
+    fallback: fallbackProducts
   });
 
-  return products.length > 0 ? products : [fallbackProduct];
+  const fallbackBySlug = new Map(fallbackProducts.map((item) => [item.slug, item]));
+  const merged = products.map((product) => {
+    const fallback = fallbackBySlug.get(product.slug);
+    return fallback ? { ...fallback, ...product } : product;
+  });
+
+  const requiredSlugs = [
+    "single-adjustable-transducer-board",
+    "dual-transducer-board-port-side",
+    "dual-transducer-board-starboard-side"
+  ];
+  const hasRequiredSet = requiredSlugs.every((slug) => merged.some((item) => item.slug === slug));
+  const source = hasRequiredSet ? merged : fallbackProducts;
+
+  return source.filter((item) => item.isPublished !== false);
 }
 
 export async function getFaqItems() {

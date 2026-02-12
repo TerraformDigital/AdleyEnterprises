@@ -40,7 +40,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
               <Link href="/services/hull-collision-repair">Hull Collision Repair</Link>
             </li>
             <li>
-              <Link href="/products/adjustable-transducer-mounts">Adjustable Transducer Mounts</Link>
+              <Link href="/products">Adjustable Transducer Mounts</Link>
             </li>
             <li>
               <Link href="/service-areas">Service Areas</Link>
