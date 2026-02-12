@@ -90,10 +90,13 @@ export default async function RootLayout({
   return (
     <html lang="en-US">
       <body>
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <TrackingScripts />
-        <SiteHeader />
+        <SiteHeader settings={settings} />
         <LocalBusinessJsonLd settings={settings} />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter settings={settings} />
         <Analytics />
         <SpeedInsights />
