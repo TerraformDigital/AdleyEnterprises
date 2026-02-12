@@ -1,0 +1,1919 @@
+[
+  {
+    "_id": "siteSettings",
+    "_type": "siteSettings",
+    "siteTitle": "Adley Enterprises LLC",
+    "legalName": "Adley Enterprises LLC",
+    "phone": "+1 (320) 726-0822",
+    "email": "sales@adleyenterprises.com",
+    "streetAddress": "16 Industry Parkway NW",
+    "city": "Melrose",
+    "region": "MN",
+    "postalCode": "56352",
+    "country": "US",
+    "serviceRadiusMiles": 30,
+    "insured": true,
+    "yearsInBusiness": 15,
+    "warrantyNote": "Warranty claims are reviewed case-by-case with each written estimate and final repair scope approval.",
+    "aboutSummary": "Adley Enterprises LLC is a fiberglass-only boat repair shop serving Melrose and surrounding Central Minnesota communities. We focus on practical repairs, quality finish work, and clear estimate communication.",
+    "hours": [
+      {
+        "_type": "object",
+        "_key": "k1",
+        "day": "Monday",
+        "opens": "06:30",
+        "closes": "16:00"
+      },
+      {
+        "_type": "object",
+        "_key": "k2",
+        "day": "Tuesday",
+        "opens": "06:30",
+        "closes": "16:00"
+      },
+      {
+        "_type": "object",
+        "_key": "k3",
+        "day": "Wednesday",
+        "opens": "06:30",
+        "closes": "16:00"
+      },
+      {
+        "_type": "object",
+        "_key": "k4",
+        "day": "Thursday",
+        "opens": "06:30",
+        "closes": "16:00"
+      },
+      {
+        "_type": "object",
+        "_key": "k5",
+        "day": "Friday",
+        "notes": "By appointment only"
+      },
+      {
+        "_type": "object",
+        "_key": "k6",
+        "day": "Saturday",
+        "notes": "Closed"
+      },
+      {
+        "_type": "object",
+        "_key": "k7",
+        "day": "Sunday",
+        "notes": "Closed"
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
+      "metaDescription": "Fiberglass-only boat repair, hull collision repair, gel coat refinishing, and detailing services for Central Minnesota boat owners."
+    }
+  },
+  {
+    "_id": "service.fiberglass-boat-repair",
+    "_type": "service",
+    "title": "Fiberglass Boat Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "fiberglass-boat-repair"
+    },
+    "shortDescription": "Fiberglass-only structural and cosmetic repair for cracked, chipped, gouged, or stressed boat surfaces.",
+    "featured": true,
+    "priority": 1,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k8",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k9",
+            "text": "Our fiberglass boat repair process starts with a damage inspection and clear estimate. We document what is cosmetic vs structural so you understand the repair plan before work begins.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ka",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kb",
+            "text": "Typical repairs include stress cracks, gouges, impact fractures, and worn finish areas. Surface prep, fiberglass rebuilding, fairing, and finish matching are completed as one coordinated workflow.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kc",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kd",
+            "text": "Adley Enterprises works on fiberglass boats only. This keeps tools, materials, and processes focused on long-lasting fiberglass repair outcomes.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair Near Melrose, MN | Adley Enterprises LLC",
+      "metaDescription": "Professional fiberglass boat repair in Central Minnesota. Request an estimate by call, photos, or in-person inspection."
+    }
+  },
+  {
+    "_id": "service.hull-collision-repair",
+    "_type": "service",
+    "title": "Hull Collision Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "hull-collision-repair"
+    },
+    "shortDescription": "Impact and collision hull repair with fiberglass reconstruction, fairing, and finish blending.",
+    "featured": true,
+    "priority": 2,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "ke",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kf",
+            "text": "Hull collision damage can involve both visible finish issues and hidden structural stress. We inspect impact areas, map repair zones, and build a practical repair scope for safe return to service.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "kg",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kh",
+            "text": "Repairs may include crack stabilization, laminate reconstruction, fairing, and exterior finish correction. Each project is reviewed based on collision severity and hull condition.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ki",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kj",
+            "text": "If you have recent collision damage, call first and send photos. Early assessment helps prevent additional moisture intrusion or stress-related growth of damaged areas.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Boat Hull Collision Repair in Central Minnesota | Adley Enterprises",
+      "metaDescription": "Hull collision repair for fiberglass boats near Melrose, MN. Call for inspection and written estimate."
+    }
+  },
+  {
+    "_id": "service.gel-coat-exterior-painting",
+    "_type": "service",
+    "title": "Gel Coat and Exterior Painting",
+    "slug": {
+      "_type": "slug",
+      "current": "gel-coat-exterior-painting"
+    },
+    "shortDescription": "Gel coat touch-up and exterior refinishing to restore appearance and help protect fiberglass surfaces.",
+    "featured": true,
+    "priority": 3,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "kk",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kl",
+            "text": "Sun, abrasion, and repeated use eventually wear down gel coat surfaces. We repair and refinish damaged sections with attention to color blend and finish consistency.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "km",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kn",
+            "text": "Projects range from localized gel coat correction to larger exterior refinishing work. We review your boat condition and recommend the best path based on damage depth and coverage area.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ko",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kp",
+            "text": "Our goal is a clean, durable finish that supports both appearance and long-term protection.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Gel Coat Repair and Exterior Boat Painting | Adley Enterprises",
+      "metaDescription": "Gel coat touch-up and exterior refinishing for fiberglass boats in Melrose, MN and nearby cities."
+    }
+  },
+  {
+    "_id": "service.dent-scratch-repair",
+    "_type": "service",
+    "title": "Dent and Scratch Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "dent-scratch-repair"
+    },
+    "shortDescription": "Dent, chip, and scratch correction for fiberglass boat surfaces with finish-ready blending.",
+    "featured": true,
+    "priority": 4,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "kq",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kr",
+            "text": "Dents and scratches can reduce finish quality and expose fiberglass to additional wear. We assess depth and surrounding condition before selecting a repair approach.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ks",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kt",
+            "text": "Repairs include prep, material correction, fairing, and final finish blending so repaired sections align with nearby surfaces as closely as possible.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ku",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kv",
+            "text": "If you are not sure whether damage is cosmetic or structural, send photos and we can advise next steps.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Boat Dent and Scratch Repair in Minnesota | Adley Enterprises",
+      "metaDescription": "Fiberglass dent and scratch repair for boat owners in the Melrose area. Request your estimate today."
+    }
+  },
+  {
+    "_id": "service.buffing-waxing",
+    "_type": "service",
+    "title": "Buffing and Waxing",
+    "slug": {
+      "_type": "slug",
+      "current": "buffing-waxing"
+    },
+    "shortDescription": "Professional buffing and waxing to improve gloss and preserve fiberglass finish quality.",
+    "featured": true,
+    "priority": 5,
+    "body": [
+      {
+        "_type": "block",
+        "_key": "kw",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kx",
+            "text": "Buffing and waxing helps maintain finish clarity, improve appearance, and reduce surface dulling caused by weather and storage conditions.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "ky",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "kz",
+            "text": "We offer buffing/waxing as a standalone service or as part of a larger repair and refinishing scope.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k10",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k11",
+            "text": "Consistent maintenance is one of the best ways to protect gel coat and extend the life of your exterior finish.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Boat Buffing and Waxing in Central Minnesota | Adley Enterprises",
+      "metaDescription": "Fiberglass boat buffing and waxing services for lasting shine and finish protection near Melrose, MN."
+    }
+  },
+  {
+    "_id": "location.st-cloud-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in St. Cloud, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "st-cloud-mn"
+    },
+    "city": "St. Cloud",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for St. Cloud, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k12",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k13",
+            "text": "St. Cloud boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k14",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k15",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k16",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k17",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in St. Cloud, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for St. Cloud, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.sauk-rapids-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Sauk Rapids, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "sauk-rapids-mn"
+    },
+    "city": "Sauk Rapids",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Sauk Rapids, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k18",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k19",
+            "text": "Sauk Rapids boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1b",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1d",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Sauk Rapids, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Sauk Rapids, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.waite-park-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Waite Park, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "waite-park-mn"
+    },
+    "city": "Waite Park",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Waite Park, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1e",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1f",
+            "text": "Waite Park boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1h",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1i",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1j",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Waite Park, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Waite Park, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.st-joseph-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in St. Joseph, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "st-joseph-mn"
+    },
+    "city": "St. Joseph",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for St. Joseph, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1k",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1l",
+            "text": "St. Joseph boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1m",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1n",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1o",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1p",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in St. Joseph, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for St. Joseph, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.sauk-centre-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Sauk Centre, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "sauk-centre-mn"
+    },
+    "city": "Sauk Centre",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Sauk Centre, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1q",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1r",
+            "text": "Sauk Centre boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1s",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1t",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1u",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1v",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Sauk Centre, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Sauk Centre, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.cold-spring-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Cold Spring, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "cold-spring-mn"
+    },
+    "city": "Cold Spring",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Cold Spring, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k1w",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1x",
+            "text": "Cold Spring boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k1y",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k1z",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k20",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k21",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Cold Spring, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Cold Spring, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.long-prairie-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Long Prairie, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "long-prairie-mn"
+    },
+    "city": "Long Prairie",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Long Prairie, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k22",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k23",
+            "text": "Long Prairie boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k24",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k25",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k26",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k27",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Long Prairie, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Long Prairie, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.albany-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Albany, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "albany-mn"
+    },
+    "city": "Albany",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Albany, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k28",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k29",
+            "text": "Albany boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2b",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2d",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Albany, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Albany, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.paynesville-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Paynesville, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "paynesville-mn"
+    },
+    "city": "Paynesville",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Paynesville, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k2e",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2f",
+            "text": "Paynesville boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2g",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2h",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2i",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2j",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Paynesville, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Paynesville, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "location.richmond-mn",
+    "_type": "locationPage",
+    "title": "Fiberglass Boat Repair in Richmond, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "richmond-mn"
+    },
+    "city": "Richmond",
+    "region": "MN",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Richmond, MN, including collision repair, gel coat work, and finish restoration.",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k2k",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2l",
+            "text": "Richmond boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2m",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2n",
+            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2o",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2p",
+            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Fiberglass Boat Repair in Richmond, MN | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Richmond, MN. Call Adley Enterprises for estimates and scheduling."
+    }
+  },
+  {
+    "_id": "product.adjustable-transducer-mounts",
+    "_type": "product",
+    "title": "Adjustable Transducer Mounts",
+    "slug": {
+      "_type": "slug",
+      "current": "adjustable-transducer-mounts"
+    },
+    "summary": "Adjustable transducer board mounts available in port side, starboard side, and single transducer configurations.",
+    "inquiryOnly": true,
+    "shippingScope": "USA only",
+    "variants": [
+      {
+        "_type": "object",
+        "_key": "k2q",
+        "name": "Port Side Mount",
+        "description": "Adjustable board setup configured for port-side transducer placement."
+      },
+      {
+        "_type": "object",
+        "_key": "k2r",
+        "name": "Starboard Side Mount",
+        "description": "Adjustable board setup configured for starboard-side transducer placement."
+      },
+      {
+        "_type": "object",
+        "_key": "k2s",
+        "name": "Single Transducer Mount",
+        "description": "Single transducer configuration for simplified mounting requirements."
+      }
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k2t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2u",
+            "text": "Adley Enterprises offers adjustable transducer mount options designed for practical fitment and reliable positioning.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2w",
+            "text": "This is an inquiry-only product page. Public pricing is not listed. Contact us to discuss your setup and shipping details.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k2x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k2y",
+            "text": "Shipping is available within the United States.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Adjustable Transducer Mounts | Adley Enterprises LLC",
+      "metaDescription": "Inquiry-only adjustable transducer mount options from Adley Enterprises. Port, starboard, and single transducer configurations."
+    }
+  },
+  {
+    "_id": "faq.1",
+    "_type": "faqItem",
+    "question": "What types of boats do you repair?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k2z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k30",
+            "text": "We repair fiberglass boats only. Our shop focuses on fiberglass-specific repair and refinishing workflows.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 1,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.2",
+    "_type": "faqItem",
+    "question": "Do you repair aluminum boats?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k31",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k32",
+            "text": "No. We focus exclusively on fiberglass boat repair services.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 2,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.3",
+    "_type": "faqItem",
+    "question": "How do I request an estimate?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k33",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k34",
+            "text": "You can call us directly, submit your information through the quote form, and include photos if available.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 3,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.4",
+    "_type": "faqItem",
+    "question": "Can I send photos before bringing the boat in?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k35",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k36",
+            "text": "Yes. Photo submission is encouraged for faster initial review and estimate planning.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 4,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.5",
+    "_type": "faqItem",
+    "question": "How long does fiberglass repair usually take?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k37",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k38",
+            "text": "Turnaround time varies based on damage type, repair depth, finish work requirements, and schedule volume.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 5,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.6",
+    "_type": "faqItem",
+    "question": "Do you handle hull collision and gel coat damage?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k39",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3a",
+            "text": "Yes. We handle both structural and cosmetic collision damage along with gel coat and exterior finish correction.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 6,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.7",
+    "_type": "faqItem",
+    "question": "Do you offer buffing and waxing by itself?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k3b",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3c",
+            "text": "Yes. Buffing and waxing can be scheduled as standalone service or bundled with other repair work.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 7,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.8",
+    "_type": "faqItem",
+    "question": "Do you provide warranty coverage?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k3d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3e",
+            "text": "Warranty claims are reviewed with each written estimate and finalized during repair approval.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 8,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.9",
+    "_type": "faqItem",
+    "question": "Which areas do you serve?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k3f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3g",
+            "text": "We serve approximately a 30-mile radius around Melrose, MN, including St. Cloud, Sauk Rapids, Waite Park, and nearby communities.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 9,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "faq.10",
+    "_type": "faqItem",
+    "question": "Do you sell adjustable transducer mounts?",
+    "answer": [
+      {
+        "_type": "block",
+        "_key": "k3h",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3i",
+            "text": "Yes. We offer inquiry-only transducer mount options for port side, starboard side, and single transducer setups with USA shipping.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "order": 10,
+    "seo": {
+      "_type": "seo"
+    }
+  },
+  {
+    "_id": "blog.common-fiberglass-boat-damage",
+    "_type": "blogPost",
+    "title": "Common Fiberglass Boat Damage and How to Spot It Early",
+    "slug": {
+      "_type": "slug",
+      "current": "common-fiberglass-boat-damage"
+    },
+    "excerpt": "A practical checklist to identify fiberglass damage early and avoid bigger repair costs.",
+    "publishedAt": "2026-01-02T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k3j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3k",
+            "text": "Fiberglass damage often starts small: hairline cracks, chips, and soft spots that are easy to ignore.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3l",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3m",
+            "text": "The earlier you inspect and document changes, the easier it is to control repair scope.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3n",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3o",
+            "text": "If you notice repeated cracking in the same zone, schedule a professional inspection before the damage spreads.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Common Fiberglass Boat Damage and How to Spot It Early | Adley Enterprises LLC",
+      "metaDescription": "A practical checklist to identify fiberglass damage early and avoid bigger repair costs."
+    }
+  },
+  {
+    "_id": "blog.gel-coat-repair-vs-repaint",
+    "_type": "blogPost",
+    "title": "Gel Coat Repair vs Full Repaint: Which Is Right for Your Boat?",
+    "slug": {
+      "_type": "slug",
+      "current": "gel-coat-repair-vs-repaint"
+    },
+    "excerpt": "When to choose localized gel coat repair and when a larger refinishing scope makes more sense.",
+    "publishedAt": "2026-01-03T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k3p",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3q",
+            "text": "Not every faded or scratched surface needs a full repaint.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3r",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3s",
+            "text": "Localized repair is often effective when damage is isolated and color matching can be controlled.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3u",
+            "text": "Wider oxidation, heavy surface inconsistency, or repeated patch history may justify broader refinishing.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Gel Coat Repair vs Full Repaint: Which Is Right for Your Boat? | Adley Enterprises LLC",
+      "metaDescription": "When to choose localized gel coat repair and when a larger refinishing scope makes more sense."
+    }
+  },
+  {
+    "_id": "blog.what-to-do-after-hull-collision",
+    "_type": "blogPost",
+    "title": "What to Do After a Hull Collision",
+    "slug": {
+      "_type": "slug",
+      "current": "what-to-do-after-hull-collision"
+    },
+    "excerpt": "Step-by-step actions for boat owners after impact damage to protect the hull and speed up repair.",
+    "publishedAt": "2026-01-04T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k3v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3w",
+            "text": "Start with safety and document the affected area with clear photos from multiple angles.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3y",
+            "text": "Avoid continued use until a repair professional confirms structural condition.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k40",
+            "text": "Early assessment reduces the chance of moisture intrusion and additional laminate stress.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "What to Do After a Hull Collision | Adley Enterprises LLC",
+      "metaDescription": "Step-by-step actions for boat owners after impact damage to protect the hull and speed up repair."
+    }
+  },
+  {
+    "_id": "blog.how-often-buff-and-wax-fiberglass-boat",
+    "_type": "blogPost",
+    "title": "How Often Should You Buff and Wax a Fiberglass Boat?",
+    "slug": {
+      "_type": "slug",
+      "current": "how-often-buff-and-wax-fiberglass-boat"
+    },
+    "excerpt": "Maintenance interval guidance based on storage, usage patterns, and finish condition.",
+    "publishedAt": "2026-01-05T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k41",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k42",
+            "text": "Buffing and waxing frequency depends on UV exposure, water conditions, and how the boat is stored.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k43",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k44",
+            "text": "Routine finish maintenance helps preserve gloss and reduce surface degradation over time.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k45",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k46",
+            "text": "Ask for a maintenance recommendation during your next repair or inspection visit.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "How Often Should You Buff and Wax a Fiberglass Boat? | Adley Enterprises LLC",
+      "metaDescription": "Maintenance interval guidance based on storage, usage patterns, and finish condition."
+    }
+  },
+  {
+    "_id": "blog.how-photo-estimates-work",
+    "_type": "blogPost",
+    "title": "How Photo Estimates Work for Fiberglass Boat Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "how-photo-estimates-work"
+    },
+    "excerpt": "What photos to send and how to make your initial repair estimate faster and more accurate.",
+    "publishedAt": "2026-01-06T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k47",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k48",
+            "text": "Photo estimates work best when you include wide shots, close-up damage shots, and a few angle variations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k49",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4a",
+            "text": "Include brief notes on when damage occurred and whether the area has previous repair history.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4b",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4c",
+            "text": "Final scope is confirmed with in-person review when needed.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "How Photo Estimates Work for Fiberglass Boat Repair | Adley Enterprises LLC",
+      "metaDescription": "What photos to send and how to make your initial repair estimate faster and more accurate."
+    }
+  },
+  {
+    "_id": "blog.spring-boat-prep-central-minnesota",
+    "_type": "blogPost",
+    "title": "Spring Boat Prep Checklist for Central Minnesota",
+    "slug": {
+      "_type": "slug",
+      "current": "spring-boat-prep-central-minnesota"
+    },
+    "excerpt": "Pre-season fiberglass and finish checks to reduce delays when boating season starts.",
+    "publishedAt": "2026-01-07T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k4d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4e",
+            "text": "Before launch, inspect hull surfaces, gel coat condition, and any known repaired zones.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4f",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4g",
+            "text": "Address minor chips and cracks early so they do not become larger mid-season repairs.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4h",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4i",
+            "text": "A pre-season detailing and finish protection service can improve durability and appearance.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Spring Boat Prep Checklist for Central Minnesota | Adley Enterprises LLC",
+      "metaDescription": "Pre-season fiberglass and finish checks to reduce delays when boating season starts."
+    }
+  },
+  {
+    "_id": "blog.signs-you-need-dent-scratch-repair",
+    "_type": "blogPost",
+    "title": "Signs Your Boat Needs Professional Dent and Scratch Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "signs-you-need-dent-scratch-repair"
+    },
+    "excerpt": "How to tell when cosmetic-looking damage may need professional correction.",
+    "publishedAt": "2026-01-08T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k4j",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4k",
+            "text": "If a scratch catches your fingernail or appears to cut through finish layers, schedule an inspection.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4l",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4m",
+            "text": "Dents near stress zones can require more than surface correction.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4n",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4o",
+            "text": "Professional repair protects both appearance and long-term surface integrity.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Signs Your Boat Needs Professional Dent and Scratch Repair | Adley Enterprises LLC",
+      "metaDescription": "How to tell when cosmetic-looking damage may need professional correction."
+    }
+  },
+  {
+    "_id": "blog.service-areas-around-melrose",
+    "_type": "blogPost",
+    "title": "Service Areas We Cover Around Melrose, MN",
+    "slug": {
+      "_type": "slug",
+      "current": "service-areas-around-melrose"
+    },
+    "excerpt": "A quick overview of cities and communities within our regular fiberglass repair coverage area.",
+    "publishedAt": "2026-01-09T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k4p",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4q",
+            "text": "Adley Enterprises serves boat owners within roughly 30 miles of Melrose, Minnesota.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4r",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4s",
+            "text": "Coverage includes St. Cloud, Sauk Rapids, Waite Park, St. Joseph, and nearby communities.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4t",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4u",
+            "text": "If you are unsure whether you are inside our service range, call and we can confirm.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Service Areas We Cover Around Melrose, MN | Adley Enterprises LLC",
+      "metaDescription": "A quick overview of cities and communities within our regular fiberglass repair coverage area."
+    }
+  },
+  {
+    "_id": "blog.adjustable-transducer-mount-options",
+    "_type": "blogPost",
+    "title": "Adjustable Transducer Mounts: Port, Starboard, and Single Setups",
+    "slug": {
+      "_type": "slug",
+      "current": "adjustable-transducer-mount-options"
+    },
+    "excerpt": "Compare available transducer mount configurations and choose the right setup for your boat.",
+    "publishedAt": "2026-01-10T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k4v",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4w",
+            "text": "We offer port-side, starboard-side, and single transducer mount configurations.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k4y",
+            "text": "Each setup supports a practical installation path based on your transducer and hull layout.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k4z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k50",
+            "text": "Contact us for fit questions and USA shipping details.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Adjustable Transducer Mounts: Port, Starboard, and Single Setups | Adley Enterprises LLC",
+      "metaDescription": "Compare available transducer mount configurations and choose the right setup for your boat."
+    }
+  },
+  {
+    "_id": "blog.protect-fiberglass-finish-storage-transport",
+    "_type": "blogPost",
+    "title": "How to Protect Fiberglass Finish During Storage and Transport",
+    "slug": {
+      "_type": "slug",
+      "current": "protect-fiberglass-finish-storage-transport"
+    },
+    "excerpt": "Simple habits that help preserve finish quality between seasons and long hauls.",
+    "publishedAt": "2026-01-11T09:00:00Z",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k51",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k52",
+            "text": "Clean and dry surfaces before storage to reduce buildup and staining risk.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k53",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k54",
+            "text": "Use proper covers and avoid abrasive contact points during transport.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k55",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k56",
+            "text": "Routine finish checks make it easier to spot early wear before it becomes larger repair work.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "How to Protect Fiberglass Finish During Storage and Transport | Adley Enterprises LLC",
+      "metaDescription": "Simple habits that help preserve finish quality between seasons and long hauls."
+    }
+  }
+]
