@@ -1,11 +1,17 @@
 export interface PortableTextSpan {
-  _type?: string;
-  text?: string;
+  _type: string;
+  text: string;
+  marks?: string[];
+  _key?: string;
+  [key: string]: unknown;
 }
 
 export interface PortableTextBlock {
-  _type?: string;
-  children?: PortableTextSpan[];
+  _type: string;
+  children: PortableTextSpan[];
+  _key?: string;
+  style?: string;
+  markDefs?: Array<Record<string, unknown>>;
   [key: string]: unknown;
 }
 

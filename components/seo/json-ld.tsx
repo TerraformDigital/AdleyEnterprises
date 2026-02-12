@@ -148,13 +148,8 @@ export function BreadcrumbJsonLd({
 function toPlainText(blocks: FaqItem["answer"]) {
   return blocks
     .map((block) => {
-      const children = Array.isArray(block.children)
-        ? (block.children as Array<Record<string, unknown>>)
-        : [];
-
-      return children
-        .map((child) => (typeof child.text === "string" ? child.text : ""))
-        .join("");
+      const children = Array.isArray(block.children) ? block.children : [];
+      return children.map((child) => child.text).join("");
     })
     .join(" ");
 }

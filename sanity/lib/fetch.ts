@@ -18,7 +18,8 @@ export async function sanityFetch<T>({
   }
 
   try {
-    return await client.fetch<T>(query, params, {
+    const queryParams = params ?? {};
+    return await client.fetch<T>(query, queryParams, {
       next: { revalidate }
     });
   } catch (error) {
