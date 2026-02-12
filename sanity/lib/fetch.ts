@@ -19,9 +19,15 @@ export async function sanityFetch<T>({
 
   try {
     const queryParams = params ?? {};
-    return await client.fetch<T>(query, queryParams, {
+    const data = await client.fetch<T | null>(query, queryParams, {
       next: { revalidate }
     });
+
+    if (data === null || data === undefined) {
+      return fallback;
+    }
+
+    return data;
   } catch (error) {
     console.error("Sanity fetch failed, serving fallback data", error);
     return fallback;
