@@ -48,6 +48,11 @@ export default async function HomePage() {
         eyebrow="Fiberglass Boat Repair Specialists"
         title="Fiberglass Boat Repair for Melrose and Central Minnesota"
         description="Adley Enterprises LLC provides fiberglass-only repair services, including hull collision repair, gel coat refinishing, dent/scratch correction, and buffing/waxing."
+        backgroundVideo={{
+          src: "/video/homepage-hero-background.mp4",
+          type: "video/mp4",
+          poster: "/images/fiberglass-boat-repair-wide.avif"
+        }}
         cta={
           <div className="inline-actions">
             <TrackedPhoneLink phone={settings.phone} context="home_hero" className="button button-primary">
