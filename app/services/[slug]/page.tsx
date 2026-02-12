@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -7,6 +8,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { getServiceMedia } from "@/lib/service-images";
 import {
   getFaqItems,
   getLocationPages,
@@ -55,6 +57,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  const media = getServiceMedia(service.slug);
+
   return (
     <>
       <PageHero
@@ -73,10 +77,37 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         }
       />
 
+      <section className="shell page-section">
+        <div className="service-hero-image-wrap">
+          <Image
+            src={media.hero.src}
+            alt={media.hero.alt}
+            fill
+            sizes="(max-width: 900px) 92vw, 1120px"
+            className="service-hero-image"
+            priority
+          />
+        </div>
+      </section>
+
       <section className="shell page-section two-col">
         <article className="prose">
           <h2>Service Overview</h2>
           <RichText value={service.body} />
+          <h2>Recent Project Photos</h2>
+          <div className="service-gallery-grid">
+            {media.gallery.map((asset, index) => (
+              <figure key={`${asset.src}-${index}`} className="service-gallery-item">
+                <Image
+                  src={asset.src}
+                  alt={asset.alt}
+                  fill
+                  sizes="(max-width: 900px) 92vw, (max-width: 1120px) 50vw, 500px"
+                  className="service-gallery-image"
+                />
+              </figure>
+            ))}
+          </div>
           <h2>Quick Answer</h2>
           <p>
             {service.title} is available for fiberglass boats within approximately {settings.serviceRadiusMiles} miles of
