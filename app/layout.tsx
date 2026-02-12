@@ -21,7 +21,8 @@ export const metadata: Metadata = {
   keywords: PRIMARY_KEYWORDS,
   alternates: {
     canonical: SITE_URL
-  }
+  },
+  robots: process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : { index: true, follow: true }
 };
 
 export default async function RootLayout({

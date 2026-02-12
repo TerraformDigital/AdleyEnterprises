@@ -23,9 +23,11 @@ export function buildMetadata({
   path: string;
   seo?: SeoFields;
 }): Metadata {
+  const isPreviewDeployment = process.env.VERCEL_ENV === "preview";
   const finalTitle = seo?.metaTitle ?? title ?? defaultTitle;
   const finalDescription = seo?.metaDescription ?? description ?? defaultDescription;
   const canonical = seo?.canonicalUrl ?? toAbsoluteUrl(path);
+  const noIndex = seo?.noIndex ?? isPreviewDeployment;
 
   return {
     title: finalTitle,
@@ -33,7 +35,7 @@ export function buildMetadata({
     alternates: {
       canonical
     },
-    robots: seo?.noIndex ? { index: false, follow: false } : { index: true, follow: true },
+    robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     openGraph: {
       title: finalTitle,
       description: finalDescription,
