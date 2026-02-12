@@ -38,10 +38,12 @@ export async function getSiteSettings() {
 }
 
 export async function getServices() {
-  return sanityFetch<Service[]>({
+  const services = await sanityFetch<Service[]>({
     query: servicesQuery,
     fallback: fallbackServices
   });
+
+  return services.length > 0 ? services : fallbackServices;
 }
 
 export async function getServiceBySlug(slug: string) {
@@ -55,10 +57,12 @@ export async function getServiceBySlug(slug: string) {
 }
 
 export async function getLocationPages() {
-  return sanityFetch<LocationPage[]>({
+  const locations = await sanityFetch<LocationPage[]>({
     query: locationPagesQuery,
     fallback: fallbackLocations
   });
+
+  return locations.length > 0 ? locations : fallbackLocations;
 }
 
 export async function getLocationPageBySlug(slug: string) {
@@ -78,24 +82,30 @@ export async function getProductBySlug(slug: string) {
 }
 
 export async function getProducts() {
-  return sanityFetch<Product[]>({
+  const products = await sanityFetch<Product[]>({
     query: productsQuery,
     fallback: [fallbackProduct]
   });
+
+  return products.length > 0 ? products : [fallbackProduct];
 }
 
 export async function getFaqItems() {
-  return sanityFetch<FaqItem[]>({
+  const faqs = await sanityFetch<FaqItem[]>({
     query: faqItemsQuery,
     fallback: fallbackFaqs
   });
+
+  return faqs.length > 0 ? faqs : fallbackFaqs;
 }
 
 export async function getBlogPosts() {
-  return sanityFetch<BlogPost[]>({
+  const posts = await sanityFetch<BlogPost[]>({
     query: blogPostsQuery,
     fallback: fallbackBlogPosts
   });
+
+  return posts.length > 0 ? posts : fallbackBlogPosts;
 }
 
 export async function getBlogPostBySlug(slug: string) {

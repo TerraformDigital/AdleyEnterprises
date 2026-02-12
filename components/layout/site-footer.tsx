@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
@@ -8,6 +9,13 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
     <footer className="site-footer">
       <div className="shell footer-grid">
         <div>
+          <Image
+            src="/images/adley-enterprises-logo.avif"
+            alt="Adley Enterprises LLC"
+            className="footer-logo"
+            width={260}
+            height={70}
+          />
           <h2>{settings.legalName}</h2>
           <p>
             {settings.streetAddress}, {settings.city}, {settings.region} {settings.postalCode}

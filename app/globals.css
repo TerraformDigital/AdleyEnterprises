@@ -71,9 +71,24 @@ p {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   letter-spacing: 0.2px;
   color: var(--ink);
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.brand-text {
+  font-size: 0.94rem;
+  white-space: nowrap;
 }
 
 .nav-list {
@@ -335,6 +350,13 @@ select:focus {
   color: #d7e2e8;
 }
 
+.footer-logo {
+  height: 38px;
+  width: auto;
+  display: block;
+  margin-bottom: 0.65rem;
+}
+
 .site-footer p,
 .site-footer h2,
 .site-footer a,
@@ -371,5 +393,13 @@ select:focus {
   .header-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .brand-logo {
+    height: 34px;
+  }
+
+  .brand-text {
+    font-size: 0.85rem;
   }
 }

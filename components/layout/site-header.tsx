@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -14,7 +15,15 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link href="/" className="brand">
-          <span>Adley Enterprises LLC</span>
+          <Image
+            src="/images/adley-enterprises-logo.avif"
+            alt="Adley Enterprises LLC"
+            className="brand-logo"
+            width={300}
+            height={80}
+            priority
+          />
+          <span className="brand-text">Adley Enterprises LLC</span>
         </Link>
         <nav aria-label="Main navigation">
           <ul className="nav-list">
