@@ -2,6 +2,11 @@ import { PortableText, type PortableTextComponents } from "@portabletext/react";
 
 import type { PortableTextValue } from "@/types/content";
 
+type PortableTextTypedObject = {
+  _type: string;
+  _key?: string;
+};
+
 const components: PortableTextComponents = {
   block: {
     normal: ({ children }) => <p>{children}</p>,
@@ -26,5 +31,5 @@ export function RichText({ value }: { value?: PortableTextValue }) {
     return null;
   }
 
-  return <PortableText value={value} components={components} />;
+  return <PortableText value={value as unknown as PortableTextTypedObject[]} components={components} />;
 }
