@@ -27,7 +27,7 @@ export default async function FaqPage() {
 
       <section className="shell page-section faq-list">
         {faqs.map((faq) => (
-          <details key={faq.question} open>
+          <details key={faq.question}>
             <summary>{faq.question}</summary>
             <div className="prose">
               <RichText value={faq.answer} />
