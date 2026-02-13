@@ -6,14 +6,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { TrackingScripts } from "@/components/analytics/tracking-scripts";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { LocalBusinessJsonLd } from "@/components/seo/json-ld";
-import { PRIMARY_KEYWORDS, SITE_URL } from "@/lib/constants";
+import { PRIMARY_KEYWORDS, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { UNIVERSAL_OG_IMAGE_PATH, toAbsoluteUrl } from "@/lib/metadata";
 import { getSiteSettings } from "@/sanity/lib/api";
 
 import "./globals.css";
 
 const UNIVERSAL_OG_IMAGE = toAbsoluteUrl(UNIVERSAL_OG_IMAGE_PATH);
+const isPreviewDeployment = process.env.VERCEL_ENV === "preview";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -22,25 +22,25 @@ export const metadata: Metadata = {
     template: "%s | Adley Enterprises LLC"
   },
   description:
-    "Fiberglass boat repair, hull collision repair, gel coat refinishing, and marine detailing services in Central Minnesota.",
+    "Fiberglass boat repair and adjustable transducer mounts in Melrose, MN. Hull repair, gel coat, buffing, and waxing. Serving Central Minnesota. Call (320) 726-0822.",
   keywords: PRIMARY_KEYWORDS,
   alternates: {
-    canonical: SITE_URL
+    canonical: "/"
   },
   openGraph: {
     title: "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
     description:
-      "Fiberglass boat repair, hull collision repair, gel coat refinishing, and marine detailing services in Central Minnesota.",
-    url: SITE_URL,
+      "Fiberglass boat repair and adjustable transducer mounts in Melrose, MN. Hull repair, gel coat, buffing, and waxing. Serving Central Minnesota. Call (320) 726-0822.",
+    url: "/",
     type: "website",
-    siteName: "Adley Enterprises LLC",
+    siteName: SITE_NAME,
     locale: "en_US",
     images: [
       {
         url: UNIVERSAL_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Adley Enterprises LLC"
+        alt: "Adley Enterprises LLC - Fiberglass Boat Repair in Melrose, MN"
       }
     ]
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
     description:
-      "Fiberglass boat repair, hull collision repair, gel coat refinishing, and marine detailing services in Central Minnesota.",
+      "Fiberglass boat repair and adjustable transducer mounts in Melrose, MN. Hull repair, gel coat, buffing, and waxing. Serving Central Minnesota. Call (320) 726-0822.",
     images: [UNIVERSAL_OG_IMAGE]
   },
   icons: {
@@ -68,12 +68,28 @@ export const metadata: Metadata = {
       { url: "/images/adley-site-icons/apple-touch-icon-60x60.png", sizes: "60x60", type: "image/png" }
     ]
   },
-  manifest: "/images/adley-site-icons/site.webmanifest",
+  manifest: "/site.webmanifest",
   other: {
     "msapplication-TileColor": "#111111",
-    "msapplication-config": "/images/adley-site-icons/browserconfig.xml"
+    "msapplication-config": "/browserconfig.xml"
   },
-  robots: process.env.VERCEL_ENV === "preview" ? { index: false, follow: false } : { index: true, follow: true }
+  robots:
+    isPreviewDeployment
+      ? {
+          index: false,
+          follow: false
+        }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1
+          }
+        }
 };
 
 export const viewport: Viewport = {
@@ -95,7 +111,6 @@ export default async function RootLayout({
         </a>
         <TrackingScripts />
         <SiteHeader settings={settings} />
-        <LocalBusinessJsonLd settings={settings} />
         <main id="main-content">{children}</main>
         <SiteFooter settings={settings} />
         <Analytics />

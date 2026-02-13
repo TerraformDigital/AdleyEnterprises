@@ -30,7 +30,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         </div>
 
         <div>
-          <h2>Top Pages</h2>
+          <p className="footer-section-title">Top Pages</p>
           <ul className="list-reset">
             <li>
               <Link href="/services/fiberglass-boat-repair">Fiberglass Boat Repair</Link>
@@ -48,7 +48,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
         </div>
 
         <div>
-          <h2>Hours</h2>
+          <p className="footer-section-title">Hours</p>
           <ul className="list-reset">
             {settings.hours.map((hour) => (
               <li key={hour.day}>

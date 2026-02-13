@@ -1,17 +1,16 @@
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { getSiteSettings } from "@/sanity/lib/api";
 
 export const revalidate = 300;
 
 export async function generateMetadata() {
-  const settings = await getSiteSettings();
-
   return buildMetadata({
-    title: `About ${settings.legalName}`,
+    title: "About Adley Enterprises | Fiberglass Boat Repair, Melrose MN",
     description:
-      "Learn about Adley Enterprises LLC and our fiberglass-only boat repair services in Central Minnesota.",
+      "Meet the team behind Adley Enterprises. 15+ years of fiberglass boat repair experience in Melrose, Minnesota.",
     path: "/about"
   });
 }
@@ -37,6 +36,12 @@ export default async function AboutPage() {
       </section>
 
       <CtaBanner settings={settings} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "About", href: "/about" }
+        ]}
+      />
     </>
   );
 }

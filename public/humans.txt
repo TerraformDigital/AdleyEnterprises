@@ -1,0 +1,14 @@
+/* TEAM */
+Built by: Terraform Digital LLC
+Site: https://terraformdigital.com
+Location: Sauk Rapids, MN
+
+/* CLIENT */
+Adley Enterprises LLC
+Location: Melrose, MN
+
+/* TECHNOLOGY */
+Next.js, Sanity CMS, Vercel
+
+/* LAST UPDATE */
+2026-02-13

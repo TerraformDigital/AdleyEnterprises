@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { PageHero } from "@/components/sections/page-hero";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { getBlogCover } from "@/lib/blog-covers";
 import { buildMetadata } from "@/lib/metadata";
 import { getBlogPosts } from "@/sanity/lib/api";
@@ -10,9 +11,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Boat Repair Blog",
+    title: "Blog - Fiberglass Boat Repair Tips & News | Adley Enterprises",
     description:
-      "Educational posts about fiberglass repair, gel coat restoration, and maintenance for boat owners.",
+      "Tips on fiberglass boat maintenance, repair guides, transducer mounting advice, and news from Adley Enterprises in Melrose, MN.",
     path: "/blog"
   });
 }
@@ -54,6 +55,12 @@ export default async function BlogIndexPage() {
           );
         })}
       </section>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Blog", href: "/blog" }
+        ]}
+      />
     </>
   );
 }

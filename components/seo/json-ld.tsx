@@ -1,25 +1,29 @@
-import { toAbsoluteUrl } from "@/lib/metadata";
+import { JsonLd } from "@/components/JsonLd";
 import type { BlogCover } from "@/lib/blog-covers";
+import { toAbsoluteUrl } from "@/lib/metadata";
+import { BUSINESS_INFO } from "@/lib/seo";
 import type { BlogPost, FaqItem, Product, Service, SiteSettings } from "@/types/content";
 
-function JsonLd({ data }: { data: Record<string, unknown> }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data)
-      }}
-    />
-  );
+const BUSINESS_ID = `${toAbsoluteUrl("/")}#business`;
+const ORGANIZATION_ID = `${toAbsoluteUrl("/")}#organization`;
+
+function toDialString(phone: string) {
+  const digits = phone.replace(/[^\d+]/g, "");
+  return digits.startsWith("+") ? digits : `+${digits}`;
 }
 
 export function LocalBusinessJsonLd({ settings }: { settings: SiteSettings }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": BUSINESS_ID,
     name: settings.legalName,
+    image: toAbsoluteUrl(BUSINESS_INFO.logoPath),
+    logo: toAbsoluteUrl(BUSINESS_INFO.logoPath),
+    description:
+      "Fiberglass boat repair specialists and adjustable transducer mount manufacturer in Melrose, Minnesota. Serving Central MN including St. Cloud, Sauk Rapids, and surrounding communities.",
     url: toAbsoluteUrl("/"),
-    telephone: settings.phone,
+    telephone: toDialString(settings.phone),
     email: settings.email,
     address: {
       "@type": "PostalAddress",
@@ -29,57 +33,118 @@ export function LocalBusinessJsonLd({ settings }: { settings: SiteSettings }) {
       postalCode: settings.postalCode,
       addressCountry: settings.country
     },
-    openingHoursSpecification: settings.hours
-      .filter((hour) => hour.opens && hour.closes)
-      .map((hour) => ({
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: hour.day,
-        opens: hour.opens,
-        closes: hour.closes
-      })),
-    areaServed: {
-      "@type": "GeoCircle",
-      geoMidpoint: {
-        "@type": "GeoCoordinates",
-        latitude: 45.6736,
-        longitude: -94.8048
-      },
-      geoRadius: settings.serviceRadiusMiles * 1609.34
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: BUSINESS_INFO.geo.latitude,
+      longitude: BUSINESS_INFO.geo.longitude
     },
-    description: settings.aboutSummary
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        opens: "06:30",
+        closes: "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Friday",
+        opens: "06:30",
+        closes: "16:00",
+        description: "By appointment only"
+      }
+    ],
+    priceRange: "$$",
+    areaServed: [
+      { "@type": "City", name: "Melrose" },
+      { "@type": "City", name: "St. Cloud" },
+      { "@type": "City", name: "Sauk Rapids" },
+      { "@type": "City", name: "Waite Park" },
+      { "@type": "City", name: "St. Joseph" },
+      { "@type": "City", name: "Sauk Centre" },
+      { "@type": "City", name: "Cold Spring" },
+      { "@type": "City", name: "Long Prairie" },
+      { "@type": "City", name: "Albany" },
+      { "@type": "City", name: "Paynesville" },
+      { "@type": "City", name: "Richmond" }
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Fiberglass Boat Repair Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fiberglass Boat Repair" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hull Collision Repair" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gel Coat and Exterior Painting" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dent and Scratch Repair" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Buffing and Waxing" } }
+      ]
+    },
+    sameAs: [BUSINESS_INFO.ebayStoreUrl]
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function OrganizationJsonLd({ settings }: { settings: SiteSettings }) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": ORGANIZATION_ID,
+    name: settings.legalName,
+    url: toAbsoluteUrl("/"),
+    logo: toAbsoluteUrl(BUSINESS_INFO.logoPath),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: toDialString(settings.phone),
+      contactType: "customer service",
+      email: settings.email,
+      availableLanguage: "English",
+      areaServed: "US"
+    }
   };
 
   return <JsonLd data={data} />;
 }
 
 export function ServiceJsonLd({
-  service,
-  settings
+  service
 }: {
   service: Service;
-  settings: SiteSettings;
 }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: service.title,
-    name: `${service.title} | ${settings.legalName}`,
-    provider: {
-      "@type": "LocalBusiness",
-      name: settings.legalName,
-      telephone: settings.phone,
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: settings.streetAddress,
-        addressLocality: settings.city,
-        addressRegion: settings.region,
-        postalCode: settings.postalCode,
-        addressCountry: settings.country
-      }
-    },
-    areaServed: `${settings.serviceRadiusMiles} mile radius around ${settings.city}, ${settings.region}`,
+    name: service.title,
     description: service.shortDescription,
+    provider: { "@id": BUSINESS_ID },
+    areaServed: { "@type": "State", name: "Minnesota" },
+    serviceType: service.title,
     url: toAbsoluteUrl(`/services/${service.slug}`)
+  };
+
+  return <JsonLd data={data} />;
+}
+
+export function CityServiceJsonLd({
+  city,
+  slug,
+  description
+}: {
+  city: string;
+  slug: string;
+  description: string;
+}) {
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: `Fiberglass Boat Repair Near ${city}, MN`,
+    description,
+    provider: { "@id": BUSINESS_ID },
+    areaServed: {
+      "@type": "City",
+      name: city,
+      containedInPlace: { "@type": "State", name: "Minnesota" }
+    },
+    url: toAbsoluteUrl(`/service-areas/${slug}`)
   };
 
   return <JsonLd data={data} />;
@@ -115,23 +180,20 @@ export function ProductJsonLd({
       ? product.images[0].url.startsWith("http")
         ? product.images[0].url
         : toAbsoluteUrl(product.images[0].url)
-      : undefined;
+      : toAbsoluteUrl(BUSINESS_INFO.ogImagePath);
 
   const data = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.title,
-    description: product.summary,
     brand: {
       "@type": "Brand",
-      name: product.brand || settings.legalName
+      name: product.brand || "Adley Enterprises"
     },
     mpn: product.mpn,
     color: product.color,
     material: product.material,
-    category: product.category || "Marine hardware",
     countryOfOrigin: "US",
-    image: imageUrl ? [imageUrl] : undefined,
     manufacturer: {
       "@type": "Organization",
       name: settings.legalName,
@@ -144,12 +206,6 @@ export function ProductJsonLd({
         addressCountry: settings.country
       }
     },
-    additionalProperty: product.variants.map((variant) => ({
-      "@type": "PropertyValue",
-      name: "Variant",
-      value: variant.name
-    })),
-    url: productUrl,
     offers: product.price
       ? {
           "@type": "Offer",
@@ -157,10 +213,7 @@ export function ProductJsonLd({
           priceCurrency: product.priceCurrency || "USD",
           availability: "https://schema.org/InStock",
           url: productUrl,
-          seller: {
-            "@type": "Organization",
-            name: settings.legalName
-          },
+          seller: { "@id": BUSINESS_ID },
           shippingDetails: {
             "@type": "OfferShippingDetails",
             shippingRate: {
@@ -171,6 +224,14 @@ export function ProductJsonLd({
             shippingDestination: {
               "@type": "DefinedRegion",
               addressCountry: "US"
+            },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              businessDays: {
+                "@type": "QuantitativeValue",
+                minValue: 2,
+                maxValue: 5
+              }
             }
           },
           hasMerchantReturnPolicy: {
@@ -180,7 +241,10 @@ export function ProductJsonLd({
             returnMethod: "https://schema.org/ReturnByMail"
           }
         }
-      : undefined
+      : undefined,
+    image: imageUrl,
+    description: product.summary,
+    category: product.category || "Sporting Goods > Fishing > Fishfinders"
   };
 
   return <JsonLd data={data} />;
@@ -238,21 +302,28 @@ export function BlogPostingJsonLd({
 
   const data = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     headline: post.title,
     description: post.excerpt,
     image: [imageUrl],
     datePublished: post.publishedAt,
     dateModified: post.publishedAt,
-    mainEntityOfPage: canonical,
     author: {
       "@type": "Organization",
-      name: "Adley Enterprises LLC"
+      name: "Adley Enterprises LLC",
+      url: toAbsoluteUrl("/")
     },
     publisher: {
       "@type": "Organization",
       name: "Adley Enterprises LLC",
-      url: toAbsoluteUrl("/")
+      logo: {
+        "@type": "ImageObject",
+        url: toAbsoluteUrl(BUSINESS_INFO.logoPath)
+      }
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": canonical
     }
   };
 

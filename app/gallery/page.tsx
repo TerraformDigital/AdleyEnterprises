@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/sections/page-hero";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { getProjects } from "@/sanity/lib/api";
 
@@ -6,8 +7,8 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Repair Project Gallery",
-    description: "Browse recent fiberglass repair project examples from Adley Enterprises LLC.",
+    title: "Fiberglass Repair Gallery | Adley Enterprises",
+    description: "Browse recent fiberglass repair project examples from Adley Enterprises in Melrose, MN.",
     path: "/gallery"
   });
 }
@@ -43,6 +44,12 @@ export default async function GalleryPage() {
           </div>
         )}
       </section>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Gallery", href: "/gallery" }
+        ]}
+      />
     </>
   );
 }

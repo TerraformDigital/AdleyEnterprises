@@ -1,6 +1,6 @@
 import { RichText } from "@/components/portable-text";
 import { PageHero } from "@/components/sections/page-hero";
-import { FaqJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, FaqJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { getFaqItems } from "@/sanity/lib/api";
 
@@ -8,8 +8,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Boat Repair FAQ",
-    description: "Answers to common fiberglass boat repair and estimate questions.",
+    title: "FAQ - Fiberglass Boat Repair & Transducer Mounts | Adley",
+    description:
+      "Frequently asked questions about fiberglass boat repair, transducer mounts, estimates, and service areas. Adley Enterprises, Melrose, MN.",
     path: "/faq"
   });
 }
@@ -37,6 +38,12 @@ export default async function FaqPage() {
       </section>
 
       <FaqJsonLd faqs={faqs} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "FAQ", href: "/faq" }
+        ]}
+      />
     </>
   );
 }

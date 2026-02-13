@@ -5,7 +5,7 @@ import { Factory, ShieldCheck, SlidersHorizontal } from "lucide-react";
 import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
-import { SimpleFaqJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, SimpleFaqJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { formatPrice, getProductImage, productPageFaqs } from "@/lib/products";
 import { getProducts, getSiteSettings } from "@/sanity/lib/api";
@@ -14,9 +14,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Adjustable Transducer Mounts - American Made",
+    title: "Adjustable Transducer Mounts - American Made | Adley Enterprises",
     description:
-      "American-made adjustable transducer mounting boards built in Melrose, MN. Single ($91) and dual ($175.50) configurations with free shipping.",
+      "American-made adjustable transducer mounting boards built in Melrose, MN. Single ($91) and dual ($175.50) configurations. Free shipping.",
     path: "/products"
   });
 }
@@ -168,6 +168,12 @@ export default async function ProductsPage() {
 
       <CtaBanner settings={settings} />
       <SimpleFaqJsonLd items={productPageFaqs} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Products", href: "/products" }
+        ]}
+      />
     </>
   );
 }

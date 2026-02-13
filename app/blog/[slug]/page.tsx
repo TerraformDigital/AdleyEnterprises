@@ -27,12 +27,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
   }
 
+  const cover = getBlogCover(post);
+
   return buildMetadata({
     title: post.title,
     description: post.excerpt,
     path: `/blog/${post.slug}`,
     seo: post.seo,
-    imageUrl: post.coverImageUrl
+    imageUrl: cover.url,
+    openGraphType: "article",
+    publishedTime: post.publishedAt,
+    authors: ["Adley Enterprises LLC"]
   });
 }
 

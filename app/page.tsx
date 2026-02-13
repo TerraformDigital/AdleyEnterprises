@@ -5,8 +5,13 @@ import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
 import { Reveal } from "@/components/ui/reveal";
-import { FaqJsonLd } from "@/components/seo/json-ld";
+import {
+  LocalBusinessJsonLd,
+  OrganizationJsonLd,
+  SimpleFaqJsonLd
+} from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { HOMEPAGE_FAQ_ITEMS } from "@/lib/seo";
 import { getServiceIcon } from "@/lib/service-icons";
 import {
   getFaqItems,
@@ -18,14 +23,12 @@ import {
 export const revalidate = 300;
 
 export async function generateMetadata() {
-  const settings = await getSiteSettings();
-
   return buildMetadata({
-    title: `${settings.legalName} | Fiberglass Boat Repair in ${settings.city}, ${settings.region}`,
+    title: "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
     description:
-      "Fiberglass-only boat repair specialists serving Central Minnesota. Call for hull collision repair, gel coat work, dent repair, buffing, and waxing.",
+      "Fiberglass boat repair specialists in Melrose, MN. Hull collision repair, gel coat refinishing, scratch and dent correction, buffing and waxing. Serving Central Minnesota. Call (320) 726-0822.",
     path: "/",
-    seo: settings.seo
+    openGraphType: "website"
   });
 }
 
@@ -159,7 +162,9 @@ export default async function HomePage() {
       </Reveal>
 
       <CtaBanner settings={settings} />
-      <FaqJsonLd faqs={faqs.slice(0, 8)} />
+      <LocalBusinessJsonLd settings={settings} />
+      <OrganizationJsonLd settings={settings} />
+      <SimpleFaqJsonLd items={HOMEPAGE_FAQ_ITEMS} />
     </>
   );
 }

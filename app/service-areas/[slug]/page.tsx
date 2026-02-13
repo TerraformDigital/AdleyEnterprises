@@ -5,8 +5,9 @@ import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { RichText } from "@/components/portable-text";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
-import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, CityServiceJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
+import { LOCATION_METADATA_BY_SLUG } from "@/lib/seo";
 import {
   getLocationPageBySlug,
   getLocationPages,
@@ -33,11 +34,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
   }
 
+  const metadataOverride = LOCATION_METADATA_BY_SLUG[location.slug];
+
   return buildMetadata({
-    title: `${location.title} | ${location.city}, ${location.region}`,
-    description: location.shortDescription,
-    path: `/service-areas/${location.slug}`,
-    seo: location.seo
+    title: metadataOverride?.title ?? `Fiberglass Boat Repair Near ${location.city}, ${location.region} | Adley`,
+    description: metadataOverride?.description ?? location.shortDescription,
+    path: `/service-areas/${location.slug}`
   });
 }
 
@@ -96,6 +98,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       <CtaBanner settings={settings} />
+      <CityServiceJsonLd city={location.city} slug={location.slug} description={location.shortDescription} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", href: "/" },

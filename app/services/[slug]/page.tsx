@@ -9,6 +9,7 @@ import { PageHero } from "@/components/sections/page-hero";
 import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/seo/json-ld";
 import { Reveal } from "@/components/ui/reveal";
 import { buildMetadata } from "@/lib/metadata";
+import { SERVICE_METADATA_BY_SLUG } from "@/lib/seo";
 import { getServiceIcon } from "@/lib/service-icons";
 import { getServiceMedia } from "@/lib/service-images";
 import {
@@ -38,11 +39,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
   }
 
+  const metadataOverride = SERVICE_METADATA_BY_SLUG[service.slug];
+
   return buildMetadata({
-    title: `${service.title} in Central Minnesota`,
-    description: service.shortDescription,
-    path: `/services/${service.slug}`,
-    seo: service.seo
+    title: metadataOverride?.title ?? `${service.title} | Adley Enterprises`,
+    description: metadataOverride?.description ?? service.shortDescription,
+    path: `/services/${service.slug}`
   });
 }
 
@@ -168,7 +170,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       </Reveal>
 
       <CtaBanner settings={settings} />
-      <ServiceJsonLd service={service} settings={settings} />
+      <ServiceJsonLd service={service} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", href: "/" },

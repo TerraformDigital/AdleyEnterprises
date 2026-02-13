@@ -1,6 +1,7 @@
 import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { QuoteForm } from "@/components/forms/quote-form";
 import { PageHero } from "@/components/sections/page-hero";
+import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { getSiteSettings } from "@/sanity/lib/api";
 
@@ -8,9 +9,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Contact and Request Quote",
+    title: "Contact Us & Request a Quote | Adley Enterprises",
     description:
-      "Call Adley Enterprises LLC or submit a quote form for fiberglass boat repair and refinishing services.",
+      "Request a fiberglass repair estimate or order transducer mounts. Call (320) 726-0822 or use our online form. Adley Enterprises, Melrose, MN.",
     path: "/contact"
   });
 }
@@ -74,6 +75,12 @@ export default async function ContactPage() {
           <QuoteForm />
         </div>
       </section>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Contact", href: "/contact" }
+        ]}
+      />
     </>
   );
 }

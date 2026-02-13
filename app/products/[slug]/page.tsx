@@ -8,6 +8,7 @@ import { CtaBanner } from "@/components/sections/cta-banner";
 import { BreadcrumbJsonLd, ProductJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { formatPrice, getProductImage } from "@/lib/products";
+import { PRODUCT_METADATA_BY_SLUG } from "@/lib/seo";
 import { getProductBySlug, getProducts, getSiteSettings } from "@/sanity/lib/api";
 
 export const revalidate = 300;
@@ -29,12 +30,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     });
   }
 
+  const metadataOverride = PRODUCT_METADATA_BY_SLUG[product.slug];
+
   return buildMetadata({
-    title: `${product.title} | Adley Enterprises Transducer Mounts`,
+    title: metadataOverride?.title ?? `${product.title} | Adley Enterprises Transducer Mounts`,
     description:
+      metadataOverride?.description ??
       `${product.title} - ${formatPrice(product.price, product.priceCurrency)}. Adjustable transducer mount made in Minnesota with free shipping in the USA.`,
     path: `/products/${product.slug}`,
-    seo: product.seo,
     imageUrl: getProductImage(product).url
   });
 }
