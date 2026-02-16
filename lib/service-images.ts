@@ -11,6 +11,18 @@ export interface ServiceMedia {
 
 const galleryAssets: ServiceMediaAsset[] = [
   {
+    src: "/images/2456420215974847372.jpg",
+    alt: "Fiberglass boat staged in the Adley shop for inspection and repair planning"
+  },
+  {
+    src: "/images/3169520977380341354.jpg",
+    alt: "Deep scratches on a fiberglass hull before dent and scratch repair"
+  },
+  {
+    src: "/images/5199758888572573424.jpg",
+    alt: "Fiberglass boat side after refinishing work in the Adley Enterprises shop"
+  },
+  {
     src: "/images/fiberglass-boat-repair-4-3-one.avif",
     alt: "Fiberglass boat hull repair preparation work at Adley Enterprises"
   },
@@ -45,18 +57,18 @@ const serviceMediaBySlug: Record<string, ServiceMedia> = {
   "fiberglass-boat-repair": {
     card: galleryAssets[0],
     hero: {
-      ...sharedHero,
+      ...galleryAssets[0],
       alt: "Fiberglass boat structural and cosmetic repair in progress at Adley Enterprises"
     },
-    gallery: [galleryAssets[0], galleryAssets[1], galleryAssets[2], galleryAssets[3]]
+    gallery: [galleryAssets[0], galleryAssets[1], galleryAssets[2], galleryAssets[3], galleryAssets[4]]
   },
   "hull-collision-repair": {
-    card: galleryAssets[4],
+    card: galleryAssets[1],
     hero: {
-      ...galleryAssets[4],
+      ...galleryAssets[0],
       alt: "Hull collision repair process with fiberglass reconstruction and finish correction"
     },
-    gallery: [galleryAssets[4], galleryAssets[1], galleryAssets[2], galleryAssets[0]]
+    gallery: [galleryAssets[1], galleryAssets[0], galleryAssets[2], galleryAssets[6]]
   },
   "gel-coat-exterior-painting": {
     card: galleryAssets[2],
@@ -64,23 +76,23 @@ const serviceMediaBySlug: Record<string, ServiceMedia> = {
       ...sharedHero,
       alt: "Gel coat and exterior fiberglass painting workflow for restored boat finish"
     },
-    gallery: [galleryAssets[2], galleryAssets[1], galleryAssets[3], galleryAssets[0]]
+    gallery: [galleryAssets[2], galleryAssets[4], galleryAssets[5], galleryAssets[0]]
   },
   "dent-scratch-repair": {
-    card: galleryAssets[3],
+    card: galleryAssets[1],
     hero: {
-      ...sharedHero,
+      ...galleryAssets[1],
       alt: "Dent and scratch repair with fiberglass finish blending and polishing"
     },
-    gallery: [galleryAssets[3], galleryAssets[2], galleryAssets[1], galleryAssets[0]]
+    gallery: [galleryAssets[1], galleryAssets[0], galleryAssets[2], galleryAssets[5]]
   },
   "buffing-waxing": {
-    card: galleryAssets[5],
+    card: galleryAssets[2],
     hero: {
-      ...galleryAssets[5],
+      ...galleryAssets[2],
       alt: "Buffing and waxing service for long-lasting fiberglass shine and protection"
     },
-    gallery: [galleryAssets[5], galleryAssets[3], galleryAssets[2], galleryAssets[1]]
+    gallery: [galleryAssets[2], galleryAssets[8], galleryAssets[5], galleryAssets[4]]
   }
 };
 
