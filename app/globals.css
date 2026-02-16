@@ -767,6 +767,10 @@ button:focus-visible {
   grid-template-columns: 1fr 1.2fr;
 }
 
+.contact-map-heading {
+  margin-top: 1.15rem;
+}
+
 .map-embed-wrap {
   position: relative;
   width: 100%;
