@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
+import { formatBusinessHoursRange } from "@/lib/hours";
 import type { SiteSettings } from "@/types/content";
 
 export function SiteFooter({ settings }: { settings: SiteSettings }) {
@@ -52,7 +53,7 @@ export function SiteFooter({ settings }: { settings: SiteSettings }) {
           <ul className="list-reset">
             {settings.hours.map((hour) => (
               <li key={hour.day}>
-                {hour.day}: {hour.notes ?? `${hour.opens}-${hour.closes}`}
+                {hour.day}: {hour.notes ?? formatBusinessHoursRange(hour.opens, hour.closes)}
               </li>
             ))}
           </ul>

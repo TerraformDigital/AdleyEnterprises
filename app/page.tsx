@@ -24,9 +24,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
+    title: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
     description:
-      "Fiberglass boat repair specialists in Melrose, MN. Hull collision repair, gel coat refinishing, scratch and dent correction, buffing and waxing. Serving Central Minnesota. Call (320) 726-0822.",
+      "Fiberglass boat repair specialists for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, scratch and dent correction, buffing and waxing. Call (320) 726-0822.",
     path: "/",
     openGraphType: "website"
   });
@@ -49,7 +49,7 @@ export default async function HomePage() {
     <>
       <PageHero
         eyebrow="Fiberglass Boat Repair Specialists"
-        title="Fiberglass Boat Repair for Melrose and Central Minnesota"
+        title="Fiberglass Boat Repair for Central Minnesota and the Upper Midwest"
         description="Adley Enterprises LLC provides fiberglass-only repair services, including hull collision repair, gel coat refinishing, dent/scratch correction, and buffing/waxing."
         backgroundVideo={{
           src: "/video/homepage-hero-background.mp4",
@@ -84,7 +84,7 @@ export default async function HomePage() {
                 <Clock3 size={20} />
               </span>
               <h3>15+ Years in Business</h3>
-              <p>Experienced team serving Melrose and surrounding communities.</p>
+              <p>Experienced team serving Central Minnesota and Upper Midwest boat owners.</p>
             </article>
             <article>
               <span className="icon-badge" aria-hidden="true">

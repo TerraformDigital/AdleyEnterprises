@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return buildMetadata({
     title: "Fiberglass Boat Repair Services | Adley Enterprises LLC",
     description:
-      "Comprehensive fiberglass boat repair services in Melrose, MN. Hull collision repair, gel coat refinishing, dent and scratch repair, buffing and waxing. Request a free estimate.",
+      "Comprehensive fiberglass boat repair services for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, dent and scratch repair, buffing and waxing.",
     path: "/services"
   });
 }

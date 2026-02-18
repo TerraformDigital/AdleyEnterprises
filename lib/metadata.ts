@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import type { SeoFields } from "@/types/content";
 
-const defaultTitle = "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN";
+const defaultTitle = "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest";
 const defaultDescription =
-  "Fiberglass boat repair specialists serving Melrose, MN and nearby Central Minnesota communities.";
+  "Fiberglass boat repair specialists serving Central Minnesota and the Upper Midwest.";
 export const UNIVERSAL_OG_IMAGE_PATH = "/images/Adley-Enterprises-OG.jpg";
 
 export const toAbsoluteUrl = (path: string) => {

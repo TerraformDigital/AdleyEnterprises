@@ -2,6 +2,7 @@ import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { QuoteForm } from "@/components/forms/quote-form";
 import { PageHero } from "@/components/sections/page-hero";
 import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
+import { formatBusinessHoursRange } from "@/lib/hours";
 import { buildMetadata } from "@/lib/metadata";
 import { getSiteSettings } from "@/sanity/lib/api";
 
@@ -47,7 +48,7 @@ export default async function ContactPage() {
           <ul className="list-reset">
             {settings.hours.map((hour) => (
               <li key={hour.day}>
-                {hour.day}: {hour.notes ?? `${hour.opens}-${hour.closes}`}
+                {hour.day}: {hour.notes ?? formatBusinessHoursRange(hour.opens, hour.closes)}
               </li>
             ))}
           </ul>
