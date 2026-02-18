@@ -73,8 +73,8 @@ export function LocalBusinessJsonLd({ settings }: { settings: SiteSettings }) {
       itemListElement: [
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fiberglass Boat Repair" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Hull Collision Repair" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gel Coat and Exterior Painting" } },
-        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Dent and Scratch Repair" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gel Coat Repair and Refinishing" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Chip and Scratch Repair" } },
         { "@type": "Offer", itemOffered: { "@type": "Service", name: "Buffing and Waxing" } }
       ]
     },

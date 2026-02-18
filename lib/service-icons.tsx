@@ -1,10 +1,10 @@
 import type { LucideIcon } from "lucide-react";
-import { PaintbrushVertical, ShieldAlert, Sparkles, Wrench } from "lucide-react";
+import { ShieldAlert, Sparkles, Wrench } from "lucide-react";
 
 const serviceIconMap: Record<string, LucideIcon> = {
   "fiberglass-boat-repair": Wrench,
   "hull-collision-repair": ShieldAlert,
-  "gel-coat-exterior-painting": PaintbrushVertical,
+  "gel-coat-exterior-painting": Wrench,
   "dent-scratch-repair": Wrench,
   "buffing-waxing": Sparkles
 };

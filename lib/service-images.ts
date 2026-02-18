@@ -16,7 +16,7 @@ const galleryAssets: ServiceMediaAsset[] = [
   },
   {
     src: "/images/3169520977380341354.jpg",
-    alt: "Deep scratches on a fiberglass hull before dent and scratch repair"
+    alt: "Deep scratches on a fiberglass hull before chip and scratch repair"
   },
   {
     src: "/images/5199758888572573424.jpg",
@@ -74,7 +74,7 @@ const serviceMediaBySlug: Record<string, ServiceMedia> = {
     card: galleryAssets[2],
     hero: {
       ...sharedHero,
-      alt: "Gel coat and exterior fiberglass painting workflow for restored boat finish"
+      alt: "Gel coat repair and fiberglass refinishing workflow for restored boat finish"
     },
     gallery: [galleryAssets[2], galleryAssets[4], galleryAssets[5], galleryAssets[0]]
   },
@@ -82,7 +82,7 @@ const serviceMediaBySlug: Record<string, ServiceMedia> = {
     card: galleryAssets[1],
     hero: {
       ...galleryAssets[1],
-      alt: "Dent and scratch repair with fiberglass finish blending and polishing"
+      alt: "Chip and scratch repair with fiberglass finish blending and polishing"
     },
     gallery: [galleryAssets[1], galleryAssets[0], galleryAssets[2], galleryAssets[5]]
   },

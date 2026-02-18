@@ -142,10 +142,10 @@ const services = [
   {
     _id: "service.gel-coat-exterior-painting",
     _type: "service",
-    title: "Gel Coat and Exterior Painting",
+    title: "Gel Coat Repair and Refinishing",
     slug: { _type: "slug", current: "gel-coat-exterior-painting" },
     shortDescription:
-      "Gel coat touch-up and exterior refinishing to restore appearance and help protect fiberglass surfaces.",
+      "Gel coat touch-up and refinishing to restore appearance and help protect fiberglass surfaces.",
     featured: true,
     priority: 3,
     body: [
@@ -161,23 +161,23 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Gel Coat Repair and Exterior Boat Painting | Adley Enterprises",
+      metaTitle: "Gel Coat Repair and Refinishing | Adley Enterprises",
       metaDescription:
-        "Gel coat touch-up and exterior refinishing for fiberglass boats in Melrose, MN and nearby cities."
+        "Gel coat touch-up and refinishing for fiberglass boats in Melrose, MN and nearby cities."
     }
   },
   {
     _id: "service.dent-scratch-repair",
     _type: "service",
-    title: "Dent and Scratch Repair",
+    title: "Chip and Scratch Repair",
     slug: { _type: "slug", current: "dent-scratch-repair" },
     shortDescription:
-      "Dent, chip, and scratch correction for fiberglass boat surfaces with finish-ready blending.",
+      "Chip and scratch correction for fiberglass boat surfaces with finish-ready blending.",
     featured: true,
     priority: 4,
     body: [
       block(
-        "Dents and scratches can reduce finish quality and expose fiberglass to additional wear. We assess depth and surrounding condition before selecting a repair approach."
+        "Chips and scratches can reduce finish quality and expose fiberglass to additional wear. We assess depth and surrounding condition before selecting a repair approach."
       ),
       block(
         "Repairs include prep, material correction, fairing, and final finish blending so repaired sections align with nearby surfaces as closely as possible."
@@ -188,9 +188,9 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Boat Dent and Scratch Repair in Minnesota | Adley Enterprises",
+      metaTitle: "Boat Chip and Scratch Repair in Minnesota | Adley Enterprises",
       metaDescription:
-        "Fiberglass dent and scratch repair for boat owners in the Melrose area. Request your estimate today."
+        "Fiberglass chip and scratch repair for boat owners in the Melrose area. Request your estimate today."
     }
   },
   {
@@ -252,7 +252,7 @@ const locationPages = locationCities.map((city, index) => {
         `${city} boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.`
       ),
       block(
-        "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing."
+        "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing."
       ),
       block(
         "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved."
@@ -751,7 +751,7 @@ const blogSeeds = [
     ]
   },
   {
-    title: "Signs Your Boat Needs Professional Dent and Scratch Repair",
+    title: "Signs Your Boat Needs Professional Chip and Scratch Repair",
     slug: "signs-you-need-dent-scratch-repair",
     excerpt:
       "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs.",

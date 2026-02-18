@@ -26,7 +26,7 @@ export async function generateMetadata() {
   return buildMetadata({
     title: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
     description:
-      "Fiberglass boat repair specialists for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, scratch and dent correction, buffing and waxing. Call (320) 726-0822.",
+      "Fiberglass boat repair specialists for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822.",
     path: "/",
     openGraphType: "website"
   });
@@ -50,7 +50,7 @@ export default async function HomePage() {
       <PageHero
         eyebrow="Fiberglass Boat Repair Specialists"
         title="Fiberglass Boat Repair for Central Minnesota and the Upper Midwest"
-        description="Adley Enterprises LLC provides fiberglass-only repair services, including hull collision repair, gel coat refinishing, dent/scratch correction, and buffing/waxing."
+        description="Adley Enterprises LLC provides fiberglass-only repair services, including hull collision repair, gel coat refinishing, chip/scratch correction, and buffing/waxing."
         backgroundVideo={{
           src: "/video/homepage-hero-background.mp4",
           type: "video/mp4",

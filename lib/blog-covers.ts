@@ -40,7 +40,7 @@ const fallbackCoversBySlug: Record<string, BlogCover> = {
   },
   "signs-you-need-dent-scratch-repair": {
     url: "/images/fiberglass-boat-repair-4-3-four.avif",
-    alt: "Dent and scratch correction process on fiberglass side panel"
+    alt: "Chip and scratch correction process on fiberglass side panel"
   },
   "service-areas-around-melrose": {
     url: "/images/fiberglass-boat-repair-wide.avif",

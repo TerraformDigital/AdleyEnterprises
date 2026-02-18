@@ -81,22 +81,22 @@ export const fallbackServices: Service[] = [
     priority: 2
   },
   {
-    title: "Gel Coat and Exterior Painting",
+    title: "Gel Coat Repair and Refinishing",
     slug: "gel-coat-exterior-painting",
     shortDescription:
-      "Gel coat touch-up and exterior refinishing for durable protection and appearance.",
+      "Gel coat touch-up and refinishing for durable protection and appearance.",
     body: paragraph(
       "We repair weathered or damaged exterior surfaces with gel coat correction and refinishing designed for clean appearance and protection."
     ),
     priority: 3
   },
   {
-    title: "Dent and Scratch Repair",
+    title: "Chip and Scratch Repair",
     slug: "dent-scratch-repair",
     shortDescription:
-      "Dent, chip, and scratch correction for fiberglass boat surfaces with finish-ready blending.",
+      "Chip and scratch correction for fiberglass boat surfaces with finish-ready blending.",
     body: paragraph(
-      "Damage is corrected with substrate prep, repair, fairing, and controlled finish blending to match nearby surfaces."
+      "Surface damage is corrected with substrate prep, repair, fairing, and controlled finish blending to match nearby surfaces."
     ),
     priority: 4
   },
@@ -662,13 +662,13 @@ export const fallbackBlogPosts: BlogPost[] = [
     ]
   },
   {
-    title: "Signs You Need Professional Dent and Scratch Repair",
+    title: "Signs You Need Professional Chip and Scratch Repair",
     slug: "signs-you-need-dent-scratch-repair",
     excerpt:
       "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs.",
     publishedAt: "2026-02-14",
     coverImageUrl: "/images/fiberglass-boat-repair-4-3-four.avif",
-    coverImageAlt: "Dent and scratch correction work on fiberglass hull panel",
+    coverImageAlt: "Chip and scratch correction work on fiberglass hull panel",
     body: [
       richBlock(
         "Not all scratches are equal. Some are light finish marks, while others cut deep enough to expose substrate and invite further degradation."

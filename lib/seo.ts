@@ -29,14 +29,14 @@ export const SERVICE_METADATA_BY_SLUG: Record<string, { title: string; descripti
       "Impact and collision hull repair with fiberglass reconstruction, fairing, and finish blending. Melrose, MN. Free estimates. Call (320) 726-0822."
   },
   "gel-coat-exterior-painting": {
-    title: "Gel Coat Repair & Exterior Painting | Adley Enterprises",
+    title: "Gel Coat Repair & Refinishing | Adley Enterprises",
     description:
-      "Gel coat touch-up and fiberglass exterior refinishing in Melrose, MN. Restore protection and appearance. Free estimates. Call (320) 726-0822."
+      "Gel coat touch-up and fiberglass refinishing in Melrose, MN. Restore protection and appearance. Free estimates. Call (320) 726-0822."
   },
   "dent-scratch-repair": {
-    title: "Dent & Scratch Repair | Fiberglass Boats | Adley Enterprises",
+    title: "Chip & Scratch Repair | Fiberglass Boats | Adley Enterprises",
     description:
-      "Fiberglass dent, chip, and scratch correction with finish-ready blending. Melrose, MN. Free estimates. Call (320) 726-0822."
+      "Fiberglass chip and scratch correction with finish-ready blending. Melrose, MN. Free estimates. Call (320) 726-0822."
   },
   "buffing-waxing": {
     title: "Boat Buffing & Waxing | Fiberglass Protection | Adley",
@@ -49,7 +49,7 @@ export const LOCATION_METADATA_BY_SLUG: Record<string, { title: string; descript
   "st-cloud-mn": {
     title: "Fiberglass Boat Repair Near St. Cloud, MN | Adley",
     description:
-      "Fiberglass boat repair serving St. Cloud, MN. Hull collision repair, gel coat, dent correction, buffing. Located in Melrose - 30 min from St. Cloud. Call (320) 726-0822."
+      "Fiberglass boat repair serving St. Cloud, MN. Hull collision repair, gel coat, chip and scratch correction, buffing. Located in Melrose - 30 min from St. Cloud. Call (320) 726-0822."
   },
   "sauk-rapids-mn": {
     title: "Fiberglass Boat Repair Near Sauk Rapids, MN | Adley",
@@ -94,7 +94,7 @@ export const LOCATION_METADATA_BY_SLUG: Record<string, { title: string; descript
   "richmond-mn": {
     title: "Fiberglass Boat Repair Near Richmond, MN | Adley",
     description:
-      "Fiberglass boat repair serving Richmond, MN. Dent, scratch, and hull repair. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair serving Richmond, MN. Chip, scratch, and hull repair. Located in Melrose. Call (320) 726-0822."
   }
 };
 
