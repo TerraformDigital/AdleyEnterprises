@@ -124,10 +124,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             </div>
             <h2>Quick Answer</h2>
             <p>
-              {service.title} is available for fiberglass boats within approximately {settings.serviceRadiusMiles} miles of
-              {" "}
-              {settings.city}, {settings.region}. Estimate requests can be submitted by phone, photos, or in-person
-              inspection.
+              {service.title} is available for fiberglass boats across the Midwest, including Minnesota, Iowa,
+              Wisconsin, Michigan, North Dakota, South Dakota, and Montana. Estimate requests can be submitted by
+              phone, photos, or in-person inspection.
             </p>
           </article>
 
@@ -150,12 +149,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 </li>
               ))}
             </ul>
-            <h3>Nearby Service Areas</h3>
+            <h3>Midwest Service Areas</h3>
             <ul className="list-reset">
-              {locations.slice(0, 6).map((location) => (
+              {locations.slice(0, 7).map((location) => (
                 <li key={location.slug}>
                   <Link href={`/service-areas/${location.slug}`}>
-                    {location.city}, {location.region}
+                    {location.city}
                   </Link>
                 </li>
               ))}

@@ -15,7 +15,7 @@ export async function generateMetadata() {
   return buildMetadata({
     title: "Fiberglass Boat Repair Services | Adley Enterprises LLC",
     description:
-      "Comprehensive fiberglass boat repair services for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, chip and scratch repair, buffing and waxing.",
+      "Comprehensive fiberglass boat repair services across the Midwest. Hull collision repair, gel coat refinishing, chip and scratch repair, buffing and waxing.",
     path: "/services"
   });
 }
@@ -28,7 +28,7 @@ export default async function ServicesPage() {
       <PageHero
         eyebrow="Services"
         title="Fiberglass Boat Repair Services"
-        description="Comprehensive fiberglass-only repair and refinishing services for Central Minnesota boat owners."
+        description="Comprehensive fiberglass-only repair and refinishing services for Midwest boat owners."
       />
 
       <section className="shell page-section card-grid">

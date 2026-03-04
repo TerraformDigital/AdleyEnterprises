@@ -30,6 +30,26 @@ const nextConfig: NextConfig = {
       }
     ]
   },
+  async redirects() {
+    const legacyCityServiceAreaSlugs = [
+      "st-cloud-mn",
+      "sauk-rapids-mn",
+      "waite-park-mn",
+      "st-joseph-mn",
+      "sauk-centre-mn",
+      "cold-spring-mn",
+      "long-prairie-mn",
+      "albany-mn",
+      "paynesville-mn",
+      "richmond-mn"
+    ];
+
+    return legacyCityServiceAreaSlugs.map((slug) => ({
+      source: `/service-areas/${slug}`,
+      destination: "/service-areas/minnesota",
+      permanent: true
+    }));
+  },
   async headers() {
     const previewRobotsHeader =
       process.env.VERCEL_ENV === "preview" ? [{ key: "X-Robots-Tag", value: "noindex, nofollow" }] : [];

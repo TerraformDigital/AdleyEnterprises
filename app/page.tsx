@@ -24,9 +24,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
+    title: "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
     description:
-      "Fiberglass boat repair specialists for Central Minnesota and the Upper Midwest. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822.",
+      "Fiberglass boat repair specialists across the Midwest. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822.",
     path: "/",
     openGraphType: "website"
   });
@@ -49,7 +49,7 @@ export default async function HomePage() {
     <>
       <PageHero
         eyebrow="Fiberglass Boat Repair Specialists"
-        title="Fiberglass Boat Repair for Central Minnesota and the Upper Midwest"
+        title="Fiberglass Boat Repair Across the Midwest"
         description="Adley Enterprises LLC provides fiberglass-only repair services, including hull collision repair, gel coat refinishing, chip/scratch correction, and buffing/waxing."
         backgroundVideo={{
           src: "/video/homepage-hero-background.mp4",
@@ -84,7 +84,7 @@ export default async function HomePage() {
                 <Clock3 size={20} />
               </span>
               <h3>15+ Years in Business</h3>
-              <p>Experienced team serving Central Minnesota and Upper Midwest boat owners.</p>
+              <p>Experienced team serving Midwest boat owners.</p>
             </article>
             <article>
               <span className="icon-badge" aria-hidden="true">
@@ -130,9 +130,9 @@ export default async function HomePage() {
             <Link href="/service-areas">View All Service Areas</Link>
           </div>
           <ul className="city-list">
-            {locations.slice(0, 10).map((location) => (
+            {locations.slice(0, 7).map((location) => (
               <li key={location.slug}>
-                <Link href={`/service-areas/${location.slug}`}>{location.city}, MN</Link>
+                <Link href={`/service-areas/${location.slug}`}>{location.city}</Link>
               </li>
             ))}
           </ul>

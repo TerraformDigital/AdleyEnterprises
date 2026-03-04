@@ -56,7 +56,7 @@ export default async function ContactPage() {
           <h3 className="contact-map-heading">Location Map</h3>
           <div className="map-embed-wrap">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.8467487585917!2d-94.84146492371453!3d45.67397677107831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b5bd6b87b780d5%3A0x9def5ec2bbc1a5c0!2sWarrior%20Boats%2C%20Inc.!5e0!3m2!1sen!2sus!4v1770876402489!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.873238119137!2d-94.84081798698143!3d45.67344501933109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b5bd6b7fa5a9d3%3A0x22a039a71aa118ac!2s16%20Industry%20Pkwy%2C%20Melrose%2C%20MN%2056352!5e0!3m2!1sen!2sus!4v1772650555907!5m2!1sen!2sus"
               width="600"
               height="450"
               style={{ border: 0 }}
@@ -66,9 +66,6 @@ export default async function ContactPage() {
               title="Adley Enterprises location map"
             />
           </div>
-          <p className="small">
-            Map pin may display Warrior Boats. Adley Enterprises operates at this same address in Melrose, MN.
-          </p>
         </div>
 
         <div>

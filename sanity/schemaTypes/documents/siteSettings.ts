@@ -63,9 +63,9 @@ export const siteSettingsType = defineType({
     }),
     defineField({
       name: "serviceRadiusMiles",
-      title: "Service radius (miles)",
+      title: "Coverage radius (legacy miles field)",
       type: "number",
-      initialValue: 30,
+      initialValue: 1000,
       validation: (rule) => rule.required().positive()
     }),
     defineField({

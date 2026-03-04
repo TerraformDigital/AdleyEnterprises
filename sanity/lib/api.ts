@@ -82,10 +82,36 @@ const copyReplacements: Array<[RegExp, string]> = [
   [/dent, chip, and scratch correction/g, "chip and scratch correction"],
   [/Dent, chip, and scratch correction/g, "Chip and scratch correction"],
   [/Dents and scratches/g, "Chips and scratches"],
-  [/dents and scratches/g, "chips and scratches"]
+  [/dents and scratches/g, "chips and scratches"],
+  [/Central Minnesota and the Upper Midwest/g, "the Midwest"],
+  [/Central Minnesota/g, "the Midwest"],
+  [/Upper Midwest/g, "Midwest"],
+  [
+    /approximately a 30-mile radius around Melrose, MN, including St\. Cloud, Sauk Rapids, Waite Park, and nearby communities/g,
+    "across Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana"
+  ],
+  [
+    /serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and regional lake communities/g,
+    "serves fiberglass boat owners across the Midwest, with regular repair requests from Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana"
+  ],
+  [
+    /An overview of Central Minnesota communities regularly served from the Melrose shop\./g,
+    "An overview of Midwest states regularly served by Adley Enterprises."
+  ],
+  [/Service Areas We Cover Around Melrose, MN/g, "Service Areas We Cover Across the Midwest"],
+  [/Spring Boat Prep Checklist for Central Minnesota/g, "Spring Boat Prep Checklist for Midwest Boat Owners"],
+  [/In Central Minnesota, spring launch dates come fast\./g, "Across the Midwest, spring launch dates come fast."],
+  [
+    /Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions\./g,
+    "Maintenance interval guidance based on storage, use patterns, and Midwest conditions."
+  ],
+  [
+    /serving Melrose and surrounding Central Minnesota communities/gi,
+    "serving boat owners across the Midwest"
+  ]
 ];
 
-function normalizeServiceCopy(text: string): string {
+function normalizeContentCopy(text: string): string {
   return copyReplacements.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), text);
 }
 
@@ -99,10 +125,22 @@ function normalizePortableTextBlocks(blocks?: Service["body"]): Service["body"] 
     children: Array.isArray(block.children)
       ? block.children.map((child) => ({
           ...child,
-          text: typeof child.text === "string" ? normalizeServiceCopy(child.text) : child.text
+          text: typeof child.text === "string" ? normalizeContentCopy(child.text) : child.text
         }))
       : block.children
   }));
+}
+
+function normalizeSeoFields<T extends { metaTitle?: string; metaDescription?: string } | undefined>(seo: T): T {
+  if (!seo) {
+    return seo;
+  }
+
+  return {
+    ...seo,
+    metaTitle: seo.metaTitle ? normalizeContentCopy(seo.metaTitle) : seo.metaTitle,
+    metaDescription: seo.metaDescription ? normalizeContentCopy(seo.metaDescription) : seo.metaDescription
+  };
 }
 
 function withServiceOverrides(service: Service): Service {
@@ -111,24 +149,70 @@ function withServiceOverrides(service: Service): Service {
   if (!override) {
     return {
       ...service,
-      title: normalizeServiceCopy(service.title),
-      shortDescription: normalizeServiceCopy(service.shortDescription),
-      body: normalizePortableTextBlocks(service.body)
+      title: normalizeContentCopy(service.title),
+      shortDescription: normalizeContentCopy(service.shortDescription),
+      body: normalizePortableTextBlocks(service.body),
+      seo: normalizeSeoFields(service.seo)
     };
   }
 
   return {
     ...service,
-    ...override
+    ...override,
+    seo: normalizeSeoFields(service.seo)
   };
 }
 
 function withLocationCopyUpdates(location: LocationPage): LocationPage {
   return {
     ...location,
-    title: normalizeServiceCopy(location.title),
-    shortDescription: normalizeServiceCopy(location.shortDescription),
-    body: normalizePortableTextBlocks(location.body)
+    title: normalizeContentCopy(location.title),
+    city: normalizeContentCopy(location.city),
+    region: normalizeContentCopy(location.region),
+    shortDescription: normalizeContentCopy(location.shortDescription),
+    body: normalizePortableTextBlocks(location.body),
+    seo: normalizeSeoFields(location.seo)
+  };
+}
+
+function withFaqCopyUpdates(faq: FaqItem): FaqItem {
+  return {
+    ...faq,
+    question: normalizeContentCopy(faq.question),
+    answer: normalizePortableTextBlocks(faq.answer) ?? faq.answer,
+    seo: normalizeSeoFields(faq.seo)
+  };
+}
+
+function withBlogCopyUpdates(post: BlogPost): BlogPost {
+  return {
+    ...post,
+    title: normalizeContentCopy(post.title),
+    excerpt: normalizeContentCopy(post.excerpt),
+    coverImageAlt: post.coverImageAlt ? normalizeContentCopy(post.coverImageAlt) : post.coverImageAlt,
+    body: normalizePortableTextBlocks(post.body) ?? post.body,
+    seo: normalizeSeoFields(post.seo)
+  };
+}
+
+const requiredLocationSlugs = fallbackLocations.map((location) => location.slug);
+
+function hasRequiredLocationCoverage(locations: LocationPage[]) {
+  return requiredLocationSlugs.every((slug) => locations.some((location) => location.slug === slug));
+}
+
+function orderLocationsByRequiredSlugs(locations: LocationPage[]) {
+  const rank = new Map(requiredLocationSlugs.map((slug, index) => [slug, index]));
+  return locations
+    .slice()
+    .sort((a, b) => (rank.get(a.slug) ?? Number.MAX_SAFE_INTEGER) - (rank.get(b.slug) ?? Number.MAX_SAFE_INTEGER));
+}
+
+function withSiteSettingsOverrides(settings: SiteSettings): SiteSettings {
+  return {
+    ...settings,
+    aboutSummary: normalizeContentCopy(settings.aboutSummary),
+    seo: normalizeSeoFields(settings.seo)
   };
 }
 
@@ -136,12 +220,12 @@ function withBlogFallback(post: BlogPost): BlogPost {
   const fallback = fallbackBlogPosts.find((item) => item.slug === post.slug);
 
   if (!fallback) {
-    return post;
+    return withBlogCopyUpdates(post);
   }
 
   const shouldUpgradeBody = !post.body || post.body.length < 5;
 
-  return {
+  const merged = {
     ...fallback,
     ...post,
     excerpt: post.excerpt || fallback.excerpt,
@@ -152,13 +236,17 @@ function withBlogFallback(post: BlogPost): BlogPost {
     coverImageCreditUrl: post.coverImageCreditUrl || fallback.coverImageCreditUrl,
     coverImageSource: post.coverImageSource || fallback.coverImageSource
   };
+
+  return withBlogCopyUpdates(merged);
 }
 
 export async function getSiteSettings() {
-  return sanityFetch<SiteSettings>({
+  const settings = await sanityFetch<SiteSettings>({
     query: siteSettingsQuery,
     fallback: fallbackSiteSettings
   });
+
+  return withSiteSettingsOverrides(settings);
 }
 
 export async function getServices() {
@@ -187,11 +275,19 @@ export async function getLocationPages() {
     fallback: fallbackLocations
   });
 
-  const source = locations.length > 0 ? locations : fallbackLocations;
+  const useFetchedLocations = locations.length > 0 && hasRequiredLocationCoverage(locations);
+  const source = useFetchedLocations
+    ? orderLocationsByRequiredSlugs(locations.filter((location) => requiredLocationSlugs.includes(location.slug)))
+    : fallbackLocations;
+
   return source.map((location) => withLocationCopyUpdates(location));
 }
 
 export async function getLocationPageBySlug(slug: string) {
+  if (!requiredLocationSlugs.includes(slug)) {
+    return null;
+  }
+
   const location = await sanityFetch<LocationPage | null>({
     query: locationPageBySlugQuery,
     params: { slug },
@@ -245,7 +341,8 @@ export async function getFaqItems() {
     fallback: fallbackFaqs
   });
 
-  return faqs.length > 0 ? faqs : fallbackFaqs;
+  const source = faqs.length > 0 ? faqs : fallbackFaqs;
+  return source.map((faq) => withFaqCopyUpdates(faq));
 }
 
 export async function getBlogPosts() {

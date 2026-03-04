@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
+import { buildQuoteEmailHtml, buildQuoteEmailText } from "@/lib/email/quote-email-template";
 import { quoteRequestSchema } from "@/lib/quote-schema";
 
 const quoteToEmail = process.env.QUOTE_TO_EMAIL || "sales@adleyenterprises.com";
@@ -48,33 +49,8 @@ export async function POST(request: Request) {
   }
 
   const resend = new Resend(resendApiKey);
-
-  const emailText = [
-    `Name: ${data.name}`,
-    `Phone: ${data.phone}`,
-    `Email: ${data.email}`,
-    `City: ${data.city}`,
-    `Boat Make/Model: ${data.boatMakeModel}`,
-    `Service Needed: ${data.serviceNeeded}`,
-    `Damage Type: ${data.damageType}`,
-    `Preferred Contact: ${data.preferredContact}`,
-    `Photo Links: ${data.photoLinks || "N/A"}`,
-    `Additional Notes: ${data.message || "N/A"}`
-  ].join("\n");
-
-  const emailHtml = `
-    <h2>New Quote Request</h2>
-    <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
-    <p><strong>Phone:</strong> ${escapeHtml(data.phone)}</p>
-    <p><strong>Email:</strong> ${escapeHtml(data.email)}</p>
-    <p><strong>City:</strong> ${escapeHtml(data.city)}</p>
-    <p><strong>Boat Make/Model:</strong> ${escapeHtml(data.boatMakeModel)}</p>
-    <p><strong>Service Needed:</strong> ${escapeHtml(data.serviceNeeded)}</p>
-    <p><strong>Damage Type:</strong> ${escapeHtml(data.damageType)}</p>
-    <p><strong>Preferred Contact:</strong> ${escapeHtml(data.preferredContact)}</p>
-    <p><strong>Photo Links:</strong> ${escapeHtml(data.photoLinks || "N/A")}</p>
-    <p><strong>Additional Notes:</strong><br />${escapeHtml(data.message || "N/A").replace(/\n/g, "<br />")}</p>
-  `;
+  const emailText = buildQuoteEmailText(data);
+  const emailHtml = buildQuoteEmailHtml(data);
 
   try {
     await resend.emails.send({
@@ -96,13 +72,4 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
-}
-
-function escapeHtml(value: string) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }

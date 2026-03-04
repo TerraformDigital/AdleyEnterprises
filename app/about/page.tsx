@@ -8,9 +8,9 @@ export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "About Adley Enterprises | Fiberglass Boat Repair, Melrose MN",
+    title: "About Adley Enterprises | Fiberglass Boat Repair Across the Midwest",
     description:
-      "Meet the team behind Adley Enterprises. 15+ years of fiberglass boat repair experience in Melrose, Minnesota.",
+      "Meet the team behind Adley Enterprises. 15+ years of fiberglass boat repair experience serving Midwest boat owners.",
     path: "/about"
   });
 }
@@ -23,7 +23,7 @@ export default async function AboutPage() {
       <PageHero
         eyebrow="About"
         title="Fiberglass Boat Repair Expertise Since Day One"
-        description={`${settings.legalName} focuses exclusively on fiberglass boat repair and refinishing for boat owners across Central Minnesota.`}
+        description={`${settings.legalName} focuses exclusively on fiberglass boat repair and refinishing for boat owners across the Midwest.`}
       />
 
       <section className="shell page-section prose">

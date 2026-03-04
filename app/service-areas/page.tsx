@@ -3,28 +3,28 @@ import Link from "next/link";
 import { PageHero } from "@/components/sections/page-hero";
 import { BreadcrumbJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
-import { getLocationPages, getSiteSettings } from "@/sanity/lib/api";
+import { getLocationPages } from "@/sanity/lib/api";
 
 export const revalidate = 300;
 
 export async function generateMetadata() {
   return buildMetadata({
-    title: "Service Areas | Fiberglass Boat Repair in Central Minnesota",
+    title: "Service Areas | Fiberglass Boat Repair Across the Midwest",
     description:
-      "Adley Enterprises serves boat owners across Central Minnesota including St. Cloud, Sauk Rapids, Sauk Centre, Cold Spring, Paynesville, and surrounding communities.",
+      "Adley Enterprises serves fiberglass boat owners across the Midwest, including Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana.",
     path: "/service-areas"
   });
 }
 
 export default async function ServiceAreasPage() {
-  const [locations, settings] = await Promise.all([getLocationPages(), getSiteSettings()]);
+  const locations = await getLocationPages();
 
   return (
     <>
       <PageHero
         eyebrow="Service Areas"
-        title="Central Minnesota Service Areas"
-        description={`Adley Enterprises provides fiberglass boat repair service within roughly ${settings.serviceRadiusMiles} miles of ${settings.city}.`}
+        title="Midwest Service Areas"
+        description="We provide fiberglass boat repair services across Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana."
       />
 
       <section className="shell page-section">
@@ -32,7 +32,7 @@ export default async function ServiceAreasPage() {
           {locations.map((location) => (
             <article key={location.slug} className="card">
               <h2>
-                <Link href={`/service-areas/${location.slug}`}>{location.city}, {location.region}</Link>
+                <Link href={`/service-areas/${location.slug}`}>{location.title}</Link>
               </h2>
               <p>{location.shortDescription}</p>
             </article>

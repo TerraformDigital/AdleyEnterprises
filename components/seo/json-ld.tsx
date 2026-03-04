@@ -6,6 +6,15 @@ import type { BlogPost, FaqItem, Product, Service, SiteSettings } from "@/types/
 
 const BUSINESS_ID = `${toAbsoluteUrl("/")}#business`;
 const ORGANIZATION_ID = `${toAbsoluteUrl("/")}#organization`;
+const MIDWEST_STATE_AREAS = [
+  { "@type": "State", name: "Minnesota" },
+  { "@type": "State", name: "Iowa" },
+  { "@type": "State", name: "Wisconsin" },
+  { "@type": "State", name: "Michigan" },
+  { "@type": "State", name: "North Dakota" },
+  { "@type": "State", name: "South Dakota" },
+  { "@type": "State", name: "Montana" }
+];
 
 function toDialString(phone: string) {
   const digits = phone.replace(/[^\d+]/g, "");
@@ -21,7 +30,7 @@ export function LocalBusinessJsonLd({ settings }: { settings: SiteSettings }) {
     image: toAbsoluteUrl(BUSINESS_INFO.logoPath),
     logo: toAbsoluteUrl(BUSINESS_INFO.logoPath),
     description:
-      "Fiberglass boat repair specialists and adjustable transducer mount manufacturer in Melrose, Minnesota. Serving Central MN including St. Cloud, Sauk Rapids, and surrounding communities.",
+      "Fiberglass boat repair specialists and adjustable transducer mount manufacturer in Melrose, Minnesota. Serving boat owners across the Midwest.",
     url: toAbsoluteUrl("/"),
     telephone: toDialString(settings.phone),
     email: settings.email,
@@ -54,19 +63,7 @@ export function LocalBusinessJsonLd({ settings }: { settings: SiteSettings }) {
       }
     ],
     priceRange: "$$",
-    areaServed: [
-      { "@type": "City", name: "Melrose" },
-      { "@type": "City", name: "St. Cloud" },
-      { "@type": "City", name: "Sauk Rapids" },
-      { "@type": "City", name: "Waite Park" },
-      { "@type": "City", name: "St. Joseph" },
-      { "@type": "City", name: "Sauk Centre" },
-      { "@type": "City", name: "Cold Spring" },
-      { "@type": "City", name: "Long Prairie" },
-      { "@type": "City", name: "Albany" },
-      { "@type": "City", name: "Paynesville" },
-      { "@type": "City", name: "Richmond" }
-    ],
+    areaServed: MIDWEST_STATE_AREAS,
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Fiberglass Boat Repair Services",
@@ -116,7 +113,7 @@ export function ServiceJsonLd({
     name: service.title,
     description: service.shortDescription,
     provider: { "@id": BUSINESS_ID },
-    areaServed: { "@type": "State", name: "Minnesota" },
+    areaServed: MIDWEST_STATE_AREAS,
     serviceType: service.title,
     url: toAbsoluteUrl(`/services/${service.slug}`)
   };
@@ -124,25 +121,25 @@ export function ServiceJsonLd({
   return <JsonLd data={data} />;
 }
 
-export function CityServiceJsonLd({
-  city,
+export function ServiceAreaJsonLd({
+  areaName,
   slug,
   description
 }: {
-  city: string;
+  areaName: string;
   slug: string;
   description: string;
 }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: `Fiberglass Boat Repair Near ${city}, MN`,
+    name: `Fiberglass Boat Repair in ${areaName}`,
     description,
     provider: { "@id": BUSINESS_ID },
     areaServed: {
-      "@type": "City",
-      name: city,
-      containedInPlace: { "@type": "State", name: "Minnesota" }
+      "@type": "State",
+      name: areaName,
+      containedInPlace: { "@type": "Country", name: "United States" }
     },
     url: toAbsoluteUrl(`/service-areas/${slug}`)
   };

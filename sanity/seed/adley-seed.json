@@ -11,11 +11,11 @@
     "region": "MN",
     "postalCode": "56352",
     "country": "US",
-    "serviceRadiusMiles": 30,
+    "serviceRadiusMiles": 1000,
     "insured": true,
     "yearsInBusiness": 15,
     "warrantyNote": "Warranty claims are reviewed case-by-case with each written estimate and final repair scope approval.",
-    "aboutSummary": "Adley Enterprises LLC is a fiberglass-only boat repair shop serving Melrose and surrounding Central Minnesota communities. We focus on practical repairs, quality finish work, and clear estimate communication.",
+    "aboutSummary": "Adley Enterprises LLC is a fiberglass-only boat repair shop serving boat owners across the Midwest. We focus on practical repairs, quality finish work, and clear estimate communication.",
     "hours": [
       {
         "_type": "object",
@@ -66,8 +66,8 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
-      "metaDescription": "Fiberglass-only boat repair, hull collision repair, gel coat refinishing, and detailing services for Central Minnesota boat owners."
+      "metaTitle": "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
+      "metaDescription": "Fiberglass-only boat repair, hull collision repair, gel coat refinishing, and detailing services for Midwest boat owners."
     }
   },
   {
@@ -127,8 +127,8 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair Near Melrose, MN | Adley Enterprises LLC",
-      "metaDescription": "Professional fiberglass boat repair in Central Minnesota. Request an estimate by call, photos, or in-person inspection."
+      "metaTitle": "Fiberglass Boat Repair Across the Midwest | Adley Enterprises LLC",
+      "metaDescription": "Professional fiberglass boat repair across the Midwest. Request an estimate by call, photos, or in-person inspection."
     }
   },
   {
@@ -188,19 +188,19 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Boat Hull Collision Repair in Central Minnesota | Adley Enterprises",
-      "metaDescription": "Hull collision repair for fiberglass boats near Melrose, MN. Call for inspection and written estimate."
+      "metaTitle": "Boat Hull Collision Repair Across the Midwest | Adley Enterprises",
+      "metaDescription": "Hull collision repair for fiberglass boats across the Midwest. Call for inspection and written estimate."
     }
   },
   {
     "_id": "service.gel-coat-exterior-painting",
     "_type": "service",
-    "title": "Gel Coat and Exterior Painting",
+    "title": "Gel Coat Repair and Refinishing",
     "slug": {
       "_type": "slug",
       "current": "gel-coat-exterior-painting"
     },
-    "shortDescription": "Gel coat touch-up and exterior refinishing to restore appearance and help protect fiberglass surfaces.",
+    "shortDescription": "Gel coat touch-up and refinishing to restore appearance and help protect fiberglass surfaces.",
     "featured": true,
     "priority": 3,
     "body": [
@@ -249,19 +249,19 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Gel Coat Repair and Exterior Boat Painting | Adley Enterprises",
-      "metaDescription": "Gel coat touch-up and exterior refinishing for fiberglass boats in Melrose, MN and nearby cities."
+      "metaTitle": "Gel Coat Repair and Refinishing | Adley Enterprises",
+      "metaDescription": "Gel coat touch-up and refinishing for fiberglass boats across the Midwest."
     }
   },
   {
     "_id": "service.dent-scratch-repair",
     "_type": "service",
-    "title": "Dent and Scratch Repair",
+    "title": "Chip and Scratch Repair",
     "slug": {
       "_type": "slug",
       "current": "dent-scratch-repair"
     },
-    "shortDescription": "Dent, chip, and scratch correction for fiberglass boat surfaces with finish-ready blending.",
+    "shortDescription": "Chip and scratch correction for fiberglass boat surfaces with finish-ready blending.",
     "featured": true,
     "priority": 4,
     "body": [
@@ -274,7 +274,7 @@
           {
             "_type": "span",
             "_key": "kr",
-            "text": "Dents and scratches can reduce finish quality and expose fiberglass to additional wear. We assess depth and surrounding condition before selecting a repair approach.",
+            "text": "Chips and scratches can reduce finish quality and expose fiberglass to additional wear. We assess depth and surrounding condition before selecting a repair approach.",
             "marks": []
           }
         ]
@@ -310,8 +310,8 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Boat Dent and Scratch Repair in Minnesota | Adley Enterprises",
-      "metaDescription": "Fiberglass dent and scratch repair for boat owners in the Melrose area. Request your estimate today."
+      "metaTitle": "Boat Chip and Scratch Repair Across the Midwest | Adley Enterprises",
+      "metaDescription": "Fiberglass chip and scratch repair for boat owners across the Midwest. Request your estimate today."
     }
   },
   {
@@ -371,21 +371,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Boat Buffing and Waxing in Central Minnesota | Adley Enterprises",
-      "metaDescription": "Fiberglass boat buffing and waxing services for lasting shine and finish protection near Melrose, MN."
+      "metaTitle": "Boat Buffing and Waxing Across the Midwest | Adley Enterprises",
+      "metaDescription": "Fiberglass boat buffing and waxing services for lasting shine and finish protection across the Midwest."
     }
   },
   {
-    "_id": "location.st-cloud-mn",
+    "_id": "location.minnesota",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in St. Cloud, MN",
+    "title": "Fiberglass Boat Repair in Minnesota",
     "slug": {
       "_type": "slug",
-      "current": "st-cloud-mn"
+      "current": "minnesota"
     },
-    "city": "St. Cloud",
+    "city": "Minnesota",
     "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for St. Cloud, MN, including collision repair, gel coat work, and finish restoration.",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across Minnesota, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -396,7 +396,7 @@
           {
             "_type": "span",
             "_key": "k13",
-            "text": "St. Cloud boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across Minnesota can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -410,7 +410,7 @@
           {
             "_type": "span",
             "_key": "k15",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -432,21 +432,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in St. Cloud, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for St. Cloud, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in Minnesota | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Minnesota. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.sauk-rapids-mn",
+    "_id": "location.iowa",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Sauk Rapids, MN",
+    "title": "Fiberglass Boat Repair in Iowa",
     "slug": {
       "_type": "slug",
-      "current": "sauk-rapids-mn"
+      "current": "iowa"
     },
-    "city": "Sauk Rapids",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Sauk Rapids, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "Iowa",
+    "region": "IA",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across Iowa, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -457,7 +457,7 @@
           {
             "_type": "span",
             "_key": "k19",
-            "text": "Sauk Rapids boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across Iowa can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -471,7 +471,7 @@
           {
             "_type": "span",
             "_key": "k1b",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -493,21 +493,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Sauk Rapids, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Sauk Rapids, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in Iowa | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Iowa. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.waite-park-mn",
+    "_id": "location.wisconsin",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Waite Park, MN",
+    "title": "Fiberglass Boat Repair in Wisconsin",
     "slug": {
       "_type": "slug",
-      "current": "waite-park-mn"
+      "current": "wisconsin"
     },
-    "city": "Waite Park",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Waite Park, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "Wisconsin",
+    "region": "WI",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across Wisconsin, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -518,7 +518,7 @@
           {
             "_type": "span",
             "_key": "k1f",
-            "text": "Waite Park boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across Wisconsin can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -532,7 +532,7 @@
           {
             "_type": "span",
             "_key": "k1h",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -554,21 +554,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Waite Park, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Waite Park, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in Wisconsin | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Wisconsin. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.st-joseph-mn",
+    "_id": "location.michigan",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in St. Joseph, MN",
+    "title": "Fiberglass Boat Repair in Michigan",
     "slug": {
       "_type": "slug",
-      "current": "st-joseph-mn"
+      "current": "michigan"
     },
-    "city": "St. Joseph",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for St. Joseph, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "Michigan",
+    "region": "MI",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across Michigan, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -579,7 +579,7 @@
           {
             "_type": "span",
             "_key": "k1l",
-            "text": "St. Joseph boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across Michigan can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -593,7 +593,7 @@
           {
             "_type": "span",
             "_key": "k1n",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -615,21 +615,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in St. Joseph, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for St. Joseph, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in Michigan | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Michigan. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.sauk-centre-mn",
+    "_id": "location.north-dakota",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Sauk Centre, MN",
+    "title": "Fiberglass Boat Repair in North Dakota",
     "slug": {
       "_type": "slug",
-      "current": "sauk-centre-mn"
+      "current": "north-dakota"
     },
-    "city": "Sauk Centre",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Sauk Centre, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "North Dakota",
+    "region": "ND",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across North Dakota, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -640,7 +640,7 @@
           {
             "_type": "span",
             "_key": "k1r",
-            "text": "Sauk Centre boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across North Dakota can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -654,7 +654,7 @@
           {
             "_type": "span",
             "_key": "k1t",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -676,21 +676,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Sauk Centre, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Sauk Centre, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in North Dakota | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for North Dakota. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.cold-spring-mn",
+    "_id": "location.south-dakota",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Cold Spring, MN",
+    "title": "Fiberglass Boat Repair in South Dakota",
     "slug": {
       "_type": "slug",
-      "current": "cold-spring-mn"
+      "current": "south-dakota"
     },
-    "city": "Cold Spring",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Cold Spring, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "South Dakota",
+    "region": "SD",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across South Dakota, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -701,7 +701,7 @@
           {
             "_type": "span",
             "_key": "k1x",
-            "text": "Cold Spring boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across South Dakota can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -715,7 +715,7 @@
           {
             "_type": "span",
             "_key": "k1z",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -737,21 +737,21 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Cold Spring, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Cold Spring, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in South Dakota | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for South Dakota. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
-    "_id": "location.long-prairie-mn",
+    "_id": "location.montana",
     "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Long Prairie, MN",
+    "title": "Fiberglass Boat Repair in Montana",
     "slug": {
       "_type": "slug",
-      "current": "long-prairie-mn"
+      "current": "montana"
     },
-    "city": "Long Prairie",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Long Prairie, MN, including collision repair, gel coat work, and finish restoration.",
+    "city": "Montana",
+    "region": "MT",
+    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for boat owners across Montana, including collision repair, gel coat work, and finish restoration.",
     "body": [
       {
         "_type": "block",
@@ -762,7 +762,7 @@
           {
             "_type": "span",
             "_key": "k23",
-            "text": "Long Prairie boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
+            "text": "Boat owners across Montana can request fiberglass repair estimates by phone, photo submission, or in-person inspection.",
             "marks": []
           }
         ]
@@ -776,7 +776,7 @@
           {
             "_type": "span",
             "_key": "k25",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
+            "text": "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing.",
             "marks": []
           }
         ]
@@ -798,191 +798,8 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Long Prairie, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Long Prairie, MN. Call Adley Enterprises for estimates and scheduling."
-    }
-  },
-  {
-    "_id": "location.albany-mn",
-    "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Albany, MN",
-    "slug": {
-      "_type": "slug",
-      "current": "albany-mn"
-    },
-    "city": "Albany",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Albany, MN, including collision repair, gel coat work, and finish restoration.",
-    "body": [
-      {
-        "_type": "block",
-        "_key": "k28",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k29",
-            "text": "Albany boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2a",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2b",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2c",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2d",
-            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
-            "marks": []
-          }
-        ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Albany, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Albany, MN. Call Adley Enterprises for estimates and scheduling."
-    }
-  },
-  {
-    "_id": "location.paynesville-mn",
-    "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Paynesville, MN",
-    "slug": {
-      "_type": "slug",
-      "current": "paynesville-mn"
-    },
-    "city": "Paynesville",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Paynesville, MN, including collision repair, gel coat work, and finish restoration.",
-    "body": [
-      {
-        "_type": "block",
-        "_key": "k2e",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2f",
-            "text": "Paynesville boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2g",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2h",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2i",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2j",
-            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
-            "marks": []
-          }
-        ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Paynesville, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Paynesville, MN. Call Adley Enterprises for estimates and scheduling."
-    }
-  },
-  {
-    "_id": "location.richmond-mn",
-    "_type": "locationPage",
-    "title": "Fiberglass Boat Repair in Richmond, MN",
-    "slug": {
-      "_type": "slug",
-      "current": "richmond-mn"
-    },
-    "city": "Richmond",
-    "region": "MN",
-    "shortDescription": "Adley Enterprises provides fiberglass-only boat repair services for Richmond, MN, including collision repair, gel coat work, and finish restoration.",
-    "body": [
-      {
-        "_type": "block",
-        "_key": "k2k",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2l",
-            "text": "Richmond boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2m",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2n",
-            "text": "Common requests include hull collision repair, crack and gouge correction, dent and scratch repair, and finish restoration with buffing and waxing.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k2o",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k2p",
-            "text": "Repair timelines vary by damage severity and parts/material needs. We provide a written estimate before work is approved.",
-            "marks": []
-          }
-        ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "Fiberglass Boat Repair in Richmond, MN | Adley Enterprises LLC",
-      "metaDescription": "Fiberglass-only boat repair services for Richmond, MN. Call Adley Enterprises for estimates and scheduling."
+      "metaTitle": "Fiberglass Boat Repair in Montana | Adley Enterprises LLC",
+      "metaDescription": "Fiberglass-only boat repair services for Montana. Call Adley Enterprises for estimates and scheduling."
     }
   },
   {
@@ -1019,13 +836,13 @@
     "images": [
       {
         "_type": "object",
-        "_key": "k2q",
+        "_key": "k28",
         "url": "/images/products/single-adjustable-board-01.jpg",
         "alt": "Single Adjustable Transducer board by Adley Enterprises - primary view"
       },
       {
         "_type": "object",
-        "_key": "k2r",
+        "_key": "k29",
         "url": "/images/products/single-adjustable-board-02.jpg",
         "alt": "American Made Single Adjustable Transducer board detail view"
       }
@@ -1033,67 +850,67 @@
     "specifications": [
       {
         "_type": "object",
-        "_key": "k2w",
+        "_key": "k2e",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k2x",
+        "_key": "k2f",
         "label": "Model",
         "value": "Single Adjustable Transducer Board"
       },
       {
         "_type": "object",
-        "_key": "k2y",
+        "_key": "k2g",
         "label": "MPN",
         "value": "11-1-2023-SDB"
       },
       {
         "_type": "object",
-        "_key": "k2z",
+        "_key": "k2h",
         "label": "Type",
         "value": "Adjustable"
       },
       {
         "_type": "object",
-        "_key": "k30",
+        "_key": "k2i",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k31",
+        "_key": "k2j",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k32",
+        "_key": "k2k",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k33",
+        "_key": "k2l",
         "label": "Shipping",
         "value": "Free USPS Priority Mail"
       },
       {
         "_type": "object",
-        "_key": "k34",
+        "_key": "k2m",
         "label": "Returns",
         "value": "30 days (buyer pays return shipping)"
       },
       {
         "_type": "object",
-        "_key": "k35",
+        "_key": "k2n",
         "label": "Dimensions",
         "value": "To be confirmed"
       },
       {
         "_type": "object",
-        "_key": "k36",
+        "_key": "k2o",
         "label": "Weight",
         "value": "To be confirmed"
       }
@@ -1105,20 +922,20 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k37",
+        "_key": "k2p",
         "name": "Single transducer setup"
       }
     ],
     "body": [
       {
         "_type": "block",
-        "_key": "k38",
+        "_key": "k2q",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k39",
+            "_key": "k2r",
             "text": "This board is designed for anglers running a single transducer setup who need clean mounting and precise adjustment without switching to disposable bracket hardware.",
             "marks": []
           }
@@ -1126,13 +943,13 @@
       },
       {
         "_type": "block",
-        "_key": "k3a",
+        "_key": "k2s",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k3b",
+            "_key": "k2t",
             "text": "The core advantage is angle control. Instead of being stuck with a fixed plate, you can dial the transducer position to improve sonar returns based on your hull behavior, load, and typical running speed.",
             "marks": []
           }
@@ -1140,13 +957,13 @@
       },
       {
         "_type": "block",
-        "_key": "k3c",
+        "_key": "k2u",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k3d",
+            "_key": "k2v",
             "text": "Each board is built by Adley Enterprises in Melrose, Minnesota by the same team that performs fiberglass boat repairs.",
             "marks": []
           }
@@ -1190,15 +1007,188 @@
     "images": [
       {
         "_type": "object",
-        "_key": "k2s",
+        "_key": "k2a",
         "url": "/images/products/dual-port-adjustable-board-01.jpg",
         "alt": "American Made Dual Transducer Board Port Side Adjustable Mount"
       },
       {
         "_type": "object",
-        "_key": "k2t",
+        "_key": "k2b",
         "url": "/images/products/dual-port-starboard-board-01.jpg",
         "alt": "Adjustable dual transducer boards showing port and starboard orientations"
+      }
+    ],
+    "specifications": [
+      {
+        "_type": "object",
+        "_key": "k2w",
+        "label": "Brand",
+        "value": "Adley Enterprises"
+      },
+      {
+        "_type": "object",
+        "_key": "k2x",
+        "label": "Model",
+        "value": "Dual Transducer Board - Port Side Adjustable Mount"
+      },
+      {
+        "_type": "object",
+        "_key": "k2y",
+        "label": "MPN",
+        "value": "To be confirmed"
+      },
+      {
+        "_type": "object",
+        "_key": "k2z",
+        "label": "Type",
+        "value": "Adjustable dual mount (port side)"
+      },
+      {
+        "_type": "object",
+        "_key": "k30",
+        "label": "Material",
+        "value": "Plastic"
+      },
+      {
+        "_type": "object",
+        "_key": "k31",
+        "label": "Color",
+        "value": "Black"
+      },
+      {
+        "_type": "object",
+        "_key": "k32",
+        "label": "Made In",
+        "value": "USA (Melrose, MN)"
+      },
+      {
+        "_type": "object",
+        "_key": "k33",
+        "label": "Shipping",
+        "value": "Free delivery"
+      },
+      {
+        "_type": "object",
+        "_key": "k34",
+        "label": "Returns",
+        "value": "30 days (buyer pays return shipping)"
+      },
+      {
+        "_type": "object",
+        "_key": "k35",
+        "label": "Dimensions",
+        "value": "To be confirmed"
+      },
+      {
+        "_type": "object",
+        "_key": "k36",
+        "label": "Weight",
+        "value": "To be confirmed"
+      }
+    ],
+    "relatedProductSlugs": [
+      "single-adjustable-transducer-board",
+      "dual-transducer-board-starboard-side"
+    ],
+    "variants": [
+      {
+        "_type": "object",
+        "_key": "k37",
+        "name": "Dual transducer port-side configuration"
+      }
+    ],
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k38",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k39",
+            "text": "This dual-board configuration is intended for anglers running two transducers and needing a dedicated port-side layout.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3a",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3b",
+            "text": "Compared with flat fixed plates, this setup gives you more control over angle and final position during install.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k3c",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k3d",
+            "text": "eBay item number and final MPN are being confirmed. Contact us directly if you want this configuration before published listing details are finalized.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "American Made Dual Transducer Board - Port Side | Adley Enterprises Transducer Mounts",
+      "metaDescription": "Dual Transducer Board - Port Side Adjustable Mount for $175.50. American-made in Melrose, MN with free USA shipping."
+    }
+  },
+  {
+    "_id": "product.dual-transducer-board-starboard-side",
+    "_type": "product",
+    "title": "American Made Dual Transducer Board - Starboard Side Adjustable Mount",
+    "slug": {
+      "_type": "slug",
+      "current": "dual-transducer-board-starboard-side"
+    },
+    "summary": "Dual adjustable mount for starboard-side transducer configurations. American made and built in Melrose, MN.",
+    "price": 175.5,
+    "priceCurrency": "USD",
+    "mpn": "To be confirmed",
+    "ebayItemNumber": "204657042455",
+    "ebayUrl": "https://www.ebay.com/itm/204657042455",
+    "brand": "Adley Enterprises",
+    "type": "Adjustable dual mount (starboard side)",
+    "material": "Plastic",
+    "color": "Black",
+    "category": "Sporting Goods > Fishing > Fishfinders",
+    "condition": "New",
+    "inquiryOnly": false,
+    "shippingScope": "USA only",
+    "shippingInfo": "Free delivery in the USA.",
+    "returnPolicy": "30-day returns. Buyer pays return shipping.",
+    "stockNote": "Availability in eBay store",
+    "locationNote": "Melrose, Minnesota",
+    "madeIn": "USA (Melrose, MN)",
+    "compatibilityNote": "Designed for dual transducer layouts that require starboard-side orientation.",
+    "socialProofNote": "Built in the same Minnesota shop trusted for fiberglass repair work.",
+    "isPublished": true,
+    "images": [
+      {
+        "_type": "object",
+        "_key": "k2c",
+        "url": "/images/products/dual-port-starboard-board-01.jpg",
+        "alt": "Adjustable dual transducer boards showing port and starboard orientations"
+      },
+      {
+        "_type": "object",
+        "_key": "k2d",
+        "url": "/images/products/dual-starboard-adjustable-board-02.jpg",
+        "alt": "Dual transducer mount detail image for starboard-side setup"
       }
     ],
     "specifications": [
@@ -1212,7 +1202,7 @@
         "_type": "object",
         "_key": "k3f",
         "label": "Model",
-        "value": "Dual Transducer Board - Port Side Adjustable Mount"
+        "value": "Dual Transducer Board - Starboard Side Adjustable Mount"
       },
       {
         "_type": "object",
@@ -1224,7 +1214,7 @@
         "_type": "object",
         "_key": "k3h",
         "label": "Type",
-        "value": "Adjustable dual mount (port side)"
+        "value": "Adjustable dual mount (starboard side)"
       },
       {
         "_type": "object",
@@ -1271,13 +1261,13 @@
     ],
     "relatedProductSlugs": [
       "single-adjustable-transducer-board",
-      "dual-transducer-board-starboard-side"
+      "dual-transducer-board-port-side"
     ],
     "variants": [
       {
         "_type": "object",
         "_key": "k3p",
-        "name": "Dual transducer port-side configuration"
+        "name": "Dual transducer starboard-side configuration"
       }
     ],
     "body": [
@@ -1290,7 +1280,7 @@
           {
             "_type": "span",
             "_key": "k3r",
-            "text": "This dual-board configuration is intended for anglers running two transducers and needing a dedicated port-side layout.",
+            "text": "This starboard-side dual board is built for boats where transducer placement, cable routing, and stern layout are best served on the right-side configuration.",
             "marks": []
           }
         ]
@@ -1304,7 +1294,7 @@
           {
             "_type": "span",
             "_key": "k3t",
-            "text": "Compared with flat fixed plates, this setup gives you more control over angle and final position during install.",
+            "text": "The adjustable design allows fine positioning during setup instead of committing to a fixed angle from the start.",
             "marks": []
           }
         ]
@@ -1318,179 +1308,6 @@
           {
             "_type": "span",
             "_key": "k3v",
-            "text": "eBay item number and final MPN are being confirmed. Contact us directly if you want this configuration before published listing details are finalized.",
-            "marks": []
-          }
-        ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "American Made Dual Transducer Board - Port Side | Adley Enterprises Transducer Mounts",
-      "metaDescription": "Dual Transducer Board - Port Side Adjustable Mount for $175.50. American-made in Melrose, MN with free USA shipping."
-    }
-  },
-  {
-    "_id": "product.dual-transducer-board-starboard-side",
-    "_type": "product",
-    "title": "American Made Dual Transducer Board - Starboard Side Adjustable Mount",
-    "slug": {
-      "_type": "slug",
-      "current": "dual-transducer-board-starboard-side"
-    },
-    "summary": "Dual adjustable mount for starboard-side transducer configurations. American made and built in Melrose, MN.",
-    "price": 175.5,
-    "priceCurrency": "USD",
-    "mpn": "To be confirmed",
-    "ebayItemNumber": "204657042455",
-    "ebayUrl": "https://www.ebay.com/itm/204657042455",
-    "brand": "Adley Enterprises",
-    "type": "Adjustable dual mount (starboard side)",
-    "material": "Plastic",
-    "color": "Black",
-    "category": "Sporting Goods > Fishing > Fishfinders",
-    "condition": "New",
-    "inquiryOnly": false,
-    "shippingScope": "USA only",
-    "shippingInfo": "Free delivery in the USA.",
-    "returnPolicy": "30-day returns. Buyer pays return shipping.",
-    "stockNote": "Availability in eBay store",
-    "locationNote": "Melrose, Minnesota",
-    "madeIn": "USA (Melrose, MN)",
-    "compatibilityNote": "Designed for dual transducer layouts that require starboard-side orientation.",
-    "socialProofNote": "Built in the same Minnesota shop trusted for fiberglass repair work.",
-    "isPublished": true,
-    "images": [
-      {
-        "_type": "object",
-        "_key": "k2u",
-        "url": "/images/products/dual-port-starboard-board-01.jpg",
-        "alt": "Adjustable dual transducer boards showing port and starboard orientations"
-      },
-      {
-        "_type": "object",
-        "_key": "k2v",
-        "url": "/images/products/dual-starboard-adjustable-board-02.jpg",
-        "alt": "Dual transducer mount detail image for starboard-side setup"
-      }
-    ],
-    "specifications": [
-      {
-        "_type": "object",
-        "_key": "k3w",
-        "label": "Brand",
-        "value": "Adley Enterprises"
-      },
-      {
-        "_type": "object",
-        "_key": "k3x",
-        "label": "Model",
-        "value": "Dual Transducer Board - Starboard Side Adjustable Mount"
-      },
-      {
-        "_type": "object",
-        "_key": "k3y",
-        "label": "MPN",
-        "value": "To be confirmed"
-      },
-      {
-        "_type": "object",
-        "_key": "k3z",
-        "label": "Type",
-        "value": "Adjustable dual mount (starboard side)"
-      },
-      {
-        "_type": "object",
-        "_key": "k40",
-        "label": "Material",
-        "value": "Plastic"
-      },
-      {
-        "_type": "object",
-        "_key": "k41",
-        "label": "Color",
-        "value": "Black"
-      },
-      {
-        "_type": "object",
-        "_key": "k42",
-        "label": "Made In",
-        "value": "USA (Melrose, MN)"
-      },
-      {
-        "_type": "object",
-        "_key": "k43",
-        "label": "Shipping",
-        "value": "Free delivery"
-      },
-      {
-        "_type": "object",
-        "_key": "k44",
-        "label": "Returns",
-        "value": "30 days (buyer pays return shipping)"
-      },
-      {
-        "_type": "object",
-        "_key": "k45",
-        "label": "Dimensions",
-        "value": "To be confirmed"
-      },
-      {
-        "_type": "object",
-        "_key": "k46",
-        "label": "Weight",
-        "value": "To be confirmed"
-      }
-    ],
-    "relatedProductSlugs": [
-      "single-adjustable-transducer-board",
-      "dual-transducer-board-port-side"
-    ],
-    "variants": [
-      {
-        "_type": "object",
-        "_key": "k47",
-        "name": "Dual transducer starboard-side configuration"
-      }
-    ],
-    "body": [
-      {
-        "_type": "block",
-        "_key": "k48",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k49",
-            "text": "This starboard-side dual board is built for boats where transducer placement, cable routing, and stern layout are best served on the right-side configuration.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k4a",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k4b",
-            "text": "The adjustable design allows fine positioning during setup instead of committing to a fixed angle from the start.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k4c",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k4d",
             "text": "You can order through eBay or contact Adley directly to confirm fit before purchase.",
             "marks": []
           }
@@ -1532,13 +1349,13 @@
     "images": [
       {
         "_type": "object",
-        "_key": "k2q",
+        "_key": "k28",
         "url": "/images/products/single-adjustable-board-01.jpg",
         "alt": "Single Adjustable Transducer board by Adley Enterprises - primary view"
       },
       {
         "_type": "object",
-        "_key": "k2r",
+        "_key": "k29",
         "url": "/images/products/single-adjustable-board-02.jpg",
         "alt": "American Made Single Adjustable Transducer board detail view"
       }
@@ -1546,49 +1363,49 @@
     "specifications": [
       {
         "_type": "object",
-        "_key": "k4e",
+        "_key": "k3w",
         "label": "Brand",
         "value": "Adley Enterprises"
       },
       {
         "_type": "object",
-        "_key": "k4f",
+        "_key": "k3x",
         "label": "Model",
         "value": "Transducer Mounting Board"
       },
       {
         "_type": "object",
-        "_key": "k4g",
+        "_key": "k3y",
         "label": "Type",
         "value": "Standard (non-adjustable)"
       },
       {
         "_type": "object",
-        "_key": "k4h",
+        "_key": "k3z",
         "label": "Material",
         "value": "Plastic"
       },
       {
         "_type": "object",
-        "_key": "k4i",
+        "_key": "k40",
         "label": "Color",
         "value": "Black"
       },
       {
         "_type": "object",
-        "_key": "k4j",
+        "_key": "k41",
         "label": "Made In",
         "value": "USA (Melrose, MN)"
       },
       {
         "_type": "object",
-        "_key": "k4k",
+        "_key": "k42",
         "label": "Shipping",
         "value": "Free delivery"
       },
       {
         "_type": "object",
-        "_key": "k4l",
+        "_key": "k43",
         "label": "Returns",
         "value": "Free returns"
       }
@@ -1599,20 +1416,20 @@
     "variants": [
       {
         "_type": "object",
-        "_key": "k4m",
+        "_key": "k44",
         "name": "Basic mounting board"
       }
     ],
     "body": [
       {
         "_type": "block",
-        "_key": "k4n",
+        "_key": "k45",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4o",
+            "_key": "k46",
             "text": "This board is held as optional pending client confirmation for website publishing.",
             "marks": []
           }
@@ -1632,13 +1449,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4p",
+        "_key": "k47",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4q",
+            "_key": "k48",
             "text": "We repair fiberglass boats only. Our shop focuses on fiberglass-specific repair and refinishing workflows.",
             "marks": []
           }
@@ -1657,13 +1474,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4r",
+        "_key": "k49",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4s",
+            "_key": "k4a",
             "text": "No. We focus exclusively on fiberglass boat repair services.",
             "marks": []
           }
@@ -1682,13 +1499,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4t",
+        "_key": "k4b",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4u",
+            "_key": "k4c",
             "text": "You can call us directly, submit your information through the quote form, and include photos if available.",
             "marks": []
           }
@@ -1707,13 +1524,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4v",
+        "_key": "k4d",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4w",
+            "_key": "k4e",
             "text": "Yes. Photo submission is encouraged for faster initial review and estimate planning.",
             "marks": []
           }
@@ -1732,13 +1549,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4x",
+        "_key": "k4f",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k4y",
+            "_key": "k4g",
             "text": "Turnaround time varies based on damage type, repair depth, finish work requirements, and schedule volume.",
             "marks": []
           }
@@ -1757,13 +1574,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k4z",
+        "_key": "k4h",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k50",
+            "_key": "k4i",
             "text": "Yes. We handle both structural and cosmetic collision damage along with gel coat and exterior finish correction.",
             "marks": []
           }
@@ -1782,13 +1599,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k51",
+        "_key": "k4j",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k52",
+            "_key": "k4k",
             "text": "Yes. Buffing and waxing can be scheduled as standalone service or bundled with other repair work.",
             "marks": []
           }
@@ -1807,13 +1624,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k53",
+        "_key": "k4l",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k54",
+            "_key": "k4m",
             "text": "Warranty claims are reviewed with each written estimate and finalized during repair approval.",
             "marks": []
           }
@@ -1832,14 +1649,14 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k55",
+        "_key": "k4n",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k56",
-            "text": "We serve approximately a 30-mile radius around Melrose, MN, including St. Cloud, Sauk Rapids, Waite Park, and nearby communities.",
+            "_key": "k4o",
+            "text": "We serve fiberglass boat owners across the Midwest, including Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana.",
             "marks": []
           }
         ]
@@ -1857,13 +1674,13 @@
     "answer": [
       {
         "_type": "block",
-        "_key": "k57",
+        "_key": "k4p",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k58",
+            "_key": "k4q",
             "text": "Yes. We offer inquiry-only transducer mount options for port side, starboard side, and single transducer setups with USA shipping.",
             "marks": []
           }
@@ -1890,13 +1707,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k59",
+        "_key": "k4r",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5a",
+            "_key": "k4s",
             "text": "Most fiberglass failures start as small visual changes: light spider cracking, chips near edges, and stress lines around hardware. Early inspection usually means simpler repairs, shorter downtime, and lower risk of hidden moisture intrusion.",
             "marks": []
           }
@@ -1904,13 +1721,13 @@
       },
       {
         "_type": "block",
-        "_key": "k5b",
+        "_key": "k4t",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5c",
+            "_key": "k4u",
             "text": "What to Watch for During Routine Checks",
             "marks": []
           }
@@ -1918,7 +1735,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5d",
+        "_key": "k4v",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -1926,7 +1743,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5e",
+            "_key": "k4w",
             "text": "Spider cracks that keep returning in the same area.",
             "marks": []
           }
@@ -1934,7 +1751,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5f",
+        "_key": "k4x",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -1942,7 +1759,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5g",
+            "_key": "k4y",
             "text": "Chips or gouges that expose fibers under the gel coat surface.",
             "marks": []
           }
@@ -1950,7 +1767,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5h",
+        "_key": "k4z",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -1958,7 +1775,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5i",
+            "_key": "k50",
             "text": "Soft or flexing sections when you apply light hand pressure.",
             "marks": []
           }
@@ -1966,7 +1783,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5j",
+        "_key": "k51",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -1974,7 +1791,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5k",
+            "_key": "k52",
             "text": "Discoloration, bubbling, or dull patches that spread over time.",
             "marks": []
           }
@@ -1982,13 +1799,13 @@
       },
       {
         "_type": "block",
-        "_key": "k5l",
+        "_key": "k53",
         "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5m",
+            "_key": "k54",
             "text": "Simple Documentation That Speeds Up Estimates",
             "marks": []
           }
@@ -1996,13 +1813,13 @@
       },
       {
         "_type": "block",
-        "_key": "k5n",
+        "_key": "k55",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5o",
+            "_key": "k56",
             "text": "Take a wide photo of the whole panel, then medium and close-up shots of the damage. Include one angled photo to show depth and one photo with a ruler or tape measure for scale.",
             "marks": []
           }
@@ -2010,13 +1827,13 @@
       },
       {
         "_type": "block",
-        "_key": "k5p",
+        "_key": "k57",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5q",
+            "_key": "k58",
             "text": "If cracks are growing or damage is near high-load zones, schedule inspection before the next run.",
             "marks": []
           }
@@ -2044,13 +1861,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k5r",
+        "_key": "k59",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5s",
+            "_key": "k5a",
             "text": "Boat owners often ask whether they need spot gel coat repair or full repainting. The best answer depends on coverage area, damage depth, and finish consistency.",
             "marks": []
           }
@@ -2058,13 +1875,13 @@
       },
       {
         "_type": "block",
-        "_key": "k5t",
+        "_key": "k5b",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k5u",
+            "_key": "k5c",
             "text": "When Spot Gel Coat Repair Is Usually Enough",
             "marks": []
           }
@@ -2072,7 +1889,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5v",
+        "_key": "k5d",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2080,7 +1897,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5w",
+            "_key": "k5e",
             "text": "Damage is isolated to one or two sections.",
             "marks": []
           }
@@ -2088,7 +1905,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5x",
+        "_key": "k5f",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2096,7 +1913,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k5y",
+            "_key": "k5g",
             "text": "The surrounding finish is still stable and not heavily oxidized.",
             "marks": []
           }
@@ -2104,7 +1921,7 @@
       },
       {
         "_type": "block",
-        "_key": "k5z",
+        "_key": "k5h",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2112,7 +1929,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k60",
+            "_key": "k5i",
             "text": "Color matching can be blended without obvious patch transitions.",
             "marks": []
           }
@@ -2120,13 +1937,13 @@
       },
       {
         "_type": "block",
-        "_key": "k61",
+        "_key": "k5j",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k62",
+            "_key": "k5k",
             "text": "When Broader Refinishing Makes More Sense",
             "marks": []
           }
@@ -2134,7 +1951,7 @@
       },
       {
         "_type": "block",
-        "_key": "k63",
+        "_key": "k5l",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2142,7 +1959,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k64",
+            "_key": "k5m",
             "text": "Multiple repaired sections create inconsistent color or gloss.",
             "marks": []
           }
@@ -2150,7 +1967,7 @@
       },
       {
         "_type": "block",
-        "_key": "k65",
+        "_key": "k5n",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2158,7 +1975,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k66",
+            "_key": "k5o",
             "text": "Oxidation and weathering are present across wide panels.",
             "marks": []
           }
@@ -2166,7 +1983,7 @@
       },
       {
         "_type": "block",
-        "_key": "k67",
+        "_key": "k5p",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2174,7 +1991,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k68",
+            "_key": "k5q",
             "text": "Previous patch history makes new touch-up blending unreliable.",
             "marks": []
           }
@@ -2182,13 +1999,13 @@
       },
       {
         "_type": "block",
-        "_key": "k69",
+        "_key": "k5r",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6a",
+            "_key": "k5s",
             "text": "Adley Enterprises does not publish one-size-fits-all pricing. Every estimate is tied to real hull condition and finish scope.",
             "marks": []
           }
@@ -2216,13 +2033,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k6b",
+        "_key": "k5t",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6c",
+            "_key": "k5u",
             "text": "Collision damage is not always limited to what you can see on the surface. Fiberglass can fracture beneath the finish, so what looks small may still need structural correction.",
             "marks": []
           }
@@ -2230,13 +2047,13 @@
       },
       {
         "_type": "block",
-        "_key": "k6d",
+        "_key": "k5v",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6e",
+            "_key": "k5w",
             "text": "Immediate Steps After Impact",
             "marks": []
           }
@@ -2244,7 +2061,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6f",
+        "_key": "k5x",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2252,7 +2069,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6g",
+            "_key": "k5y",
             "text": "Prioritize safety and remove the boat from operation.",
             "marks": []
           }
@@ -2260,7 +2077,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6h",
+        "_key": "k5z",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2268,7 +2085,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6i",
+            "_key": "k60",
             "text": "Photograph damage from wide, medium, and close-up angles.",
             "marks": []
           }
@@ -2276,7 +2093,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6j",
+        "_key": "k61",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2284,7 +2101,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6k",
+            "_key": "k62",
             "text": "Note where the impact happened and what was hit.",
             "marks": []
           }
@@ -2292,7 +2109,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6l",
+        "_key": "k63",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2300,7 +2117,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6m",
+            "_key": "k64",
             "text": "Avoid additional runs until structural condition is reviewed.",
             "marks": []
           }
@@ -2308,13 +2125,13 @@
       },
       {
         "_type": "block",
-        "_key": "k6n",
+        "_key": "k65",
         "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6o",
+            "_key": "k66",
             "text": "What to Avoid Before Inspection",
             "marks": []
           }
@@ -2322,7 +2139,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6p",
+        "_key": "k67",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2330,7 +2147,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6q",
+            "_key": "k68",
             "text": "Do not grind, sand, or fill the area before evaluation.",
             "marks": []
           }
@@ -2338,7 +2155,7 @@
       },
       {
         "_type": "block",
-        "_key": "k6r",
+        "_key": "k69",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2346,7 +2163,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k6s",
+            "_key": "k6a",
             "text": "Do not apply temporary coatings that hide crack edges.",
             "marks": []
           }
@@ -2354,13 +2171,13 @@
       },
       {
         "_type": "block",
-        "_key": "k6t",
+        "_key": "k6b",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k6u",
+            "_key": "k6c",
             "text": "Early assessment helps reduce moisture intrusion risk and prevents stress cracks from expanding while the boat is parked.",
             "marks": []
           }
@@ -2381,11 +2198,149 @@
       "_type": "slug",
       "current": "how-often-buff-and-wax-fiberglass-boat"
     },
-    "excerpt": "Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions.",
+    "excerpt": "Maintenance interval guidance based on storage, use patterns, and Midwest conditions.",
     "publishedAt": "2026-01-05T09:00:00Z",
     "coverImageUrl": "/images/polishing-boat-optimized.jpg",
     "coverImageAlt": "Technician buffing and polishing a fiberglass boat side panel",
     "body": [
+      {
+        "_type": "block",
+        "_key": "k6d",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6e",
+            "text": "Buffing and waxing keeps fiberglass finishes cleaner, glossier, and better protected from weather exposure.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6f",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6g",
+            "text": "Typical Service Rhythm by Use Case",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6h",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6i",
+            "text": "Indoor stored / moderate use: usually one full correction cycle per season.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6j",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6k",
+            "text": "Outdoor stored / frequent weekend use: often two cycles per season.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6l",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6m",
+            "text": "Heavy sun exposure or frequent trailering: touch-up intervals may be shorter.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6n",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6o",
+            "text": "Signs It Is Time for Service",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6p",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6q",
+            "text": "Water no longer beads consistently on the surface.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6r",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6s",
+            "text": "The hull looks chalky or dull after washing.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k6t",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k6u",
+            "text": "Fine swirl marks are visible in direct sunlight.",
+            "marks": []
+          }
+        ]
+      },
       {
         "_type": "block",
         "_key": "k6v",
@@ -2395,144 +2350,6 @@
           {
             "_type": "span",
             "_key": "k6w",
-            "text": "Buffing and waxing keeps fiberglass finishes cleaner, glossier, and better protected from weather exposure.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k6x",
-        "style": "h2",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k6y",
-            "text": "Typical Service Rhythm by Use Case",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k6z",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k70",
-            "text": "Indoor stored / moderate use: usually one full correction cycle per season.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k71",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k72",
-            "text": "Outdoor stored / frequent weekend use: often two cycles per season.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k73",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k74",
-            "text": "Heavy sun exposure or frequent trailering: touch-up intervals may be shorter.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k75",
-        "style": "h3",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k76",
-            "text": "Signs It Is Time for Service",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k77",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k78",
-            "text": "Water no longer beads consistently on the surface.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k79",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k7a",
-            "text": "The hull looks chalky or dull after washing.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k7b",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k7c",
-            "text": "Fine swirl marks are visible in direct sunlight.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k7d",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k7e",
             "text": "Regular maintenance helps protect earlier repair work and keeps finish quality consistent through the season.",
             "marks": []
           }
@@ -2542,7 +2359,7 @@
     "seo": {
       "_type": "seo",
       "metaTitle": "How Often Should You Buff and Wax a Fiberglass Boat? | Adley Enterprises LLC",
-      "metaDescription": "Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions."
+      "metaDescription": "Maintenance interval guidance based on storage, use patterns, and Midwest conditions."
     }
   },
   {
@@ -2560,13 +2377,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k7f",
+        "_key": "k6x",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k7g",
+            "_key": "k6y",
             "text": "Photo estimates help start the conversation quickly, especially when you are comparing timelines before hauling the boat in.",
             "marks": []
           }
@@ -2574,13 +2391,13 @@
       },
       {
         "_type": "block",
-        "_key": "k7h",
+        "_key": "k6z",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k7i",
+            "_key": "k70",
             "text": "Best Photo Set to Send",
             "marks": []
           }
@@ -2588,7 +2405,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7j",
+        "_key": "k71",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2596,7 +2413,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7k",
+            "_key": "k72",
             "text": "One full-side image so damage context is clear.",
             "marks": []
           }
@@ -2604,7 +2421,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7l",
+        "_key": "k73",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2612,7 +2429,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7m",
+            "_key": "k74",
             "text": "Two medium shots showing the exact repair zone.",
             "marks": []
           }
@@ -2620,7 +2437,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7n",
+        "_key": "k75",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2628,7 +2445,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7o",
+            "_key": "k76",
             "text": "Two close-ups that capture crack depth or edge condition.",
             "marks": []
           }
@@ -2636,7 +2453,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7p",
+        "_key": "k77",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2644,7 +2461,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7q",
+            "_key": "k78",
             "text": "An angled shot to reveal contour distortion or dent shape.",
             "marks": []
           }
@@ -2652,13 +2469,13 @@
       },
       {
         "_type": "block",
-        "_key": "k7r",
+        "_key": "k79",
         "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k7s",
+            "_key": "k7a",
             "text": "Information to Include",
             "marks": []
           }
@@ -2666,7 +2483,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7t",
+        "_key": "k7b",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2674,7 +2491,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7u",
+            "_key": "k7c",
             "text": "Boat make/model and approximate year.",
             "marks": []
           }
@@ -2682,7 +2499,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7v",
+        "_key": "k7d",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2690,7 +2507,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7w",
+            "_key": "k7e",
             "text": "How the damage happened and when it happened.",
             "marks": []
           }
@@ -2698,7 +2515,7 @@
       },
       {
         "_type": "block",
-        "_key": "k7x",
+        "_key": "k7f",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -2706,7 +2523,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k7y",
+            "_key": "k7g",
             "text": "Whether the area was previously repaired.",
             "marks": []
           }
@@ -2714,13 +2531,13 @@
       },
       {
         "_type": "block",
-        "_key": "k7z",
+        "_key": "k7h",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k80",
+            "_key": "k7i",
             "text": "Photo estimates are an initial planning step. Final scope is confirmed through in-person inspection when required.",
             "marks": []
           }
@@ -2736,7 +2553,7 @@
   {
     "_id": "blog.spring-boat-prep-central-minnesota",
     "_type": "blogPost",
-    "title": "Spring Boat Prep Checklist for Central Minnesota",
+    "title": "Spring Boat Prep Checklist for Midwest Boat Owners",
     "slug": {
       "_type": "slug",
       "current": "spring-boat-prep-central-minnesota"
@@ -2748,14 +2565,168 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k81",
+        "_key": "k7j",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
+            "_key": "k7k",
+            "text": "Across the Midwest, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7l",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7m",
+            "text": "Pre-Launch Inspection Checklist",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7n",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7o",
+            "text": "Inspect high-stress zones for fresh cracks and impact marks.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7p",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7q",
+            "text": "Check previous repair areas for movement or finish edge changes.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7r",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7s",
+            "text": "Look for oxidation or chalking on exposed gel coat surfaces.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7t",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7u",
+            "text": "Confirm all hardware mount points are sealed and stable.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7v",
+        "style": "h3",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7w",
+            "text": "Why Early Scheduling Helps",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k7x",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k7y",
+            "text": "Small corrections are easier to schedule before peak season. Waiting until launch weekend can delay repairs when demand spikes.",
+            "marks": []
+          }
+        ]
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Spring Boat Prep Checklist for Midwest Boat Owners | Adley Enterprises LLC",
+      "metaDescription": "Pre-season fiberglass inspection and finish prep to reduce downtime during Minnesota’s launch window."
+    }
+  },
+  {
+    "_id": "blog.signs-you-need-dent-scratch-repair",
+    "_type": "blogPost",
+    "title": "Signs Your Boat Needs Professional Chip and Scratch Repair",
+    "slug": {
+      "_type": "slug",
+      "current": "signs-you-need-dent-scratch-repair"
+    },
+    "excerpt": "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs.",
+    "publishedAt": "2026-01-08T09:00:00Z",
+    "coverImageUrl": "/images/fiberglass-boat-repair-4-3-four.avif",
+    "coverImageAlt": "Dent and scratch correction work on fiberglass hull panel",
+    "body": [
+      {
+        "_type": "block",
+        "_key": "k7z",
+        "style": "normal",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "_key": "k80",
+            "text": "Not all scratches are equal. Some are light finish marks, while others cut deep enough to expose substrate and invite further degradation.",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_type": "block",
+        "_key": "k81",
+        "style": "h2",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
             "_key": "k82",
-            "text": "In Central Minnesota, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded.",
+            "text": "Red Flags That Need Professional Review",
             "marks": []
           }
         ]
@@ -2763,13 +2734,15 @@
       {
         "_type": "block",
         "_key": "k83",
-        "style": "h2",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k84",
-            "text": "Pre-Launch Inspection Checklist",
+            "text": "Scratches that catch a fingernail and appear layered.",
             "marks": []
           }
         ]
@@ -2785,7 +2758,7 @@
           {
             "_type": "span",
             "_key": "k86",
-            "text": "Inspect high-stress zones for fresh cracks and impact marks.",
+            "text": "Dents near chine lines, corners, or hardware zones.",
             "marks": []
           }
         ]
@@ -2801,7 +2774,7 @@
           {
             "_type": "span",
             "_key": "k88",
-            "text": "Check previous repair areas for movement or finish edge changes.",
+            "text": "Damage with surrounding spider cracks or dull halos.",
             "marks": []
           }
         ]
@@ -2817,7 +2790,7 @@
           {
             "_type": "span",
             "_key": "k8a",
-            "text": "Look for oxidation or chalking on exposed gel coat surfaces.",
+            "text": "Repeated chips in the same impact-prone location.",
             "marks": []
           }
         ]
@@ -2825,15 +2798,13 @@
       {
         "_type": "block",
         "_key": "k8b",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
+        "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8c",
-            "text": "Confirm all hardware mount points are sealed and stable.",
+            "text": "What Affects Repair Scope",
             "marks": []
           }
         ]
@@ -2841,13 +2812,15 @@
       {
         "_type": "block",
         "_key": "k8d",
-        "style": "h3",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8e",
-            "text": "Why Early Scheduling Helps",
+            "text": "Depth and spread of the damage.",
             "marks": []
           }
         ]
@@ -2856,46 +2829,30 @@
         "_type": "block",
         "_key": "k8f",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8g",
-            "text": "Small corrections are easier to schedule before peak season. Waiting until launch weekend can delay repairs when demand spikes.",
+            "text": "Location relative to stress and load points.",
             "marks": []
           }
         ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "Spring Boat Prep Checklist for Central Minnesota | Adley Enterprises LLC",
-      "metaDescription": "Pre-season fiberglass inspection and finish prep to reduce downtime during Minnesota’s launch window."
-    }
-  },
-  {
-    "_id": "blog.signs-you-need-dent-scratch-repair",
-    "_type": "blogPost",
-    "title": "Signs Your Boat Needs Professional Dent and Scratch Repair",
-    "slug": {
-      "_type": "slug",
-      "current": "signs-you-need-dent-scratch-repair"
-    },
-    "excerpt": "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs.",
-    "publishedAt": "2026-01-08T09:00:00Z",
-    "coverImageUrl": "/images/fiberglass-boat-repair-4-3-four.avif",
-    "coverImageAlt": "Dent and scratch correction work on fiberglass hull panel",
-    "body": [
+      },
       {
         "_type": "block",
         "_key": "k8h",
         "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8i",
-            "text": "Not all scratches are equal. Some are light finish marks, while others cut deep enough to expose substrate and invite further degradation.",
+            "text": "Need for color blending across adjacent panels.",
             "marks": []
           }
         ]
@@ -2903,29 +2860,47 @@
       {
         "_type": "block",
         "_key": "k8j",
-        "style": "h2",
+        "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8k",
-            "text": "Red Flags That Need Professional Review",
+            "text": "Professional review helps separate true cosmetic touch-up work from deeper correction needs.",
             "marks": []
           }
         ]
-      },
+      }
+    ],
+    "seo": {
+      "_type": "seo",
+      "metaTitle": "Signs Your Boat Needs Professional Chip and Scratch Repair | Adley Enterprises LLC",
+      "metaDescription": "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs."
+    }
+  },
+  {
+    "_id": "blog.service-areas-around-melrose",
+    "_type": "blogPost",
+    "title": "Service Areas We Cover Across the Midwest",
+    "slug": {
+      "_type": "slug",
+      "current": "service-areas-around-melrose"
+    },
+    "excerpt": "An overview of Midwest states regularly served by Adley Enterprises.",
+    "publishedAt": "2026-01-09T09:00:00Z",
+    "coverImageUrl": "/images/fiberglass-boat-repair-wide.avif",
+    "coverImageAlt": "Adley Enterprises repair shop servicing Midwest boat owners",
+    "body": [
       {
         "_type": "block",
         "_key": "k8l",
         "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8m",
-            "text": "Scratches that catch a fingernail and appear layered.",
+            "text": "Adley Enterprises serves fiberglass boat owners across the Midwest, with regular repair requests from regional lake communities and traveling customers.",
             "marks": []
           }
         ]
@@ -2933,15 +2908,13 @@
       {
         "_type": "block",
         "_key": "k8n",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
+        "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8o",
-            "text": "Dents near chine lines, corners, or hardware zones.",
+            "text": "Primary Midwest Service States",
             "marks": []
           }
         ]
@@ -2957,7 +2930,7 @@
           {
             "_type": "span",
             "_key": "k8q",
-            "text": "Damage with surrounding spider cracks or dull halos.",
+            "text": "Minnesota, Iowa, and Wisconsin.",
             "marks": []
           }
         ]
@@ -2973,7 +2946,7 @@
           {
             "_type": "span",
             "_key": "k8s",
-            "text": "Repeated chips in the same impact-prone location.",
+            "text": "Michigan, North Dakota, and South Dakota.",
             "marks": []
           }
         ]
@@ -2981,13 +2954,15 @@
       {
         "_type": "block",
         "_key": "k8t",
-        "style": "h3",
+        "style": "normal",
+        "listItem": "bullet",
+        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8u",
-            "text": "What Affects Repair Scope",
+            "text": "Montana and additional nearby Midwest requests.",
             "marks": []
           }
         ]
@@ -2996,14 +2971,12 @@
         "_type": "block",
         "_key": "k8v",
         "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8w",
-            "text": "Depth and spread of the damage.",
+            "text": "If your state is not listed, call anyway. Many owners still choose Adley for fiberglass-only specialization and coordinate transport.",
             "marks": []
           }
         ]
@@ -3012,167 +2985,11 @@
         "_type": "block",
         "_key": "k8x",
         "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
         "markDefs": [],
         "children": [
           {
             "_type": "span",
             "_key": "k8y",
-            "text": "Location relative to stress and load points.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k8z",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k90",
-            "text": "Need for color blending across adjacent panels.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k91",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k92",
-            "text": "Professional review helps separate true cosmetic touch-up work from deeper correction needs.",
-            "marks": []
-          }
-        ]
-      }
-    ],
-    "seo": {
-      "_type": "seo",
-      "metaTitle": "Signs Your Boat Needs Professional Dent and Scratch Repair | Adley Enterprises LLC",
-      "metaDescription": "How to tell when cosmetic-looking damage could indicate deeper fiberglass correction needs."
-    }
-  },
-  {
-    "_id": "blog.service-areas-around-melrose",
-    "_type": "blogPost",
-    "title": "Service Areas We Cover Around Melrose, MN",
-    "slug": {
-      "_type": "slug",
-      "current": "service-areas-around-melrose"
-    },
-    "excerpt": "An overview of Central Minnesota communities regularly served from the Melrose shop.",
-    "publishedAt": "2026-01-09T09:00:00Z",
-    "coverImageUrl": "/images/fiberglass-boat-repair-wide.avif",
-    "coverImageAlt": "Adley Enterprises repair shop servicing Central Minnesota boat owners",
-    "body": [
-      {
-        "_type": "block",
-        "_key": "k93",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k94",
-            "text": "Adley Enterprises serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and lake communities.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k95",
-        "style": "h2",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k96",
-            "text": "Common Cities in the Primary Service Radius",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k97",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k98",
-            "text": "St. Cloud, Sauk Rapids, Waite Park, and St. Joseph.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k99",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k9a",
-            "text": "Sauk Centre, Cold Spring, Long Prairie, and Albany.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k9b",
-        "style": "normal",
-        "listItem": "bullet",
-        "level": 1,
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k9c",
-            "text": "Paynesville, Richmond, and surrounding communities.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k9d",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k9e",
-            "text": "If you are outside that radius, call anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization.",
-            "marks": []
-          }
-        ]
-      },
-      {
-        "_type": "block",
-        "_key": "k9f",
-        "style": "normal",
-        "markDefs": [],
-        "children": [
-          {
-            "_type": "span",
-            "_key": "k9g",
             "text": "Appointment scheduling is recommended, especially during pre-season and mid-summer demand windows.",
             "marks": []
           }
@@ -3181,8 +2998,8 @@
     ],
     "seo": {
       "_type": "seo",
-      "metaTitle": "Service Areas We Cover Around Melrose, MN | Adley Enterprises LLC",
-      "metaDescription": "An overview of Central Minnesota communities regularly served from the Melrose shop."
+      "metaTitle": "Service Areas We Cover Across the Midwest | Adley Enterprises LLC",
+      "metaDescription": "An overview of Midwest states regularly served by Adley Enterprises."
     }
   },
   {
@@ -3200,13 +3017,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "k9h",
+        "_key": "k8z",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k9i",
+            "_key": "k90",
             "text": "Adley Enterprises builds inquiry-only adjustable transducer mounts for owners who need practical fitment options and clean installation paths.",
             "marks": []
           }
@@ -3214,13 +3031,13 @@
       },
       {
         "_type": "block",
-        "_key": "k9j",
+        "_key": "k91",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k9k",
+            "_key": "k92",
             "text": "Core Configuration Options",
             "marks": []
           }
@@ -3228,7 +3045,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9l",
+        "_key": "k93",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3236,7 +3053,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9m",
+            "_key": "k94",
             "text": "Single transducer mount for simpler sonar layouts.",
             "marks": []
           }
@@ -3244,7 +3061,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9n",
+        "_key": "k95",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3252,7 +3069,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9o",
+            "_key": "k96",
             "text": "Dual mount (port side) for side-specific electronics setups.",
             "marks": []
           }
@@ -3260,7 +3077,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9p",
+        "_key": "k97",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3268,7 +3085,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9q",
+            "_key": "k98",
             "text": "Dual mount (starboard side) for opposite-side routing needs.",
             "marks": []
           }
@@ -3276,13 +3093,13 @@
       },
       {
         "_type": "block",
-        "_key": "k9r",
+        "_key": "k99",
         "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "k9s",
+            "_key": "k9a",
             "text": "What to Confirm Before Ordering",
             "marks": []
           }
@@ -3290,7 +3107,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9t",
+        "_key": "k9b",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3298,7 +3115,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9u",
+            "_key": "k9c",
             "text": "Exact transducer model and bracket footprint.",
             "marks": []
           }
@@ -3306,7 +3123,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9v",
+        "_key": "k9d",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3314,7 +3131,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9w",
+            "_key": "k9e",
             "text": "Preferred side and cable path to electronics.",
             "marks": []
           }
@@ -3322,7 +3139,7 @@
       },
       {
         "_type": "block",
-        "_key": "k9x",
+        "_key": "k9f",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3330,7 +3147,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "k9y",
+            "_key": "k9g",
             "text": "Stern clearance and trailer proximity.",
             "marks": []
           }
@@ -3338,13 +3155,13 @@
       },
       {
         "_type": "block",
-        "_key": "k9z",
+        "_key": "k9h",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "ka0",
+            "_key": "k9i",
             "text": "Public pricing is not listed. Contact Adley Enterprises with your setup details for fit guidance and USA shipping options.",
             "marks": []
           }
@@ -3372,13 +3189,13 @@
     "body": [
       {
         "_type": "block",
-        "_key": "ka1",
+        "_key": "k9j",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "ka2",
+            "_key": "k9k",
             "text": "Storage and transport are two common sources of avoidable finish wear. A few setup changes can protect gel coat and reduce spring repair needs.",
             "marks": []
           }
@@ -3386,13 +3203,13 @@
       },
       {
         "_type": "block",
-        "_key": "ka3",
+        "_key": "k9l",
         "style": "h2",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "ka4",
+            "_key": "k9m",
             "text": "Pre-Storage Protection Steps",
             "marks": []
           }
@@ -3400,7 +3217,7 @@
       },
       {
         "_type": "block",
-        "_key": "ka5",
+        "_key": "k9n",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3408,7 +3225,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "ka6",
+            "_key": "k9o",
             "text": "Wash and fully dry surfaces before covering.",
             "marks": []
           }
@@ -3416,7 +3233,7 @@
       },
       {
         "_type": "block",
-        "_key": "ka7",
+        "_key": "k9p",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3424,7 +3241,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "ka8",
+            "_key": "k9q",
             "text": "Remove residue around fittings, seams, and rub rail zones.",
             "marks": []
           }
@@ -3432,7 +3249,7 @@
       },
       {
         "_type": "block",
-        "_key": "ka9",
+        "_key": "k9r",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3440,7 +3257,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "kaa",
+            "_key": "k9s",
             "text": "Apply protective wax before long off-season storage.",
             "marks": []
           }
@@ -3448,7 +3265,7 @@
       },
       {
         "_type": "block",
-        "_key": "kab",
+        "_key": "k9t",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3456,7 +3273,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "kac",
+            "_key": "k9u",
             "text": "Use breathable covers to reduce trapped moisture.",
             "marks": []
           }
@@ -3464,13 +3281,13 @@
       },
       {
         "_type": "block",
-        "_key": "kad",
+        "_key": "k9v",
         "style": "h3",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "kae",
+            "_key": "k9w",
             "text": "Transport Protection Checklist",
             "marks": []
           }
@@ -3478,7 +3295,7 @@
       },
       {
         "_type": "block",
-        "_key": "kaf",
+        "_key": "k9x",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3486,7 +3303,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "kag",
+            "_key": "k9y",
             "text": "Secure straps to avoid rubbing against painted/gel surfaces.",
             "marks": []
           }
@@ -3494,7 +3311,7 @@
       },
       {
         "_type": "block",
-        "_key": "kah",
+        "_key": "k9z",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3502,7 +3319,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "kai",
+            "_key": "ka0",
             "text": "Pad frequent contact points on trailer supports.",
             "marks": []
           }
@@ -3510,7 +3327,7 @@
       },
       {
         "_type": "block",
-        "_key": "kaj",
+        "_key": "ka1",
         "style": "normal",
         "listItem": "bullet",
         "level": 1,
@@ -3518,7 +3335,7 @@
         "children": [
           {
             "_type": "span",
-            "_key": "kak",
+            "_key": "ka2",
             "text": "Inspect tie-down pressure after first miles on the road.",
             "marks": []
           }
@@ -3526,13 +3343,13 @@
       },
       {
         "_type": "block",
-        "_key": "kal",
+        "_key": "ka3",
         "style": "normal",
         "markDefs": [],
         "children": [
           {
             "_type": "span",
-            "_key": "kam",
+            "_key": "ka4",
             "text": "Monthly off-season checks help catch dull patches or abrasion early, before the next launch window.",
             "marks": []
           }

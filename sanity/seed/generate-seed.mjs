@@ -48,9 +48,9 @@ const toSlug = (value) =>
 
 const defaultSeo = {
   _type: "seo",
-  metaTitle: "Adley Enterprises LLC | Fiberglass Boat Repair in Melrose, MN",
+  metaTitle: "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
   metaDescription:
-    "Fiberglass-only boat repair, hull collision repair, gel coat refinishing, and detailing services for Central Minnesota boat owners."
+    "Fiberglass-only boat repair, hull collision repair, gel coat refinishing, and detailing services for Midwest boat owners."
 };
 
 const siteSettings = {
@@ -65,13 +65,13 @@ const siteSettings = {
   region: "MN",
   postalCode: "56352",
   country: "US",
-  serviceRadiusMiles: 30,
+  serviceRadiusMiles: 1000,
   insured: true,
   yearsInBusiness: 15,
   warrantyNote:
     "Warranty claims are reviewed case-by-case with each written estimate and final repair scope approval.",
   aboutSummary:
-    "Adley Enterprises LLC is a fiberglass-only boat repair shop serving Melrose and surrounding Central Minnesota communities. We focus on practical repairs, quality finish work, and clear estimate communication.",
+    "Adley Enterprises LLC is a fiberglass-only boat repair shop serving boat owners across the Midwest. We focus on practical repairs, quality finish work, and clear estimate communication.",
   hours: [
     { _type: "object", _key: key(), day: "Monday", opens: "06:30", closes: "16:00" },
     { _type: "object", _key: key(), day: "Tuesday", opens: "06:30", closes: "16:00" },
@@ -107,9 +107,9 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Fiberglass Boat Repair Near Melrose, MN | Adley Enterprises LLC",
+      metaTitle: "Fiberglass Boat Repair Across the Midwest | Adley Enterprises LLC",
       metaDescription:
-        "Professional fiberglass boat repair in Central Minnesota. Request an estimate by call, photos, or in-person inspection."
+        "Professional fiberglass boat repair across the Midwest. Request an estimate by call, photos, or in-person inspection."
     }
   },
   {
@@ -134,9 +134,9 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Boat Hull Collision Repair in Central Minnesota | Adley Enterprises",
+      metaTitle: "Boat Hull Collision Repair Across the Midwest | Adley Enterprises",
       metaDescription:
-        "Hull collision repair for fiberglass boats near Melrose, MN. Call for inspection and written estimate."
+        "Hull collision repair for fiberglass boats across the Midwest. Call for inspection and written estimate."
     }
   },
   {
@@ -163,7 +163,7 @@ const services = [
       _type: "seo",
       metaTitle: "Gel Coat Repair and Refinishing | Adley Enterprises",
       metaDescription:
-        "Gel coat touch-up and refinishing for fiberglass boats in Melrose, MN and nearby cities."
+        "Gel coat touch-up and refinishing for fiberglass boats across the Midwest."
     }
   },
   {
@@ -188,9 +188,9 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Boat Chip and Scratch Repair in Minnesota | Adley Enterprises",
+      metaTitle: "Boat Chip and Scratch Repair Across the Midwest | Adley Enterprises",
       metaDescription:
-        "Fiberglass chip and scratch repair for boat owners in the Melrose area. Request your estimate today."
+        "Fiberglass chip and scratch repair for boat owners across the Midwest. Request your estimate today."
     }
   },
   {
@@ -215,41 +215,38 @@ const services = [
     ],
     seo: {
       _type: "seo",
-      metaTitle: "Boat Buffing and Waxing in Central Minnesota | Adley Enterprises",
+      metaTitle: "Boat Buffing and Waxing Across the Midwest | Adley Enterprises",
       metaDescription:
-        "Fiberglass boat buffing and waxing services for lasting shine and finish protection near Melrose, MN."
+        "Fiberglass boat buffing and waxing services for lasting shine and finish protection across the Midwest."
     }
   }
 ];
 
-const locationCities = [
-  "St. Cloud",
-  "Sauk Rapids",
-  "Waite Park",
-  "St. Joseph",
-  "Sauk Centre",
-  "Cold Spring",
-  "Long Prairie",
-  "Albany",
-  "Paynesville",
-  "Richmond"
+const locationStates = [
+  { name: "Minnesota", code: "MN" },
+  { name: "Iowa", code: "IA" },
+  { name: "Wisconsin", code: "WI" },
+  { name: "Michigan", code: "MI" },
+  { name: "North Dakota", code: "ND" },
+  { name: "South Dakota", code: "SD" },
+  { name: "Montana", code: "MT" }
 ];
 
-const locationPages = locationCities.map((city, index) => {
-  const slug = `${toSlug(city)}-mn`;
+const locationPages = locationStates.map((state) => {
+  const slug = toSlug(state.name);
 
   return {
     _id: `location.${slug}`,
     _type: "locationPage",
-    title: `Fiberglass Boat Repair in ${city}, MN`,
+    title: `Fiberglass Boat Repair in ${state.name}`,
     slug: { _type: "slug", current: slug },
-    city,
-    region: "MN",
+    city: state.name,
+    region: state.code,
     shortDescription:
-      `Adley Enterprises provides fiberglass-only boat repair services for ${city}, MN, including collision repair, gel coat work, and finish restoration.`,
+      `Adley Enterprises provides fiberglass-only boat repair services for boat owners across ${state.name}, including collision repair, gel coat work, and finish restoration.`,
     body: [
       block(
-        `${city} boat owners can request fiberglass repair estimates by phone, photo submission, or in-person inspection at our Melrose location.`
+        `Boat owners across ${state.name} can request fiberglass repair estimates by phone, photo submission, or in-person inspection.`
       ),
       block(
         "Common requests include hull collision repair, crack and gouge correction, chip and scratch repair, and finish restoration with buffing and waxing."
@@ -260,9 +257,9 @@ const locationPages = locationCities.map((city, index) => {
     ],
     seo: {
       _type: "seo",
-      metaTitle: `Fiberglass Boat Repair in ${city}, MN | Adley Enterprises LLC`,
+      metaTitle: `Fiberglass Boat Repair in ${state.name} | Adley Enterprises LLC`,
       metaDescription:
-        `Fiberglass-only boat repair services for ${city}, MN. Call Adley Enterprises for estimates and scheduling.`
+        `Fiberglass-only boat repair services for ${state.name}. Call Adley Enterprises for estimates and scheduling.`
     }
   };
 });
@@ -616,7 +613,7 @@ const faqItems = [
   },
   {
     q: "Which areas do you serve?",
-    a: "We serve approximately a 30-mile radius around Melrose, MN, including St. Cloud, Sauk Rapids, Waite Park, and nearby communities."
+    a: "We serve fiberglass boat owners across the Midwest, including Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana."
   },
   {
     q: "Do you sell adjustable transducer mounts?",
@@ -695,7 +692,7 @@ const blogSeeds = [
     title: "How Often Should You Buff and Wax a Fiberglass Boat?",
     slug: "how-often-buff-and-wax-fiberglass-boat",
     excerpt:
-      "Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions.",
+      "Maintenance interval guidance based on storage, use patterns, and Midwest conditions.",
     coverImageUrl: "/images/polishing-boat-optimized.jpg",
     coverImageAlt: "Technician buffing and polishing a fiberglass boat side panel",
     body: [
@@ -733,14 +730,14 @@ const blogSeeds = [
     ]
   },
   {
-    title: "Spring Boat Prep Checklist for Central Minnesota",
+    title: "Spring Boat Prep Checklist for Midwest Boat Owners",
     slug: "spring-boat-prep-central-minnesota",
     excerpt:
       "Pre-season fiberglass inspection and finish prep to reduce downtime during Minnesota’s launch window.",
     coverImageUrl: "/images/fiberglass-boat-repair-4-3-two.avif",
     coverImageAlt: "Spring-season fiberglass hull prep before boating launch",
     body: [
-      { style: "normal", text: "In Central Minnesota, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded." },
+      { style: "normal", text: "Across the Midwest, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded." },
       { style: "h2", text: "Pre-Launch Inspection Checklist" },
       { listItem: "bullet", text: "Inspect high-stress zones for fresh cracks and impact marks." },
       { listItem: "bullet", text: "Check previous repair areas for movement or finish edge changes." },
@@ -772,19 +769,19 @@ const blogSeeds = [
     ]
   },
   {
-    title: "Service Areas We Cover Around Melrose, MN",
+    title: "Service Areas We Cover Across the Midwest",
     slug: "service-areas-around-melrose",
     excerpt:
-      "An overview of Central Minnesota communities regularly served from the Melrose shop.",
+      "An overview of Midwest states regularly served by Adley Enterprises.",
     coverImageUrl: "/images/fiberglass-boat-repair-wide.avif",
-    coverImageAlt: "Adley Enterprises repair shop servicing Central Minnesota boat owners",
+    coverImageAlt: "Adley Enterprises repair shop servicing Midwest boat owners",
     body: [
-      { style: "normal", text: "Adley Enterprises serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and lake communities." },
-      { style: "h2", text: "Common Cities in the Primary Service Radius" },
-      { listItem: "bullet", text: "St. Cloud, Sauk Rapids, Waite Park, and St. Joseph." },
-      { listItem: "bullet", text: "Sauk Centre, Cold Spring, Long Prairie, and Albany." },
-      { listItem: "bullet", text: "Paynesville, Richmond, and surrounding communities." },
-      { style: "normal", text: "If you are outside that radius, call anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization." },
+      { style: "normal", text: "Adley Enterprises serves fiberglass boat owners across the Midwest, with regular repair requests from regional lake communities and traveling customers." },
+      { style: "h2", text: "Primary Midwest Service States" },
+      { listItem: "bullet", text: "Minnesota, Iowa, and Wisconsin." },
+      { listItem: "bullet", text: "Michigan, North Dakota, and South Dakota." },
+      { listItem: "bullet", text: "Montana and additional nearby Midwest requests." },
+      { style: "normal", text: "If your state is not listed, call anyway. Many owners still choose Adley for fiberglass-only specialization and coordinate transport." },
       { style: "normal", text: "Appointment scheduling is recommended, especially during pre-season and mid-summer demand windows." }
     ]
   },

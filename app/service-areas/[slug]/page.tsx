@@ -5,7 +5,7 @@ import { TrackedPhoneLink } from "@/components/analytics/tracked-phone-link";
 import { RichText } from "@/components/portable-text";
 import { CtaBanner } from "@/components/sections/cta-banner";
 import { PageHero } from "@/components/sections/page-hero";
-import { BreadcrumbJsonLd, CityServiceJsonLd } from "@/components/seo/json-ld";
+import { BreadcrumbJsonLd, ServiceAreaJsonLd } from "@/components/seo/json-ld";
 import { buildMetadata } from "@/lib/metadata";
 import { LOCATION_METADATA_BY_SLUG } from "@/lib/seo";
 import {
@@ -28,8 +28,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!location) {
     return buildMetadata({
-      title: "Location Not Found",
-      description: "This location page does not exist.",
+      title: "Service Area Not Found",
+      description: "This service area page does not exist.",
       path: "/service-areas"
     });
   }
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const metadataOverride = LOCATION_METADATA_BY_SLUG[location.slug];
 
   return buildMetadata({
-    title: metadataOverride?.title ?? `Fiberglass Boat Repair Near ${location.city}, ${location.region} | Adley`,
+    title: metadataOverride?.title ?? `${location.title} | Adley Enterprises`,
     description: metadataOverride?.description ?? location.shortDescription,
     path: `/service-areas/${location.slug}`
   });
@@ -58,8 +58,8 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   return (
     <>
       <PageHero
-        eyebrow="Location Page"
-        title={`Fiberglass Boat Repair in ${location.city}, ${location.region}`}
+        eyebrow="Service Area"
+        title={location.title}
         description={location.shortDescription}
         cta={
           <div className="inline-actions">
@@ -79,7 +79,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
       <section className="shell page-section two-col">
         <article className="prose">
-          <h2>Local Service Coverage</h2>
+          <h2>Statewide Service Coverage</h2>
           <RichText value={location.body} />
           <p>
             We service fiberglass boats only and provide written estimates prior to repair authorization.
@@ -98,12 +98,12 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
       </section>
 
       <CtaBanner settings={settings} />
-      <CityServiceJsonLd city={location.city} slug={location.slug} description={location.shortDescription} />
+      <ServiceAreaJsonLd areaName={location.city} slug={location.slug} description={location.shortDescription} />
       <BreadcrumbJsonLd
         items={[
           { name: "Home", href: "/" },
           { name: "Service Areas", href: "/service-areas" },
-          { name: `${location.city}, ${location.region}`, href: `/service-areas/${location.slug}` }
+          { name: location.city, href: `/service-areas/${location.slug}` }
         ]}
       />
     </>

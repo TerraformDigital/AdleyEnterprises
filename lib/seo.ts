@@ -19,82 +19,67 @@ export const BUSINESS_INFO = {
 
 export const SERVICE_METADATA_BY_SLUG: Record<string, { title: string; description: string }> = {
   "fiberglass-boat-repair": {
-    title: "Fiberglass Boat Repair in Melrose, MN | Adley Enterprises",
+    title: "Fiberglass Boat Repair Across the Midwest | Adley",
     description:
-      "Structural and cosmetic fiberglass boat repair in Melrose, MN. Cracked, chipped, gouged, or stressed surfaces repaired. Free estimates. Call (320) 726-0822."
+      "Structural and cosmetic fiberglass boat repair across the Midwest. Cracked, chipped, gouged, or stressed surfaces repaired. Free estimates. Call (320) 726-0822."
   },
   "hull-collision-repair": {
-    title: "Hull Collision Repair | Fiberglass Boat Repair | Adley",
+    title: "Hull Collision Repair Across the Midwest | Adley",
     description:
-      "Impact and collision hull repair with fiberglass reconstruction, fairing, and finish blending. Melrose, MN. Free estimates. Call (320) 726-0822."
+      "Impact and collision hull repair with fiberglass reconstruction, fairing, and finish blending across the Midwest. Free estimates. Call (320) 726-0822."
   },
   "gel-coat-exterior-painting": {
-    title: "Gel Coat Repair & Refinishing | Adley Enterprises",
+    title: "Gel Coat Repair & Refinishing Across the Midwest | Adley",
     description:
-      "Gel coat touch-up and fiberglass refinishing in Melrose, MN. Restore protection and appearance. Free estimates. Call (320) 726-0822."
+      "Gel coat touch-up and fiberglass refinishing for Midwest boat owners. Restore protection and appearance. Free estimates. Call (320) 726-0822."
   },
   "dent-scratch-repair": {
-    title: "Chip & Scratch Repair | Fiberglass Boats | Adley Enterprises",
+    title: "Chip & Scratch Repair Across the Midwest | Adley",
     description:
-      "Fiberglass chip and scratch correction with finish-ready blending. Melrose, MN. Free estimates. Call (320) 726-0822."
+      "Fiberglass chip and scratch correction with finish-ready blending across the Midwest. Free estimates. Call (320) 726-0822."
   },
   "buffing-waxing": {
-    title: "Boat Buffing & Waxing | Fiberglass Protection | Adley",
+    title: "Boat Buffing & Waxing Across the Midwest | Adley",
     description:
-      "Professional buffing and waxing to restore shine and protect fiberglass surfaces. Melrose, MN. Call (320) 726-0822."
+      "Professional buffing and waxing to restore shine and protect fiberglass surfaces across the Midwest. Call (320) 726-0822."
   }
 };
 
 export const LOCATION_METADATA_BY_SLUG: Record<string, { title: string; description: string }> = {
-  "st-cloud-mn": {
-    title: "Fiberglass Boat Repair Near St. Cloud, MN | Adley",
+  minnesota: {
+    title: "Fiberglass Boat Repair in Minnesota | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving St. Cloud, MN. Hull collision repair, gel coat, chip and scratch correction, buffing. Located in Melrose - 30 min from St. Cloud. Call (320) 726-0822."
+      "Fiberglass boat repair services for Minnesota boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "sauk-rapids-mn": {
-    title: "Fiberglass Boat Repair Near Sauk Rapids, MN | Adley",
+  iowa: {
+    title: "Fiberglass Boat Repair in Iowa | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving Sauk Rapids, MN. Hull repair, gel coat refinishing, scratch correction. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair services for Iowa boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "waite-park-mn": {
-    title: "Fiberglass Boat Repair Near Waite Park, MN | Adley",
+  wisconsin: {
+    title: "Fiberglass Boat Repair in Wisconsin | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving Waite Park, MN. Full repair and refinishing services. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair services for Wisconsin boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "st-joseph-mn": {
-    title: "Fiberglass Boat Repair Near St. Joseph, MN | Adley",
+  michigan: {
+    title: "Fiberglass Boat Repair in Michigan | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving St. Joseph, MN. Structural and cosmetic repair. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair services for Michigan boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "sauk-centre-mn": {
-    title: "Fiberglass Boat Repair Near Sauk Centre, MN | Adley",
+  "north-dakota": {
+    title: "Fiberglass Boat Repair in North Dakota | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving Sauk Centre, MN. Hull collision repair, gel coat, buffing and waxing. Call (320) 726-0822."
+      "Fiberglass boat repair services for North Dakota boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "cold-spring-mn": {
-    title: "Fiberglass Boat Repair Near Cold Spring, MN | Adley",
+  "south-dakota": {
+    title: "Fiberglass Boat Repair in South Dakota | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving Cold Spring, MN. All repair and refinishing services. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair services for South Dakota boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   },
-  "long-prairie-mn": {
-    title: "Fiberglass Boat Repair Near Long Prairie, MN | Adley",
+  montana: {
+    title: "Fiberglass Boat Repair in Montana | Adley Enterprises",
     description:
-      "Fiberglass boat repair serving Long Prairie, MN. Hull repair, gel coat, scratch correction. Located in Melrose. Call (320) 726-0822."
-  },
-  "albany-mn": {
-    title: "Fiberglass Boat Repair Near Albany, MN | Adley",
-    description:
-      "Fiberglass boat repair serving Albany, MN. Full fiberglass repair and refinishing. Located in Melrose - just minutes away. Call (320) 726-0822."
-  },
-  "paynesville-mn": {
-    title: "Fiberglass Boat Repair Near Paynesville, MN | Adley",
-    description:
-      "Fiberglass boat repair serving Paynesville, MN. Hull repair, gel coat, buffing and waxing. Located in Melrose. Call (320) 726-0822."
-  },
-  "richmond-mn": {
-    title: "Fiberglass Boat Repair Near Richmond, MN | Adley",
-    description:
-      "Fiberglass boat repair serving Richmond, MN. Chip, scratch, and hull repair. Located in Melrose. Call (320) 726-0822."
+      "Fiberglass boat repair services for Montana boat owners. Hull collision repair, gel coat refinishing, chip and scratch correction, buffing and waxing. Call (320) 726-0822."
   }
 };
 

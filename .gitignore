@@ -21,3 +21,7 @@ pnpm-debug.log*
 
 # os
 .DS_Store
+
+# local large media exports (do not commit)
+public/video/*.mov
+public/video/*.zip

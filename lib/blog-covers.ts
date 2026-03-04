@@ -44,7 +44,7 @@ const fallbackCoversBySlug: Record<string, BlogCover> = {
   },
   "service-areas-around-melrose": {
     url: "/images/fiberglass-boat-repair-wide.avif",
-    alt: "Fiberglass boat repair team serving Central Minnesota customers"
+    alt: "Fiberglass boat repair team serving Midwest customers"
   },
   "adjustable-transducer-mount-options": {
     url: "/images/fiberglass-boat-repair-4-3-one.avif",

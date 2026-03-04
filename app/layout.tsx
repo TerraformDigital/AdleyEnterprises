@@ -18,19 +18,19 @@ const isPreviewDeployment = process.env.VERCEL_ENV === "preview";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
+    default: "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
     template: "%s | Adley Enterprises LLC"
   },
   description:
-    "Fiberglass boat repair and adjustable transducer mounts for Central Minnesota and the Upper Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
+    "Fiberglass boat repair and adjustable transducer mounts across the Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
   keywords: PRIMARY_KEYWORDS,
   alternates: {
     canonical: "/"
   },
   openGraph: {
-    title: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
+    title: "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
     description:
-      "Fiberglass boat repair and adjustable transducer mounts for Central Minnesota and the Upper Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
+      "Fiberglass boat repair and adjustable transducer mounts across the Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
     url: "/",
     type: "website",
     siteName: SITE_NAME,
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
         url: UNIVERSAL_OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Adley Enterprises LLC - Fiberglass Boat Repair for the Upper Midwest"
+        alt: "Adley Enterprises LLC - Fiberglass Boat Repair Across the Midwest"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adley Enterprises LLC | Fiberglass Boat Repair for the Upper Midwest",
+    title: "Adley Enterprises LLC | Fiberglass Boat Repair Across the Midwest",
     description:
-      "Fiberglass boat repair and adjustable transducer mounts for Central Minnesota and the Upper Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
+      "Fiberglass boat repair and adjustable transducer mounts across the Midwest. Hull repair, gel coat, buffing, and waxing. Call (320) 726-0822.",
     images: [UNIVERSAL_OG_IMAGE]
   },
   icons: {

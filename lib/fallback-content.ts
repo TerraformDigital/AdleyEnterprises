@@ -39,13 +39,13 @@ export const fallbackSiteSettings: SiteSettings = {
   region: "MN",
   postalCode: "56352",
   country: "US",
-  serviceRadiusMiles: 30,
+  serviceRadiusMiles: 1000,
   insured: true,
   yearsInBusiness: 15,
   warrantyNote:
     "Warranty claims are reviewed case-by-case with each written estimate and final repair scope approval.",
   aboutSummary:
-    "Adley Enterprises LLC is a fiberglass-only boat repair shop serving Melrose and surrounding Central Minnesota communities with practical repair plans and quality finish work.",
+    "Adley Enterprises LLC is a fiberglass-only boat repair shop serving boat owners across the Midwest with practical repair plans and quality finish work.",
   hours: [
     { day: "Monday", opens: "06:30", closes: "16:00" },
     { day: "Tuesday", opens: "06:30", closes: "16:00" },
@@ -112,30 +112,34 @@ export const fallbackServices: Service[] = [
   }
 ];
 
-export const fallbackLocations: LocationPage[] = [
-  "St. Cloud",
-  "Sauk Rapids",
-  "Waite Park",
-  "St. Joseph",
-  "Sauk Centre",
-  "Cold Spring",
-  "Long Prairie",
-  "Albany",
-  "Paynesville",
-  "Richmond"
-].map((city) => ({
-  title: `Fiberglass Boat Repair in ${city}, MN`,
-  slug: `${city
-    .toLowerCase()
-    .replace(/\./g, "")
-    .replace(/\s+/g, "-")}-mn`,
-  city,
-  region: "MN",
+const serviceAreaStates = [
+  { name: "Minnesota", code: "MN", slug: "minnesota" },
+  { name: "Iowa", code: "IA", slug: "iowa" },
+  { name: "Wisconsin", code: "WI", slug: "wisconsin" },
+  { name: "Michigan", code: "MI", slug: "michigan" },
+  { name: "North Dakota", code: "ND", slug: "north-dakota" },
+  { name: "South Dakota", code: "SD", slug: "south-dakota" },
+  { name: "Montana", code: "MT", slug: "montana" }
+];
+
+export const fallbackLocations: LocationPage[] = serviceAreaStates.map((state) => ({
+  title: `Fiberglass Boat Repair in ${state.name}`,
+  slug: state.slug,
+  city: state.name,
+  region: state.code,
   shortDescription:
-    `Adley Enterprises serves ${city}, MN with fiberglass-only boat repair, collision repair, and refinishing services.`,
-  body: paragraph(
-    `Boat owners in ${city}, MN can request estimates by phone, photo submission, or in-person inspection.`
-  )
+    `Adley Enterprises serves fiberglass boat owners across ${state.name} with collision repair, gel coat refinishing, chip and scratch correction, and buffing/waxing.`,
+  body: [
+    richBlock(
+      `Boat owners throughout ${state.name} can request estimates by phone, photo submission, or in-person inspection.`
+    ),
+    richBlock(
+      "We repair fiberglass boats only and handle structural and cosmetic repair workflows, including hull collision reconstruction and finish correction."
+    ),
+    richBlock(
+      "If you are coordinating transport from outside Minnesota, contact us first so we can review photos and help plan the next step."
+    )
+  ]
 }));
 
 const singleBoardImages = [
@@ -451,7 +455,7 @@ export const fallbackFaqs: FaqItem[] = [
   {
     question: "Which areas do you serve?",
     answer:
-      "We serve approximately a 30-mile radius around Melrose, MN, including St. Cloud, Sauk Rapids, Waite Park, and nearby communities."
+      "We serve fiberglass boat owners across the Midwest, including Minnesota, Iowa, Wisconsin, Michigan, North Dakota, South Dakota, and Montana."
   },
   {
     question: "Do you sell adjustable transducer mounts?",
@@ -556,7 +560,7 @@ export const fallbackBlogPosts: BlogPost[] = [
     title: "How Often Should You Buff and Wax a Fiberglass Boat?",
     slug: "how-often-buff-and-wax-fiberglass-boat",
     excerpt:
-      "Maintenance interval guidance based on storage, use patterns, and Central Minnesota conditions.",
+      "Maintenance interval guidance based on storage, use patterns, and Midwest conditions.",
     publishedAt: "2026-01-26",
     coverImageUrl: "/images/polishing-boat-optimized.jpg",
     coverImageAlt: "Technician buffing and polishing a fiberglass boat side panel",
@@ -636,7 +640,7 @@ export const fallbackBlogPosts: BlogPost[] = [
     ]
   },
   {
-    title: "Spring Boat Prep Checklist for Central Minnesota",
+    title: "Spring Boat Prep Checklist for Midwest Boat Owners",
     slug: "spring-boat-prep-central-minnesota",
     excerpt:
       "Pre-season fiberglass inspection and finish prep to reduce downtime during Minnesota’s launch window.",
@@ -645,7 +649,7 @@ export const fallbackBlogPosts: BlogPost[] = [
     coverImageAlt: "Spring-season fiberglass hull prep before boating launch",
     body: [
       richBlock(
-        "In Central Minnesota, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded."
+        "Across the Midwest, spring launch dates come fast. A structured pre-season check helps catch fiberglass issues before service queues get crowded."
       ),
       richBlock("Pre-Launch Inspection Checklist", "h2"),
       bullet("Inspect high-stress zones for fresh cracks and impact marks."),
@@ -691,30 +695,27 @@ export const fallbackBlogPosts: BlogPost[] = [
     ]
   },
   {
-    title: "Service Areas We Cover Around Melrose, MN",
+    title: "Service Areas We Cover Across the Midwest",
     slug: "service-areas-around-melrose",
     excerpt:
-      "An overview of Central Minnesota communities regularly served from the Melrose shop.",
+      "An overview of the Midwest states regularly served by Adley Enterprises.",
     publishedAt: "2026-02-18",
     coverImageUrl: "/images/fiberglass-boat-repair-wide.avif",
-    coverImageAlt: "Adley Enterprises repair shop servicing Central Minnesota boat owners",
+    coverImageAlt: "Adley Enterprises repair shop servicing Midwest boat owners",
     body: [
       richBlock(
-        "Adley Enterprises serves approximately a 30-mile radius around Melrose, MN, with regular fiberglass repair requests from nearby cities and regional lake communities."
+        "Adley Enterprises serves fiberglass boat owners across the Midwest with regular repair requests from regional lake communities and traveling customers."
       ),
-      richBlock("Common Cities in the Primary Service Radius", "h2"),
-      bullet("St. Cloud"),
-      bullet("Sauk Rapids"),
-      bullet("Waite Park"),
-      bullet("St. Joseph"),
-      bullet("Sauk Centre"),
-      bullet("Cold Spring"),
-      bullet("Long Prairie"),
-      bullet("Albany"),
-      bullet("Paynesville"),
-      bullet("Richmond"),
+      richBlock("Primary Midwest Service States", "h2"),
+      bullet("Minnesota"),
+      bullet("Iowa"),
+      bullet("Wisconsin"),
+      bullet("Michigan"),
+      bullet("North Dakota"),
+      bullet("South Dakota"),
+      bullet("Montana"),
       richBlock(
-        "If you are outside that radius, contact the team anyway. In some cases, owners still choose Melrose service for fiberglass-only specialization."
+        "If your state is not listed, contact the team anyway. Many owners still choose Adley for fiberglass-only specialization and coordinate transport."
       ),
       richBlock(
         "Appointment scheduling is recommended, especially during pre-season and mid-summer windows when demand increases."
